@@ -1,0 +1,23 @@
+[project]
+name = "raypyng-bluesky"
+version = "0.0.1"
+authors = [
+  { name="Simone Vadilonga, Ruslan Ovsyannikov", email="simone.vadilonga@helmholtz-berlin.de" },
+]
+description = "This is a raypyng-Bluesky interface library that allows using the Bluesky data acquisition framework to run raypyng simulations (RAY-UI)"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+
+dependencies = [
+            'raypyng>=0.0.12'
+]
+
+[project.urls]
+"Homepage" = "https://github.com/hz-b/raypyng/"
+"Bug Tracker" = "https://github.com/hz-b/raypyng/issues"
+"Documentation" = "https://raypyng.readthedocs.io"
