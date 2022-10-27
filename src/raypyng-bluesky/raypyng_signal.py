@@ -27,3 +27,15 @@ class RayPySignal(Signal):
     
     def get(self): 
         return float(self.obj.cdata)
+
+ 
+class RayPySignalRO(Signal):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+
+    def put(self, value, *, timestamp=None, force=False):
+        raise ReadOnlyError("The signal {} is readonly.".format(self.name))
+
+    def set(self, value, *, timestamp=None, force=False):
+        raise ReadOnlyError("The signal {} is readonly.".format(self.name))
