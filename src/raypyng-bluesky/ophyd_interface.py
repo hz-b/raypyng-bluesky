@@ -58,12 +58,19 @@ class Detector(Device):
 
         This method returns a status object which reports done and success
         """
+        # save the rml file in tmp/tmp.rml
+        # load it
+        # trace
+        # export
+        
     
     def read(self):
 
         """
         returns the last value from the simlation
         """
+
+        # read the exported files and return the values
 
 
 
