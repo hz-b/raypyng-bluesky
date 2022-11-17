@@ -3,8 +3,8 @@ from ophyd import Component as Cpt
 from ophyd.sim import NullStatus
 
 
-from raypyng_signal import RayPySignalRO, RayPySignal
-from positioners import PVPositionerDone
+from .signal import RayPySignalRO, RayPySignal
+from .positioners import PVPositionerDone
 
 
 class RaypyngAxis(PVPositionerDone):

@@ -2,8 +2,8 @@ from ophyd.device import Device
 from ophyd import Component as Cpt
 
 
-from raypyng_axes import SimulatedAxisSource, SimulatedAxisMisalign 
-from raypyng_axes import SimulatedAxisAperture, SimulatedAxisGrating
+from .axes import SimulatedAxisSource, SimulatedAxisMisalign 
+from .axes import SimulatedAxisAperture, SimulatedAxisGrating
 
 class MisalignComponents(Device):
     raypyng  = True

@@ -1,5 +1,5 @@
 [project]
-name = "raypyng-bluesky"
+name = "raypyng_bluesky"
 version = "0.0.1"
 authors = [
   { name="Simone Vadilonga, Ruslan Ovsyannikov", email="simone.vadilonga@helmholtz-berlin.de" },
@@ -14,7 +14,12 @@ classifiers = [
 ]
 
 dependencies = [
-            'raypyng>=0.0.12'
+            'raypyng>=0.0.12',
+            'bluesky',
+            'ophyd',
+            'databroker',
+            'ipython',
+            'pyqt5'
 ]
 
 [project.urls]
