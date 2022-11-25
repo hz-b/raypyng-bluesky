@@ -37,12 +37,13 @@ class RaypyngDetector(Signal):
         self.path = path
         if not os.path.exists(self.path):
             os.makedirs(self.path)
+    
+    def set_rayui_api(self,rayui_api): 
+        self.rayui_api = rayui_api
 
     def check_if_simulation_is_done(self,result_queue):
-        # make sure tmp folder exists, if not create it
-        sim_done = os.path.join(self.path,"simulation_done.txt")
-        while not os.path.exists(os.path.join(self.path, self.parent_detector_name+"-RawRaysOutgoing.csv")):
-            time.sleep(.1)
+        while not self.rayui_api._simulation_done:
+             time.sleep(.1)
         result_queue.put(('done'))
         return 
     
@@ -102,21 +103,23 @@ class RaypyngTriggerDetector(Signal):
         if os.path.exists(sim_done):
             os.remove(sim_done)
 
+    def setup_simulation(self):
+        self.r = RayUIRunner(ray_path=None, hide=True)
+        self.a = RayUIAPI(self.r)
+        return self.a
+
     def simulate(self,result_queue):
         self.remove_done_simulation_file()
         # make sure tmp folder exists, if not create it
         if not os.path.exists(self.path):
             os.makedirs(self.path)
-        
-        r = RayUIRunner(ray_path=None, hide=True)
-        a = RayUIAPI(r)
         self.rml.write(os.path.join(self.path,'tmp.rml'))
-        r.run()
-        a.load(os.path.join(self.path,'tmp.rml'))
-        a.trace(analyze=False)
-        a.save(os.path.join(self.path,'tmp.rml'))
+        self.r.run()
+        self.a.load(os.path.join(self.path,'tmp.rml'))
+        self.a.trace(analyze=False)
+        self.a.save(os.path.join(self.path,'tmp.rml'))
         for exp in self.exports_list:
-            aa=a.export(exp, "RawRaysOutgoing", self.path, '')
+            aa=self.a.export(exp, "RawRaysOutgoing", self.path, '')
             pp = PostProcess()
             pp.postprocess_RawRays(exported_element=exp, 
                                 exported_object='RawRaysOutgoing', 
@@ -124,7 +127,7 @@ class RaypyngTriggerDetector(Signal):
                                 sim_number='', 
                                 rml_filename=os.path.join(self.path,'tmp.rml'))
         
-        a.quit()
+        self.a.quit()
         result_queue.put(('done'))
         return 
     
