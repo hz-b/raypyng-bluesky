@@ -74,7 +74,6 @@ def trigger_sim(plan, trigger_detector):
                 exports = [det.parent_detector_name for det in gi_detectors]
                 # once we make the trigger detector a device this should use the
                 # configure method, see issue #5
-                trigger_detector.remove_done_simulation_file()
                 trigger_detector.update_exports(exports)
 
             elif len(raypyng_devices)>0 and len(non_raypyng_devices)>0:
@@ -100,7 +99,6 @@ def trigger_sim(plan, trigger_detector):
     def cleanup_at_close_run(msg): 
         if msg.command == 'close_run':
             if len(raypyng_devices)>0 and len(non_raypyng_devices)==0: 
-                trigger_detector.remove_done_simulation_file()
                 raypyng_devices.clear()
                 non_raypyng_devices.clear()
         return None, None 

@@ -102,18 +102,12 @@ class RaypyngTriggerDetector(Signal):
         if not os.path.exists(self.path):
             os.makedirs(self.path)
 
-    def remove_done_simulation_file(self):
-        sim_done = os.path.join(self.path,"simulation_done.txt")
-        if os.path.exists(sim_done):
-            os.remove(sim_done)
-
     def setup_simulation(self):
         self.r = RayUIRunner(ray_path=None, hide=True)
         self.a = RayUIAPI(self.r)
         return self.a
 
     def simulate(self,result_queue):
-        self.remove_done_simulation_file()
         # make sure tmp folder exists, if not create it
         if not os.path.exists(self.path):
             os.makedirs(self.path)
@@ -147,8 +141,6 @@ class RaypyngTriggerDetector(Signal):
 
         d = Status(self)
         d._finished()
-        sim_done = os.path.join(self.path,"simulation_done.txt")
-        os.mknod(sim_done)
         return d
         
     def get(self): 
