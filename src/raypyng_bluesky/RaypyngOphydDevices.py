@@ -17,6 +17,7 @@ class RaypyngOphydDevices():
         self.rml = RMLFile(rml_path)
         self.temporary_folder = temporary_folder
         self.name_space = name_space.f_globals
+        self.prefix = 'rp_'
         
 
         mirrors = ['Toroid', 'PlaneMirror', 'Cylinder', 'Ellipsoid']
@@ -49,7 +50,7 @@ class RaypyngOphydDevices():
         ret = ()
         for oe in self.rml.beamline.children():
             cls = self.type_to_class_dict[oe['type']]
-            k = oe['name']
+            k = self.prefix + oe['name']
             if oe['type'] == 'ImagePlane':
                 self.name_space[k] = cls(name=k, rml=self.rml, tmp=self.temporary_folder)
                 ret = ret + (self.name_space[k],)
