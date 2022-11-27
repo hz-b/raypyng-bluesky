@@ -78,10 +78,14 @@ class RaypyngDetector(Signal):
 class RaypyngTriggerDetector(Signal):
     raypyng = True
     raypyngTriggerDet = True
-    def __init__(self, *args, **kwargs):
+    def __init__(self, *args, rml, temporary_folder, **kwargs):
         super().__init__(*args, **kwargs)
-        self.rml=None
+        self.rml=rml
+        self.path = temporary_folder
         self.exports_list = []
+
+        if not os.path.exists(self.path):
+            os.makedirs(self.path)
 
     def set_rml(self, rml):
         self.rml = rml
