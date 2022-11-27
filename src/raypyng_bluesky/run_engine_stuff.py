@@ -86,7 +86,10 @@ def trigger_sim(plan, trigger_detector):
         if msg.command == 'trigger' and msg.obj.name == gi_detectors[0].name: 
             if len(raypyng_devices)>0 and len(non_raypyng_devices)==0: 
                 group = msg.kwargs['group']
-                trigger_msgs = Msg('trigger', trigger_detector, group=group) 
+                trigger_msgs = Msg('trigger', trigger_detector, group=group)
+                rayui_api = trigger_detector.setup_simulation() 
+                for det in gi_detectors:
+                    det.set_rayui_api(rayui_api)
                 def new_gen():
                     yield from ensure_generator(trigger_msgs)
                     yield msg
