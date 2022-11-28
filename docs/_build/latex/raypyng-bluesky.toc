@@ -3,3 +3,27 @@
 \contentsline {chapter}{\numberline {2}Tutorial}{3}{chapter.2}%
 \contentsline {chapter}{\numberline {3}How To Guides}{5}{chapter.3}%
 \contentsline {chapter}{\numberline {4}API}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Create Ophyd Devices from rml file}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}RaypyngOphydDevices}{7}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}RaypyngDictionary}{8}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Ophyd Signals}{8}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}RayPySignal}{8}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}RayPySignalRO}{9}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Ophyd Devices}{9}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Axes}{9}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}SimulatedAxisSource}{10}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}SimulatedAxisAperture}{10}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}SimulatedAxisGrating}{10}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Ophyd Detectors}{10}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Detector}{10}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Trigger Detector}{11}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Ophyd Devices}{12}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}MisalignComponents}{12}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}SimulatedPGM}{12}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}SimulatedApertures}{12}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}SimulatedMirror}{12}{subsection.4.5.4}%
+\contentsline {subsection}{\numberline {4.5.5}SimulatedSource}{12}{subsection.4.5.5}%
+\contentsline {section}{\numberline {4.6}Preprocessor}{12}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}MisalignComponents}{12}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}SupplementalDataRaypyng}{13}{subsection.4.6.2}%
+\contentsline {chapter}{Index}{15}{section*.41}%

@@ -1,5 +1,7 @@
 This is makeindex, version 2.15 [TeX Live 2022/dev] (kpathsea + Thai support).
 Scanning style file ./python.ist.......done (7 attributes redefined, 0 ignored).
-Scanning input file raypyng-bluesky.idx...done (0 entries accepted, 0 rejected).
-Nothing written in raypyng-bluesky.ind.
+Scanning input file raypyng-bluesky.idx....done (38 entries accepted, 0 rejected).
+Sorting entries....done (202 comparisons).
+Generating output file raypyng-bluesky.ind....done (82 lines written, 0 warnings).
+Output written in raypyng-bluesky.ind.
 Transcript written in raypyng-bluesky.ilg.

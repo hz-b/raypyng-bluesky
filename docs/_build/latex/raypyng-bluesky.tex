@@ -103,6 +103,836 @@
 \chapter{API}
 \label{\detokenize{API:api}}\label{\detokenize{API::doc}}
 
+\section{Create Ophyd Devices from rml file}
+\label{\detokenize{API:create-ophyd-devices-from-rml-file}}
+
+\subsection{RaypyngOphydDevices}
+\label{\detokenize{API:raypyngophyddevices}}\index{RaypyngOphydDevices (class in raypyng\_bluesky.RaypyngOphydDevices)@\spxentry{RaypyngOphydDevices}\spxextra{class in raypyng\_bluesky.RaypyngOphydDevices}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.RaypyngOphydDevices.RaypyngOphydDevices}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.RaypyngOphydDevices.}}\sphinxbfcode{\sphinxupquote{RaypyngOphydDevices}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{n}{RE}}, \emph{\DUrole{n}{rml\_path}}, \emph{\DUrole{n}{temporary\_folder}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{name\_space}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{prefix}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Create ophyd devices from a RAY\sphinxhyphen{}UI rml file and adds them to a name space.
+
+\sphinxAtStartPar
+If you are using ipython sys.\_getframe(0) returns the name space of the ipython instance.
+(Remember to \sphinxcode{\sphinxupquote{import sys}})
+\begin{quote}\begin{description}
+\sphinxlineitem{Parameters}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{RE}} (\sphinxstyleliteralemphasis{\sphinxupquote{RunEngine}}) \textendash{} Bluesky RunEngine
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{rml\_path}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} the path to the rml file
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{temporary\_folder}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} path where to create temporary folder. If None it is automatically
+set into the ipython profile folder. Default to None.
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{name\_space}} (\sphinxstyleliteralemphasis{\sphinxupquote{frame}}\sphinxstyleliteralemphasis{\sphinxupquote{, }}\sphinxstyleliteralemphasis{\sphinxupquote{optional}}) \textendash{} If None the class will try to understand the correct namespace to add the Ophyd devices to.
+If the automatic retrieval fails, pass\textasciigrave{}\textasciigrave{}sys.\_getframe(0)\textasciigrave{}\textasciigrave{}. Defaults to None.
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{prefix}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} the prefix to prepend to the oe names found in the rml file
+
+\end{itemize}
+
+\end{description}\end{quote}
+\index{append\_preprocessor() (raypyng\_bluesky.RaypyngOphydDevices.RaypyngOphydDevices method)@\spxentry{append\_preprocessor()}\spxextra{raypyng\_bluesky.RaypyngOphydDevices.RaypyngOphydDevices method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.RaypyngOphydDevices.RaypyngOphydDevices.append_preprocessor}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{append\_preprocessor}}}{}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Add supplemental data to the RunEngine to trigger the simulations
+
+\end{fulllineitems}
+
+\index{create\_raypyng\_elements\_from\_rml() (raypyng\_bluesky.RaypyngOphydDevices.RaypyngOphydDevices method)@\spxentry{create\_raypyng\_elements\_from\_rml()}\spxextra{raypyng\_bluesky.RaypyngOphydDevices.RaypyngOphydDevices method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.RaypyngOphydDevices.RaypyngOphydDevices.create_raypyng_elements_from_rml}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{create\_raypyng\_elements\_from\_rml}}}{}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Iterate through the raypyng objects created by RMLFile and create corresponding Ophyd Devices
+\begin{quote}\begin{description}
+\sphinxlineitem{Returns}
+\sphinxAtStartPar
+the Ophyd devices created
+
+\sphinxlineitem{Return type}
+\sphinxAtStartPar
+OphydDevices
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{create\_trigger\_detector() (raypyng\_bluesky.RaypyngOphydDevices.RaypyngOphydDevices method)@\spxentry{create\_trigger\_detector()}\spxextra{raypyng\_bluesky.RaypyngOphydDevices.RaypyngOphydDevices method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.RaypyngOphydDevices.RaypyngOphydDevices.create_trigger_detector}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{create\_trigger\_detector}}}{}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Create a trigger detector called RaypyngTriggerDetector
+
+\end{fulllineitems}
+
+\index{prepend\_to\_oe\_name() (raypyng\_bluesky.RaypyngOphydDevices.RaypyngOphydDevices method)@\spxentry{prepend\_to\_oe\_name()}\spxextra{raypyng\_bluesky.RaypyngOphydDevices.RaypyngOphydDevices method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.RaypyngOphydDevices.RaypyngOphydDevices.prepend_to_oe_name}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{prepend\_to\_oe\_name}}}{}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Prepend a prefix to the name of all the Ophyd object created
+
+\end{fulllineitems}
+
+\index{trigger\_detector() (raypyng\_bluesky.RaypyngOphydDevices.RaypyngOphydDevices method)@\spxentry{trigger\_detector()}\spxextra{raypyng\_bluesky.RaypyngOphydDevices.RaypyngOphydDevices method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.RaypyngOphydDevices.RaypyngOphydDevices.trigger_detector}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{trigger\_detector}}}{}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Return the RaypyngTriggerDetector
+\begin{quote}\begin{description}
+\sphinxlineitem{Returns}
+\sphinxAtStartPar
+the trigger detector
+
+\sphinxlineitem{Return type}
+\sphinxAtStartPar
+{\hyperref[\detokenize{API:raypyng_bluesky.detector.RaypyngTriggerDetector}]{\sphinxcrossref{RaypyngTriggerDetector}}} ({\hyperref[\detokenize{API:raypyng_bluesky.detector.RaypyngTriggerDetector}]{\sphinxcrossref{RaypyngTriggerDetector}}})
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+
+
+\subsection{RaypyngDictionary}
+\label{\detokenize{API:raypyngdictionary}}\index{RaypyngDictionary (class in raypyng\_bluesky.RaypyngOphydDevices)@\spxentry{RaypyngDictionary}\spxextra{class in raypyng\_bluesky.RaypyngOphydDevices}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.RaypyngOphydDevices.RaypyngDictionary}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.RaypyngOphydDevices.}}\sphinxbfcode{\sphinxupquote{RaypyngDictionary}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+A class defining a dictionary of the differen elements in rayui and the classe to be used as Ophyd devices
+
+\end{fulllineitems}
+
+
+
+\section{Ophyd Signals}
+\label{\detokenize{API:ophyd-signals}}
+
+\subsection{RayPySignal}
+\label{\detokenize{API:raypysignal}}\index{RayPySignal (class in raypyng\_bluesky.signal)@\spxentry{RayPySignal}\spxextra{class in raypyng\_bluesky.signal}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.signal.RayPySignal}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.signal.}}\sphinxbfcode{\sphinxupquote{RayPySignal}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
+\pysigstopsignatures\index{get() (raypyng\_bluesky.signal.RayPySignal method)@\spxentry{get()}\spxextra{raypyng\_bluesky.signal.RayPySignal method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.signal.RayPySignal.get}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get}}}{}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+The readback value
+
+\end{fulllineitems}
+
+\index{put() (raypyng\_bluesky.signal.RayPySignal method)@\spxentry{put()}\spxextra{raypyng\_bluesky.signal.RayPySignal method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.signal.RayPySignal.put}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{put}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Put updates the internal readback value
+
+\sphinxAtStartPar
+The value is optionally checked first, depending on the value of force.
+In addition, VALUE subscriptions are run.
+
+\sphinxAtStartPar
+Extra kwargs are ignored (for API compatibility with EpicsSignal kwargs
+pass through).
+\begin{quote}\begin{description}
+\sphinxlineitem{Parameters}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{value}} (\sphinxstyleliteralemphasis{\sphinxupquote{any}}) \textendash{} Value to set
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{timestamp}} (\sphinxstyleliteralemphasis{\sphinxupquote{float}}\sphinxstyleliteralemphasis{\sphinxupquote{, }}\sphinxstyleliteralemphasis{\sphinxupquote{optional}}) \textendash{} The timestamp associated with the value, defaults to time.time()
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{metadata}} (\sphinxstyleliteralemphasis{\sphinxupquote{dict}}\sphinxstyleliteralemphasis{\sphinxupquote{, }}\sphinxstyleliteralemphasis{\sphinxupquote{optional}}) \textendash{} Further associated metadata with the value (such as alarm status,
+severity, etc.)
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{force}} (\sphinxstyleliteralemphasis{\sphinxupquote{bool}}\sphinxstyleliteralemphasis{\sphinxupquote{, }}\sphinxstyleliteralemphasis{\sphinxupquote{optional}}) \textendash{} Check the value prior to setting it, defaults to False
+
+\end{itemize}
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{set() (raypyng\_bluesky.signal.RayPySignal method)@\spxentry{set()}\spxextra{raypyng\_bluesky.signal.RayPySignal method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.signal.RayPySignal.set}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{set}}}{\emph{\DUrole{n}{value}}}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Set is like \sphinxtitleref{put}, but is here for bluesky compatibility
+\begin{quote}\begin{description}
+\sphinxlineitem{Returns}
+\sphinxAtStartPar
+\sphinxstylestrong{st} \textendash{} This status object will be finished upon return in the
+case of basic soft Signals
+
+\sphinxlineitem{Return type}
+\sphinxAtStartPar
+Status
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+
+
+\subsection{RayPySignalRO}
+\label{\detokenize{API:raypysignalro}}\index{RayPySignalRO (class in raypyng\_bluesky.signal)@\spxentry{RayPySignalRO}\spxextra{class in raypyng\_bluesky.signal}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.signal.RayPySignalRO}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.signal.}}\sphinxbfcode{\sphinxupquote{RayPySignalRO}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
+\pysigstopsignatures\index{put() (raypyng\_bluesky.signal.RayPySignalRO method)@\spxentry{put()}\spxextra{raypyng\_bluesky.signal.RayPySignalRO method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.signal.RayPySignalRO.put}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{put}}}{\emph{\DUrole{n}{value}}, \emph{\DUrole{o}{*}}, \emph{\DUrole{n}{timestamp}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{force}\DUrole{o}{=}\DUrole{default_value}{False}}}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Put updates the internal readback value
+
+\sphinxAtStartPar
+The value is optionally checked first, depending on the value of force.
+In addition, VALUE subscriptions are run.
+
+\sphinxAtStartPar
+Extra kwargs are ignored (for API compatibility with EpicsSignal kwargs
+pass through).
+\begin{quote}\begin{description}
+\sphinxlineitem{Parameters}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{value}} (\sphinxstyleliteralemphasis{\sphinxupquote{any}}) \textendash{} Value to set
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{timestamp}} (\sphinxstyleliteralemphasis{\sphinxupquote{float}}\sphinxstyleliteralemphasis{\sphinxupquote{, }}\sphinxstyleliteralemphasis{\sphinxupquote{optional}}) \textendash{} The timestamp associated with the value, defaults to time.time()
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{metadata}} (\sphinxstyleliteralemphasis{\sphinxupquote{dict}}\sphinxstyleliteralemphasis{\sphinxupquote{, }}\sphinxstyleliteralemphasis{\sphinxupquote{optional}}) \textendash{} Further associated metadata with the value (such as alarm status,
+severity, etc.)
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{force}} (\sphinxstyleliteralemphasis{\sphinxupquote{bool}}\sphinxstyleliteralemphasis{\sphinxupquote{, }}\sphinxstyleliteralemphasis{\sphinxupquote{optional}}) \textendash{} Check the value prior to setting it, defaults to False
+
+\end{itemize}
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{set() (raypyng\_bluesky.signal.RayPySignalRO method)@\spxentry{set()}\spxextra{raypyng\_bluesky.signal.RayPySignalRO method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.signal.RayPySignalRO.set}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{set}}}{\emph{\DUrole{n}{value}}, \emph{\DUrole{o}{*}}, \emph{\DUrole{n}{timestamp}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{force}\DUrole{o}{=}\DUrole{default_value}{False}}}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Set is like \sphinxtitleref{put}, but is here for bluesky compatibility
+\begin{quote}\begin{description}
+\sphinxlineitem{Returns}
+\sphinxAtStartPar
+\sphinxstylestrong{st} \textendash{} This status object will be finished upon return in the
+case of basic soft Signals
+
+\sphinxlineitem{Return type}
+\sphinxAtStartPar
+Status
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+
+
+\section{Ophyd Devices}
+\label{\detokenize{API:ophyd-devices}}
+
+\subsection{Axes}
+\label{\detokenize{API:axes}}\index{RaypyngAxis (class in raypyng\_bluesky.axes)@\spxentry{RaypyngAxis}\spxextra{class in raypyng\_bluesky.axes}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.axes.RaypyngAxis}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.axes.}}\sphinxbfcode{\sphinxupquote{RaypyngAxis}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
+\pysigstopsignatures\index{get() (raypyng\_bluesky.axes.RaypyngAxis method)@\spxentry{get()}\spxextra{raypyng\_bluesky.axes.RaypyngAxis method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.axes.RaypyngAxis.get}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get}}}{}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Get the value of all components in the device
+
+\sphinxAtStartPar
+Keyword arguments are passed onto each signal.get(). Components
+beginning with an underscore will not be included.
+
+\end{fulllineitems}
+
+\index{position (raypyng\_bluesky.axes.RaypyngAxis property)@\spxentry{position}\spxextra{raypyng\_bluesky.axes.RaypyngAxis property}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.axes.RaypyngAxis.position}}
+\pysigstartsignatures
+\pysigline{\sphinxbfcode{\sphinxupquote{property\DUrole{w}{  }}}\sphinxbfcode{\sphinxupquote{position}}}
+\pysigstopsignatures
+\sphinxAtStartPar
+The current position of the motor in its engineering units
+:returns: \sphinxstylestrong{position}
+:rtype: any
+
+\end{fulllineitems}
+
+\index{set() (raypyng\_bluesky.axes.RaypyngAxis method)@\spxentry{set()}\spxextra{raypyng\_bluesky.axes.RaypyngAxis method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.axes.RaypyngAxis.set}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{set}}}{\emph{\DUrole{n}{value}}}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Set a value and return a Status object
+\begin{quote}\begin{description}
+\sphinxlineitem{Parameters}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{new\_position}} (\sphinxstyleliteralemphasis{\sphinxupquote{object}}) \textendash{} The input here is whatever the device requires (this
+should be over\sphinxhyphen{}ridden by the implementation.  For example
+a motor would take a float, a shutter the strings \{‘Open’,
+‘Close’\}, and a goineometer (h, k, l) tuples
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{timeout}} (\sphinxstyleliteralemphasis{\sphinxupquote{float}}\sphinxstyleliteralemphasis{\sphinxupquote{, }}\sphinxstyleliteralemphasis{\sphinxupquote{optional}}) \textendash{} Maximum time to wait for the motion. If None, the default timeout
+for this positioner is used.
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{moved\_cb}} (\sphinxstyleliteralemphasis{\sphinxupquote{callable}}\sphinxstyleliteralemphasis{\sphinxupquote{, }}\sphinxstyleliteralemphasis{\sphinxupquote{optional}}) \textendash{} 
+\sphinxAtStartPar
+Deprecated
+
+\sphinxAtStartPar
+Call this callback when movement has finished. This callback
+must accept one keyword argument: ‘obj’ which will be set to
+this positioner instance.
+
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{wait}} (\sphinxstyleliteralemphasis{\sphinxupquote{bool}}\sphinxstyleliteralemphasis{\sphinxupquote{, }}\sphinxstyleliteralemphasis{\sphinxupquote{optional}}) \textendash{} 
+\sphinxAtStartPar
+Deprecated
+
+\sphinxAtStartPar
+If the method should block until the Status object reports
+it is done.
+
+\sphinxAtStartPar
+Defaults to False
+
+
+\end{itemize}
+
+\sphinxlineitem{Returns}
+\sphinxAtStartPar
+\sphinxstylestrong{status} \textendash{} Status object to indicate when the motion / set is done.
+
+\sphinxlineitem{Return type}
+\sphinxAtStartPar
+StatusBase
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+
+
+\subsection{SimulatedAxisSource}
+\label{\detokenize{API:simulatedaxissource}}\index{SimulatedAxisSource (class in raypyng\_bluesky.axes)@\spxentry{SimulatedAxisSource}\spxextra{class in raypyng\_bluesky.axes}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.axes.SimulatedAxisSource}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.axes.}}\sphinxbfcode{\sphinxupquote{SimulatedAxisSource}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
+\pysigstopsignatures
+\end{fulllineitems}
+
+
+\sphinxAtStartPar
+class SimulatedAxisMisalign(RaypyngAxis):
+
+
+\subsection{SimulatedAxisAperture}
+\label{\detokenize{API:simulatedaxisaperture}}\index{SimulatedAxisAperture (class in raypyng\_bluesky.axes)@\spxentry{SimulatedAxisAperture}\spxextra{class in raypyng\_bluesky.axes}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.axes.SimulatedAxisAperture}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.axes.}}\sphinxbfcode{\sphinxupquote{SimulatedAxisAperture}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
+\pysigstopsignatures
+\end{fulllineitems}
+
+
+
+\subsection{SimulatedAxisGrating}
+\label{\detokenize{API:simulatedaxisgrating}}\index{SimulatedAxisGrating (class in raypyng\_bluesky.axes)@\spxentry{SimulatedAxisGrating}\spxextra{class in raypyng\_bluesky.axes}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.axes.SimulatedAxisGrating}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.axes.}}\sphinxbfcode{\sphinxupquote{SimulatedAxisGrating}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
+\pysigstopsignatures
+\end{fulllineitems}
+
+
+
+\section{Ophyd Detectors}
+\label{\detokenize{API:ophyd-detectors}}
+
+\subsection{Detector}
+\label{\detokenize{API:detector}}\index{RaypyngDetector (class in raypyng\_bluesky.detector)@\spxentry{RaypyngDetector}\spxextra{class in raypyng\_bluesky.detector}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.detector.RaypyngDetector}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.detector.}}\sphinxbfcode{\sphinxupquote{RaypyngDetector}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{n}{information\_to\_extract}\DUrole{o}{=}\DUrole{default_value}{\textquotesingle{}intensity\textquotesingle{}}}, \emph{\DUrole{n}{parent\_detector\_name}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
+\pysigstopsignatures\index{get() (raypyng\_bluesky.detector.RaypyngDetector method)@\spxentry{get()}\spxextra{raypyng\_bluesky.detector.RaypyngDetector method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.detector.RaypyngDetector.get}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get}}}{}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+The readback value
+
+\end{fulllineitems}
+
+\index{put() (raypyng\_bluesky.detector.RaypyngDetector method)@\spxentry{put()}\spxextra{raypyng\_bluesky.detector.RaypyngDetector method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.detector.RaypyngDetector.put}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{put}}}{\emph{\DUrole{n}{value}}, \emph{\DUrole{o}{*}}, \emph{\DUrole{n}{timestamp}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{force}\DUrole{o}{=}\DUrole{default_value}{False}}}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Put updates the internal readback value
+
+\sphinxAtStartPar
+The value is optionally checked first, depending on the value of force.
+In addition, VALUE subscriptions are run.
+
+\sphinxAtStartPar
+Extra kwargs are ignored (for API compatibility with EpicsSignal kwargs
+pass through).
+\begin{quote}\begin{description}
+\sphinxlineitem{Parameters}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{value}} (\sphinxstyleliteralemphasis{\sphinxupquote{any}}) \textendash{} Value to set
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{timestamp}} (\sphinxstyleliteralemphasis{\sphinxupquote{float}}\sphinxstyleliteralemphasis{\sphinxupquote{, }}\sphinxstyleliteralemphasis{\sphinxupquote{optional}}) \textendash{} The timestamp associated with the value, defaults to time.time()
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{metadata}} (\sphinxstyleliteralemphasis{\sphinxupquote{dict}}\sphinxstyleliteralemphasis{\sphinxupquote{, }}\sphinxstyleliteralemphasis{\sphinxupquote{optional}}) \textendash{} Further associated metadata with the value (such as alarm status,
+severity, etc.)
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{force}} (\sphinxstyleliteralemphasis{\sphinxupquote{bool}}\sphinxstyleliteralemphasis{\sphinxupquote{, }}\sphinxstyleliteralemphasis{\sphinxupquote{optional}}) \textendash{} Check the value prior to setting it, defaults to False
+
+\end{itemize}
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{set() (raypyng\_bluesky.detector.RaypyngDetector method)@\spxentry{set()}\spxextra{raypyng\_bluesky.detector.RaypyngDetector method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.detector.RaypyngDetector.set}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{set}}}{\emph{\DUrole{n}{value}}, \emph{\DUrole{o}{*}}, \emph{\DUrole{n}{timestamp}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{force}\DUrole{o}{=}\DUrole{default_value}{False}}}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Set is like \sphinxtitleref{put}, but is here for bluesky compatibility
+\begin{quote}\begin{description}
+\sphinxlineitem{Returns}
+\sphinxAtStartPar
+\sphinxstylestrong{st} \textendash{} This status object will be finished upon return in the
+case of basic soft Signals
+
+\sphinxlineitem{Return type}
+\sphinxAtStartPar
+Status
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{trigger() (raypyng\_bluesky.detector.RaypyngDetector method)@\spxentry{trigger()}\spxextra{raypyng\_bluesky.detector.RaypyngDetector method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.detector.RaypyngDetector.trigger}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{trigger}}}{}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Call that is used by bluesky prior to read()
+
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+
+
+\subsection{Trigger Detector}
+\label{\detokenize{API:trigger-detector}}\index{RaypyngTriggerDetector (class in raypyng\_bluesky.detector)@\spxentry{RaypyngTriggerDetector}\spxextra{class in raypyng\_bluesky.detector}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.detector.RaypyngTriggerDetector}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.detector.}}\sphinxbfcode{\sphinxupquote{RaypyngTriggerDetector}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{n}{rml}}, \emph{\DUrole{n}{temporary\_folder}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
+\pysigstopsignatures\index{get() (raypyng\_bluesky.detector.RaypyngTriggerDetector method)@\spxentry{get()}\spxextra{raypyng\_bluesky.detector.RaypyngTriggerDetector method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.detector.RaypyngTriggerDetector.get}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get}}}{}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+The readback value
+
+\end{fulllineitems}
+
+\index{put() (raypyng\_bluesky.detector.RaypyngTriggerDetector method)@\spxentry{put()}\spxextra{raypyng\_bluesky.detector.RaypyngTriggerDetector method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.detector.RaypyngTriggerDetector.put}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{put}}}{\emph{\DUrole{n}{value}}, \emph{\DUrole{o}{*}}, \emph{\DUrole{n}{timestamp}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{force}\DUrole{o}{=}\DUrole{default_value}{False}}}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Put updates the internal readback value
+
+\sphinxAtStartPar
+The value is optionally checked first, depending on the value of force.
+In addition, VALUE subscriptions are run.
+
+\sphinxAtStartPar
+Extra kwargs are ignored (for API compatibility with EpicsSignal kwargs
+pass through).
+\begin{quote}\begin{description}
+\sphinxlineitem{Parameters}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{value}} (\sphinxstyleliteralemphasis{\sphinxupquote{any}}) \textendash{} Value to set
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{timestamp}} (\sphinxstyleliteralemphasis{\sphinxupquote{float}}\sphinxstyleliteralemphasis{\sphinxupquote{, }}\sphinxstyleliteralemphasis{\sphinxupquote{optional}}) \textendash{} The timestamp associated with the value, defaults to time.time()
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{metadata}} (\sphinxstyleliteralemphasis{\sphinxupquote{dict}}\sphinxstyleliteralemphasis{\sphinxupquote{, }}\sphinxstyleliteralemphasis{\sphinxupquote{optional}}) \textendash{} Further associated metadata with the value (such as alarm status,
+severity, etc.)
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{force}} (\sphinxstyleliteralemphasis{\sphinxupquote{bool}}\sphinxstyleliteralemphasis{\sphinxupquote{, }}\sphinxstyleliteralemphasis{\sphinxupquote{optional}}) \textendash{} Check the value prior to setting it, defaults to False
+
+\end{itemize}
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{set() (raypyng\_bluesky.detector.RaypyngTriggerDetector method)@\spxentry{set()}\spxextra{raypyng\_bluesky.detector.RaypyngTriggerDetector method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.detector.RaypyngTriggerDetector.set}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{set}}}{\emph{\DUrole{n}{value}}, \emph{\DUrole{o}{*}}, \emph{\DUrole{n}{timestamp}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{force}\DUrole{o}{=}\DUrole{default_value}{False}}}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Set is like \sphinxtitleref{put}, but is here for bluesky compatibility
+\begin{quote}\begin{description}
+\sphinxlineitem{Returns}
+\sphinxAtStartPar
+\sphinxstylestrong{st} \textendash{} This status object will be finished upon return in the
+case of basic soft Signals
+
+\sphinxlineitem{Return type}
+\sphinxAtStartPar
+Status
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{trigger() (raypyng\_bluesky.detector.RaypyngTriggerDetector method)@\spxentry{trigger()}\spxextra{raypyng\_bluesky.detector.RaypyngTriggerDetector method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.detector.RaypyngTriggerDetector.trigger}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{trigger}}}{}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Call that is used by bluesky prior to read()
+
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+
+
+\section{Ophyd Devices}
+\label{\detokenize{API:id1}}
+
+\subsection{MisalignComponents}
+\label{\detokenize{API:misaligncomponents}}\index{MisalignComponents (class in raypyng\_bluesky.devices)@\spxentry{MisalignComponents}\spxextra{class in raypyng\_bluesky.devices}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.devices.MisalignComponents}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.devices.}}\sphinxbfcode{\sphinxupquote{MisalignComponents}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{n}{obj}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
+\pysigstopsignatures
+\end{fulllineitems}
+
+
+
+\subsection{SimulatedPGM}
+\label{\detokenize{API:simulatedpgm}}\index{SimulatedPGM (class in raypyng\_bluesky.devices)@\spxentry{SimulatedPGM}\spxextra{class in raypyng\_bluesky.devices}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.devices.SimulatedPGM}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.devices.}}\sphinxbfcode{\sphinxupquote{SimulatedPGM}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{n}{obj}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
+\pysigstopsignatures
+\end{fulllineitems}
+
+
+
+\subsection{SimulatedApertures}
+\label{\detokenize{API:simulatedapertures}}\index{SimulatedApertures (class in raypyng\_bluesky.devices)@\spxentry{SimulatedApertures}\spxextra{class in raypyng\_bluesky.devices}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.devices.SimulatedApertures}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.devices.}}\sphinxbfcode{\sphinxupquote{SimulatedApertures}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{n}{obj}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
+\pysigstopsignatures
+\end{fulllineitems}
+
+
+
+\subsection{SimulatedMirror}
+\label{\detokenize{API:simulatedmirror}}\index{SimulatedMirror (class in raypyng\_bluesky.devices)@\spxentry{SimulatedMirror}\spxextra{class in raypyng\_bluesky.devices}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.devices.SimulatedMirror}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.devices.}}\sphinxbfcode{\sphinxupquote{SimulatedMirror}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{n}{obj}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
+\pysigstopsignatures
+\end{fulllineitems}
+
+
+
+\subsection{SimulatedSource}
+\label{\detokenize{API:simulatedsource}}\index{SimulatedSource (class in raypyng\_bluesky.devices)@\spxentry{SimulatedSource}\spxextra{class in raypyng\_bluesky.devices}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.devices.SimulatedSource}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.devices.}}\sphinxbfcode{\sphinxupquote{SimulatedSource}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{n}{obj}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
+\pysigstopsignatures
+\end{fulllineitems}
+
+
+
+\section{Preprocessor}
+\label{\detokenize{API:preprocessor}}
+
+\subsection{MisalignComponents}
+\label{\detokenize{API:id2}}\index{trigger\_sim() (in module raypyng\_bluesky.preprocessor)@\spxentry{trigger\_sim()}\spxextra{in module raypyng\_bluesky.preprocessor}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.preprocessor.trigger_sim}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxcode{\sphinxupquote{raypyng\_bluesky.preprocessor.}}\sphinxbfcode{\sphinxupquote{trigger\_sim}}}{\emph{\DUrole{n}{plan}}, \emph{\DUrole{n}{trigger\_detector}}}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Trigger simulations for raypyng plans
+
+\sphinxAtStartPar
+This function is composed of four steps:
+1\sphinxhyphen{} populate\_raypyng\_devices\_list\_at\_stage:
+\begin{quote}
+
+\sphinxAtStartPar
+at the ‘stage message’ each device is classified
+and saved into two list. One list is dedicated to
+raypng devices, and one for all the others
+\end{quote}
+\begin{description}
+\sphinxlineitem{2\sphinxhyphen{} prepare\_simulations\_at\_open\_run:}
+\sphinxAtStartPar
+when the message is ‘open\_run’, if both raypyng
+devices and normal devices have been staged raise
+an exception. Otherwise the list of exports is
+prepared(consists of detector names included in the plan)
+and passed to the trigger detector.
+The done simulation file is removed from the
+temporary folder.
+
+\sphinxlineitem{3\sphinxhyphen{}  insert\_before\_first\_det\_trigger:}
+\sphinxAtStartPar
+before the first detector is triggered, a trigger
+message for the raypyng trigger detector is inserted
+in the same group as the other detectors
+
+\sphinxlineitem{4\sphinxhyphen{}  cleanup\_at\_close\_run:}
+\sphinxAtStartPar
+when the message is ‘close\_run’ the simulation\_done
+file is removed and the list containing the raypyng and
+other devices, created at point 1, are cleared.
+
+\end{description}
+\begin{quote}\begin{description}
+\sphinxlineitem{Parameters}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{plan}} (\sphinxstyleliteralemphasis{\sphinxupquote{bluesky.plan}}) \textendash{} the plan that is being executed
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{trigger\_detector}} ({\hyperref[\detokenize{API:raypyng_bluesky.detector.RaypyngTriggerDetector}]{\sphinxcrossref{\sphinxstyleliteralemphasis{\sphinxupquote{RaypyngTriggerDetector}}}}}) \textendash{} the trigger detector
+
+\end{itemize}
+
+\sphinxlineitem{Raises}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{ValueError}} \textendash{} if in the plan a mix of raypyng devices are other devices
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{are used raise an exeption}} \textendash{} 
+
+\end{itemize}
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+
+
+\subsection{SupplementalDataRaypyng}
+\label{\detokenize{API:supplementaldataraypyng}}\index{SupplementalDataRaypyng (class in raypyng\_bluesky.preprocessor)@\spxentry{SupplementalDataRaypyng}\spxextra{class in raypyng\_bluesky.preprocessor}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.preprocessor.SupplementalDataRaypyng}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.preprocessor.}}\sphinxbfcode{\sphinxupquote{SupplementalDataRaypyng}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{n}{trigger\_detector}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Supplemental data for raypyng.
+
+\sphinxAtStartPar
+The Run engine is needed to be able to include the
+trigger detector automatically
+\begin{quote}\begin{description}
+\sphinxlineitem{Parameters}
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{trigger\_detector}} ({\hyperref[\detokenize{API:raypyng_bluesky.detector.RaypyngTriggerDetector}]{\sphinxcrossref{\sphinxstyleliteralemphasis{\sphinxupquote{RaypyngTriggerDetector}}}}}) \textendash{} The detector to trigger raypyng
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+
+
 
 \renewcommand{\indexname}{Index}
 \printindex

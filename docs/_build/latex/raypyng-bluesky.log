@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.22)  28 NOV 2022 16:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.22)  28 NOV 2022 17:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -789,25 +789,221 @@ Chapter 3.
 
 ]
 Chapter 4.
-(./raypyng-bluesky.ind) [7] (./raypyng-bluesky.aux)
+LaTeX Font Info:    Trying to load font information for T1+txtt on input line 1
+15.
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txtt.fd
+File: t1txtt.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <10> not available
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 115.
+LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 1
+25.
+
+(/usr/share/texmf/tex/latex/tex-gyre/ts1qtm.fd
+File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
+)
+LaTeX Font Info:    Font shape `T1/txtt/m/it' in size <10> not available
+(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 127.
+ [7] [8] [9] [10] [11] [12]
+(./raypyng-bluesky.ind [13] [14
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+[]\T1/txtt/m/n/10 append_preprocessor()
+ []
+
+
+Overfull \hbox (72.31255pt too wide) in paragraph at lines 8--10
+\T1/qtm/m/n/10 (\T1/qtm/m/it/10 raypyng_bluesky.RaypyngOphydDevices.RaypyngOphy
+dDevices
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--15
+[]\T1/txtt/m/n/10 create_raypyng_elements_from_rml()
+ []
+
+
+Overfull \hbox (72.31255pt too wide) in paragraph at lines 13--15
+\T1/qtm/m/n/10 (\T1/qtm/m/it/10 raypyng_bluesky.RaypyngOphydDevices.RaypyngOphy
+dDevices
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--17
+[]\T1/txtt/m/n/10 create_trigger_detector()
+ []
+
+
+Overfull \hbox (72.31255pt too wide) in paragraph at lines 15--17
+\T1/qtm/m/n/10 (\T1/qtm/m/it/10 raypyng_bluesky.RaypyngOphydDevices.RaypyngOphy
+dDevices
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+[]\T1/txtt/m/n/10 get() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 raypyng_bluesky.detecto
+r.RaypyngDetector
+ []
+
+
+Overfull \hbox (4.14243pt too wide) in paragraph at lines 22--24
+[]\T1/txtt/m/n/10 get() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 raypyng_bluesky.detecto
+r.RaypyngTriggerDetector
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+[]\T1/txtt/m/n/10 MisalignComponents \T1/qtm/m/n/10 (\T1/qtm/m/it/10 class in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+[]\T1/txtt/m/n/10 position \T1/qtm/m/n/10 (\T1/qtm/m/it/10 raypyng_bluesky.axes
+.RaypyngAxis prop-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--35
+[]\T1/txtt/m/n/10 prepend_to_oe_name()
+ []
+
+
+Overfull \hbox (72.31255pt too wide) in paragraph at lines 33--35
+\T1/qtm/m/n/10 (\T1/qtm/m/it/10 raypyng_bluesky.RaypyngOphydDevices.RaypyngOphy
+dDevices
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+[]\T1/txtt/m/n/10 put() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 raypyng_bluesky.detecto
+r.RaypyngDetector
+ []
+
+
+Overfull \hbox (4.14243pt too wide) in paragraph at lines 36--38
+[]\T1/txtt/m/n/10 put() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 raypyng_bluesky.detecto
+r.RaypyngTriggerDetector
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+[]\T1/txtt/m/n/10 put() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 raypyng_bluesky.signal.
+RayPySignalRO
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
+[]\T1/txtt/m/n/10 RaypyngDictionary \T1/qtm/m/n/10 (\T1/qtm/m/it/10 class in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
+\T1/qtm/m/it/10 raypyng_bluesky.RaypyngOphydDevices\T1/qtm/m/n/10 ),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
+[]\T1/txtt/m/n/10 RaypyngOphydDevices \T1/qtm/m/n/10 (\T1/qtm/m/it/10 class in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
+\T1/qtm/m/it/10 raypyng_bluesky.RaypyngOphydDevices\T1/qtm/m/n/10 ),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+[]\T1/txtt/m/n/10 RaypyngTriggerDetector \T1/qtm/m/n/10 (\T1/qtm/m/it/10 class 
+in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+[]\T1/txtt/m/n/10 set() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 raypyng_bluesky.detecto
+r.RaypyngDetector
+ []
+
+
+Overfull \hbox (4.14243pt too wide) in paragraph at lines 58--60
+[]\T1/txtt/m/n/10 set() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 raypyng_bluesky.detecto
+r.RaypyngTriggerDetector
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+[]\T1/txtt/m/n/10 set() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 raypyng_bluesky.signal.
+RayPySignalRO
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+[]\T1/txtt/m/n/10 SimulatedApertures \T1/qtm/m/n/10 (\T1/qtm/m/it/10 class in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+[]\T1/txtt/m/n/10 SimulatedAxisAperture \T1/qtm/m/n/10 (\T1/qtm/m/it/10 class i
+n
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+[]\T1/txtt/m/n/10 SimulatedAxisGrating \T1/qtm/m/n/10 (\T1/qtm/m/it/10 class in
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
+[]\T1/txtt/m/n/10 SupplementalDataRaypyng \T1/qtm/m/n/10 (\T1/qtm/m/it/10 class
+ in
+ []
+
+
+Overfull \hbox (25.14236pt too wide) in paragraph at lines 76--78
+[]\T1/txtt/m/n/10 trigger() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 raypyng_bluesky.det
+ector.RaypyngTriggerDetector
+ []
+
+[15
+
+]
+Overfull \hbox (128.48227pt too wide) in paragraph at lines 78--80
+[]\T1/txtt/m/n/10 trigger_detector() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 raypyng_bl
+uesky.RaypyngOphydDevices.RaypyngOphydDevices
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+[]\T1/txtt/m/n/10 trigger_sim() \T1/qtm/m/n/10 (\T1/qtm/m/it/10 in mod-ule
+ []
+
+[16
+
+]) (./raypyng-bluesky.aux)
 Package rerunfilecheck Info: File `raypyng-bluesky.out' has not changed.
-(rerunfilecheck)             Checksum: BCD23AD338C27D62EEE0C6FACD9EA68A;358.
+(rerunfilecheck)             Checksum: 146334F03A1AC77C19FB0D38F128C052;3673.
  ) 
 Here is how much of TeX's memory you used:
- 14445 strings out of 478287
- 230067 string characters out of 5849289
- 537690 words of memory out of 5000000
- 32299 multiletter control sequences out of 15000+600000
- 508841 words of font info for 55 fonts, out of 8000000 for 9000
+ 14714 strings out of 478287
+ 235410 string characters out of 5849289
+ 553480 words of memory out of 5000000
+ 32463 multiletter control sequences out of 15000+600000
+ 520623 words of font info for 69 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 70i,11n,76p,257b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/share/texmf/fonts/t
-ype1/public/tex-gyre/qhvb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtm
-b.pfb>
-Output written on raypyng-bluesky.pdf (11 pages, 57884 bytes).
+ 70i,12n,76p,636b,704s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/share/texmf/fonts/e
+nc/dvips/tex-gyre/q-ts1.enc}</usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.
+pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvr.pfb></usr/share/texmf/fo
+nts/type1/public/tex-gyre/qtmb.pfb></usr/share/texmf/fonts/type1/public/tex-gyr
+e/qtmr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmri.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/txfonts/t1xtt.pfb>
+Output written on raypyng-bluesky.pdf (20 pages, 172041 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 380 PDF objects out of 1000 (max. 8388607)
+ 339 compressed objects within 4 object streams
+ 87 named destinations out of 1000 (max. 500000)
+ 245 words of extra memory for PDF output out of 10000 (max. 10000000)
 

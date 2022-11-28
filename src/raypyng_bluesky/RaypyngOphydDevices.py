@@ -7,7 +7,7 @@ from raypyng.rml import RMLFile
 
 from .devices import SimulatedPGM, SimulatedApertures, SimulatedMirror, SimulatedSource
 from .detector import RaypyngDetectorDevice, RaypyngTriggerDetector
-from .run_engine_stuff import SupplementalDataRaypyng
+from .preprocessor import SupplementalDataRaypyng
 
 
 
