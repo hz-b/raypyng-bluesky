@@ -18,6 +18,7 @@ def trigger_sim(plan, trigger_detector):
     """Trigger simulations for raypyng plans
 
     This function is composed of four steps:
+    
     1- populate_raypyng_devices_list_at_stage:
         at the 'stage message' each device is classified
         and saved into two list. One list is dedicated to 
