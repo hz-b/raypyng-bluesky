@@ -98,6 +98,7 @@ def trigger_sim(plan, trigger_detector):
     
     def cleanup_at_close_run(msg): 
         if msg.command == 'close_run':
+            trigger_detector.delete_temporary_folder()
             if len(raypyng_devices)>0 and len(non_raypyng_devices)==0: 
                 raypyng_devices.clear()
                 non_raypyng_devices.clear()
