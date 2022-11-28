@@ -1,6 +1,7 @@
 LICENSE
 README.md
 pyproject.toml
+src/raypyng_bluesky/RaypyngOphydDevices.py
 src/raypyng_bluesky/__init__.py
 src/raypyng_bluesky/axes.py
 src/raypyng_bluesky/detector.py
@@ -13,3 +14,4 @@ src/raypyng_bluesky.egg-info/SOURCES.txt
 src/raypyng_bluesky.egg-info/dependency_links.txt
 src/raypyng_bluesky.egg-info/requires.txt
 src/raypyng_bluesky.egg-info/top_level.txt
+test/test_rml.py

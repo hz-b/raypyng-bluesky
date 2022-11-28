@@ -14,7 +14,7 @@ classifiers = [
 ]
 
 dependencies = [
-            'raypyng>=0.0.12',
+            'raypyng>=0.0.17',
             'bluesky',
             'ophyd',
             'databroker',
