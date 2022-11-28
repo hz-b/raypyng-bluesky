@@ -140,14 +140,16 @@ class SimulatedAxisAperture(RaypyngAxis):
 
 class SimulatedAxisGrating(RaypyngAxis):
     '''Define basic properties of the gratings:
-        - lineDensity        
-        - orderDiffraction
-        - cFactor
-        - lineProfile
-        - blazeAngle
-        - aspectAngle
-        - grooveDepth
-        - grooveRatio
+
+    - lineDensity        
+    - orderDiffraction
+    - cFactor
+    - lineProfile
+    - blazeAngle
+    - aspectAngle
+    - grooveDepth
+    - grooveRatio
+    
     '''
     raypyng   = True
     
