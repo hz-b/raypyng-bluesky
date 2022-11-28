@@ -1,6 +1,7 @@
 import os
 import sys
 import inspect
+import traceback
 
 from raypyng.rml import RMLFile
 
@@ -53,18 +54,23 @@ class RaypyngOphydDevices():
     Args:
         RE (RunEngine): Bluesky RunEngine
         rml_path (str): the path to the rml file
-        temporary_folder (str): path where to create temporary folder
+        temporary_folder (str): path where to create temporary folder. If None it is automatically
+                                set into the ipython profile folder. Default to None.
         name_space (frame, optional): If None the class will try to understand the correct namespace to add the Ophyd devices to.
                                     If the automatic retrieval fails, pass``sys._getframe(0)``. Defaults to None.
         prefix (str): the prefix to prepend to the oe names found in the rml file
     """    
-    def __init__(self, *args, RE, rml_path, temporary_folder, name_space=None, prefix=None, **kwargs):
+    def __init__(self, *args, RE, rml_path, temporary_folder=None, name_space=None, prefix=None, **kwargs):
        
-        
-        self.RE = RE
 
+        self.RE = RE
         self.rml = RMLFile(rml_path)
-        self.temporary_folder = temporary_folder        
+        if temporary_folder == None:
+            stack = traceback.extract_stack()
+            fn = stack[-2].filename
+            self.temporary_folder = os.path.join(os.path.dirname(fn), 'tmp')
+        else:
+            self.temporary_folder = temporary_folder        
         if name_space == None:
             filename = inspect.stack()[1].filename
             for i in inspect.stack():
