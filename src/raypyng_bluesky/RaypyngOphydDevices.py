@@ -16,14 +16,14 @@ class RaypyngDictionary():
     
 
     def __init__(self, *args,**kwargs):
-        self._mirrors = ['Toroid', 'PlaneMirror', 'Cylinder', 'Ellipsoid', 'Foil', 'Zoneplate', 'Cone', 'Sphere', 'Paraboloid', 'Experts Optics', 'Elliptical Toroid', 'Hyperboloid', 'Reflection Zoneplate', 'Crystal', 'Cylindrical Crystal']
-        self._mirror_dict = {k:SimulatedMirror for k in self._mirrors}
+        self._optical_elements = ['Toroid', 'PlaneMirror', 'Cylinder', 'Ellipsoid', 'Foil', 'Zoneplate', 'Cone', 'Sphere', 'Paraboloid', 'Experts Optics', 'Elliptical Toroid', 'Hyperboloid', 'Reflection Zoneplate', 'Crystal', 'Cylindrical Crystal']
+        self._optical_elements_dict = {k:SimulatedMirror for k in self._optical_elements}
 
         self._sources = ['Matrix Source','Point Source', 'Pixel Source', 'Circle Source',  'Dipole',  'Wiggler', 'Wunder Source', 'Helical Double Undulator', 'Simple Undulator', 'Twin Orbit Point Source', 'Undulator File', 'Helical Double Undulator File', 'Source Data File']
         self._source_dict = {k:SimulatedSource for k in self._sources}
 
-        self._monos = ['PlaneGrating', 'Spherical Grating', 'Toroidal Grating' ]
-        self._mono_dict = {k:SimulatedPGM for k in self._monos}
+        self._gratings = ['PlaneGrating', 'Spherical Grating', 'Toroidal Grating' ]
+        self._grating_dict = {k:SimulatedPGM for k in self._gratings}
 
         self._apertures = ['Slit', 'Aperture']
         self._aperture_dict = {k:SimulatedApertures for k in self._apertures}
@@ -31,9 +31,9 @@ class RaypyngDictionary():
         self._detectors = ['ImagePlane', 'ImagePlaneBundle']
         self._detector_dict = {k:RaypyngDetectorDevice for k in self._detectors}
 
-        self._type_to_class_dict ={**self._mirror_dict, 
+        self._type_to_class_dict ={**self._optical_elements_dict, 
                             **self._source_dict, 
-                            **self._mono_dict, 
+                            **self._grating_dict, 
                             **self._aperture_dict,
                             **self._detector_dict}
         
