@@ -16,19 +16,19 @@ class RaypyngDictionary():
     
 
     def __init__(self, *args,**kwargs):
-        self._mirrors = ['Toroid', 'PlaneMirror', 'Cylinder', 'Ellipsoid']
+        self._mirrors = ['Toroid', 'PlaneMirror', 'Cylinder', 'Ellipsoid', 'Foil', 'Zoneplate', 'Cone', 'Sphere', 'Paraboloid', 'Experts Optics', 'Elliptical Toroid', 'Hyperboloid', 'Reflection Zoneplate', 'Crystal', 'Cylindrical Crystal']
         self._mirror_dict = {k:SimulatedMirror for k in self._mirrors}
 
-        self._sources = ['Dipole']
+        self._sources = ['Matrix Source','Point Source', 'Pixel Source', 'Circle Source',  'Dipole',  'Wiggler', 'Wunder Source', 'Helical Double Undulator', 'Simple Undulator', 'Twin Orbit Point Source', 'Undulator File', 'Helical Double Undulator File', 'Source Data File']
         self._source_dict = {k:SimulatedSource for k in self._sources}
 
-        self._monos = ['PlaneGrating']
+        self._monos = ['PlaneGrating', 'Spherical Grating', 'Toroidal Grating' ]
         self._mono_dict = {k:SimulatedPGM for k in self._monos}
 
-        self._apertures = ['Slit']
+        self._apertures = ['Slit', 'Aperture']
         self._aperture_dict = {k:SimulatedApertures for k in self._apertures}
 
-        self._detectors = ['ImagePlane']
+        self._detectors = ['ImagePlane', 'ImagePlaneBundle']
         self._detector_dict = {k:RaypyngDetectorDevice for k in self._detectors}
 
         self._type_to_class_dict ={**self._mirror_dict, 
