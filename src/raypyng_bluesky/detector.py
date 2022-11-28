@@ -3,6 +3,7 @@ import time
 import queue   
 import threading
 import os
+import shutil
 
 import numpy as np
 
@@ -101,6 +102,11 @@ class RaypyngTriggerDetector(Signal):
         self.path = path
         if not os.path.exists(self.path):
             os.makedirs(self.path)
+    
+    def delete_temporary_folder(self):
+        # make sure tmp folder exists, if exists delete it
+        if os.path.exists(self.path):
+            shutil.rmtree(self.path)
 
     def setup_simulation(self):
         self.r = RayUIRunner(ray_path=None, hide=True)
