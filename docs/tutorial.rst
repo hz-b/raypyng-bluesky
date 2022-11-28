@@ -5,6 +5,7 @@ The code is thought to be used in an environment where bluesky is setup. For doi
 In the startup folder of the ipython profile create a file called ``0-bluesky.py`` that contains a minimal setup of bluesky and raypyng-bluesky. 
 
 .. code:: python
+
     import os
     from bluesky import RunEngine
     from raypyng_bluesky.RaypyngOphydDevices import RaypyngOphydDevices
@@ -63,11 +64,17 @@ In the startup folder of the ipython profile create a file called ``0-bluesky.py
 Now you can start the ipython profile using:
 
 .. code:: python
+
     ipython --profile=raypyng --matplotlib=qt5
 
 Now you can access all the elements present in the rml file. If you set ``prefix=None``, the prefix ``rp_`` is automatically
 prepended to the name of the optical elements found in the rml file to create the dame of the object in python. If you have a Dipole called 
 ``D13``, then the name would be: ``rp_D13``. You can now use the simulated motors as you would normally do in bluesky.
 
+For instance you can scan the energy and see the intensity at the source and and the sample position
+
+.. code:: python
+
+    RE(scan([rp_DetectorAtSource.intensity,rp_DetectorAtFocus.intensity], rp_Dipole.en, 200, 2200, 11))
 
 
