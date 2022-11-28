@@ -6,6 +6,9 @@ from .axes import SimulatedAxisSource, SimulatedAxisMisalign
 from .axes import SimulatedAxisAperture, SimulatedAxisGrating
 
 class MisalignComponents(Device):
+    """Define the misalignment components of an optical element
+    using SimulatedAxisMisalign
+    """    
     raypyng  = True
     tx       = Cpt(SimulatedAxisMisalign, name="translationXerror", kind='normal')
     ty       = Cpt(SimulatedAxisMisalign, name="translationYerror", kind='normal')
@@ -24,6 +27,12 @@ class MisalignComponents(Device):
         self.rz.set_axis(obj=obj, axis="rotationZerror")
 
 class SimulatedPGM(MisalignComponents):
+    """Define the Plan Grating Monochromator using SimulatedAxisMisalign
+    and SimulatedAxisGrating.
+
+    Additionaly defines a two dictionaries to store different grating parameters
+    and a method  ``change_grating()`` to switch between them.
+    """    
     raypyng  = True
     cff               = Cpt(SimulatedAxisGrating, name='cFactor')
     lineDensity       = Cpt(SimulatedAxisGrating, name='lineDensity')
@@ -61,6 +70,11 @@ class SimulatedPGM(MisalignComponents):
         self.grooveRatio.set_axis(obj=obj, axis="grooveRatio")
 
     def change_grating(self, lineDensity):
+        """Change between grating1 and grating2 based on the line density
+
+        Args:
+            lineDensity (int): the line density of the grating you want to use in lines/mm
+        """        
         if lineDensity == self.grating1['lineDensity']:
             grating = self.grating1
         elif lineDensity == self.grating2['lineDensity']:
@@ -78,6 +92,9 @@ class SimulatedPGM(MisalignComponents):
         
         
 class SimulatedApertures(MisalignComponents):
+    """Define the apertures using SimulatedAxisMisalign
+    and SimulatedAxisAperture.
+    """   
     raypyng  = True
     width    = Cpt(SimulatedAxisAperture, name="totalWidth", kind='normal')
     height   = Cpt(SimulatedAxisAperture, name="totalHeight", kind='normal')
@@ -89,6 +106,8 @@ class SimulatedApertures(MisalignComponents):
 
 
 class SimulatedMirror(MisalignComponents):
+    """Define the mirrors using SimulatedAxisMisalign.
+    """   
     raypyng  = True
     def __init__(self, *args, obj, **kwargs):
         super().__init__(*args,obj=obj, **kwargs)
@@ -96,6 +115,8 @@ class SimulatedMirror(MisalignComponents):
           
 
 class SimulatedSource(Device):
+    """Define the source using SimulatedAxisSource.
+    """   
     raypyng  = True
     en       = Cpt(SimulatedAxisSource, name="source_en", kind='normal')
     nrays    = Cpt(SimulatedAxisSource, name="source_nrays", kind='normal')

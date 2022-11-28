@@ -8,6 +8,13 @@ from .positioners import PVPositionerDone
 
 
 class RaypyngAxis(PVPositionerDone):
+    """The Axis used by all the Raypyng devices.
+
+    At the moment it is a comparator, in the future some other positioner will be used, 
+    probably a SoftPositioner.
+    The class defines an empty dictionary, the ``axes_dict`` that will be then filled by each device.
+
+    """    
 
     raypyng   = True
     setpoint  = Cpt(RayPySignal, kind='normal' )
@@ -24,10 +31,21 @@ class RaypyngAxis(PVPositionerDone):
         self.readback.name = self.name
 
     def _axes_dict(self):
+        """Define an empty dictionary
+
+        Returns:
+            dict: empty dictionary
+        """        
         axes_dict={}
         return axes_dict
 
     def set_axis(self, obj, axis):
+        """Set what axis should be used, based on the ``axes_dict``
+
+        Args:
+            obj (_type_): _description_
+            axis (_type_): _description_
+        """        
         self.obj  = obj
         axes_dict = self._axes_dict()
 
@@ -35,9 +53,20 @@ class RaypyngAxis(PVPositionerDone):
         self.readback.set_axis(axes_dict[axis])
 
     def get(self):
+        """return the value of a certain axis as in the RMLFile
+
+        Returns:
+            float: the value of the axis in the RML file
+        """        
         return float(self.readback.get())
 
     def set(self, value):
+        """Write a value in the RMLFile for a certain element/axis
+
+        Args:
+            value (float,int): the value to set to the axis
+
+        """        
         self.setpoint.set(value)
         return NullStatus()
 
@@ -52,6 +81,9 @@ class RaypyngAxis(PVPositionerDone):
 
 
 class SimulatedAxisSource(RaypyngAxis):
+    """Define basic properties of the source, number of rays and photon energy in eV.
+
+    """    
 
     raypyng   = True    
          
@@ -69,7 +101,9 @@ class SimulatedAxisSource(RaypyngAxis):
     
 
 class SimulatedAxisMisalign(RaypyngAxis):
-
+    '''Define basic properties of the all the optical elements after the source, 
+    the misalignement along and about the axis.
+    '''
     raypyng   = True
     
     def __init__(self, *args, **kwargs):
@@ -88,7 +122,9 @@ class SimulatedAxisMisalign(RaypyngAxis):
     
 
 class SimulatedAxisAperture(RaypyngAxis):
-
+    '''Define basic properties of the aperture, 
+    the width and the height.
+    '''
     raypyng   = True
         
     def __init__(self, *args, **kwargs):
@@ -103,7 +139,16 @@ class SimulatedAxisAperture(RaypyngAxis):
     
 
 class SimulatedAxisGrating(RaypyngAxis):
-
+    '''Define basic properties of the gratings:
+        - lineDensity        
+        - orderDiffraction
+        - cFactor
+        - lineProfile
+        - blazeAngle
+        - aspectAngle
+        - grooveDepth
+        - grooveRatio
+    '''
     raypyng   = True
     
         

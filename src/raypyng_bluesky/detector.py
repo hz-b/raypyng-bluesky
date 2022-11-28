@@ -17,6 +17,9 @@ from raypyng.postprocessing import PostProcess
 
 
 class RaypyngDetector(Signal):
+    """Defining a raypyng detector using a signal. The detector is created when
+    an Image Plane or an Image Plane Bundle is found in the rml file. 
+    """    
     raypyng = True
     _rays   = None
     def __init__(self, *args, information_to_extract='intensity', parent_detector_name=None, **kwargs):
@@ -78,6 +81,9 @@ class RaypyngDetector(Signal):
 
 
 class RaypyngTriggerDetector(Signal):
+    """The trigger detector is used to start the simulations. The simulations are done on
+    the machine where bluesky is running.
+    """   
     raypyng = True
     raypyngTriggerDet = True
     def __init__(self, *args, rml, temporary_folder, **kwargs):
@@ -154,6 +160,13 @@ class RaypyngTriggerDetector(Signal):
 
 
 class RaypyngDetectorDevice(Device):
+    """This detector uses the RaypyngDetector signal to compose a detector that
+    can return four values:
+    - intensity [ph/s/0.1A/BW]
+    - bandwidth [eV]
+    - horizontal_focus [um]
+    - vertical_focus [um]
+    """    
     raypyng   = True
     intensity = Cpt(RaypyngDetector, name='_intensity[ph/s/0.1A/BW]', kind='hinted')
     bw =        Cpt(RaypyngDetector, name='_bandwidth[eV]', kind='hinted')

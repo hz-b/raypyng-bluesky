@@ -48,7 +48,7 @@ class RaypyngDictionary():
 class RaypyngOphydDevices():
     """Create ophyd devices from a RAY-UI rml file and adds them to a name space.
 
-    If you are using ipython sys._getframe(0) returns the name space of the ipython instance.
+    If you are using ipython ``sys._getframe(0)`` returns the name space of the ipython instance.
     (Remember to ``import sys``)
 
     Args:
@@ -57,7 +57,7 @@ class RaypyngOphydDevices():
         temporary_folder (str): path where to create temporary folder. If None it is automatically
                                 set into the ipython profile folder. Default to None.
         name_space (frame, optional): If None the class will try to understand the correct namespace to add the Ophyd devices to.
-                                    If the automatic retrieval fails, pass``sys._getframe(0)``. Defaults to None.
+                                    If the automatic retrieval fails, pass ``sys._getframe(0)``. Defaults to None.
         prefix (str): the prefix to prepend to the oe names found in the rml file
     """    
     def __init__(self, *args, RE, rml_path, temporary_folder=None, name_space=None, prefix=None, **kwargs):
