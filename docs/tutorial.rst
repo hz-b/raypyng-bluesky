@@ -1,9 +1,15 @@
 Tutorial
 ********
 
-The code is thought to be used in an environment where bluesky is setup. For doing this it is convenient to create an ipython profile.
+Setup an Ipython profile
+=========================
+The code is thought to be used in an environment where bluesky is setup. For doing this it is convenient to create an ipython profile
+and modify the startup files.
+The code in the following example is available at this `link <https://github.com/hz-b/raypyng-bluesky/tree/main/examples/profile-raypyng-bluesky-tutorial>`_ 
 In the startup folder of the ipython profile create a file called ``0-bluesky.py`` that contains a minimal setup of bluesky and raypyng-bluesky. 
 
+
+The first part of the file contains a minimal installation of bluesky
 .. code:: python
 
     import os
@@ -55,23 +61,76 @@ In the startup folder of the ipython profile create a file called ``0-bluesky.py
         configure,
         stop)
 
-
-    # insert here the path to the rml file that you want to use
-    rml_path = ...
-
-    RaypyngOphydDevices(RE=RE, rml_path=rml_path, temporary_folder=None, name_space=None, prefix=None)
-
-Now you can start the ipython profile using:
+The last part contains the the two lines of code used to create RaypyngOphyd devices. See the API documentation for 
+more details about ``RaypyngOphydDevices``.
 
 .. code:: python
 
-    ipython --profile=raypyng --matplotlib=qt5
+    # insert here the path to the rml file that you want to use
+    rml_path = '...rml/elisa.rml'
 
-Now you can access all the elements present in the rml file. If you set ``prefix=None``, the prefix ``rp_`` is automatically
+    RaypyngOphydDevices(RE=RE, rml_path=rml_path, temporary_folder=None, name_space=None, prefix=None)
+
+The ipython profile can be started using:
+
+.. code:: python
+
+    ipython --profile=raypyng-bluesky-tutorial --matplotlib=qt5
+
+All the elements present in the rml file as ophyd devices. If you set ``prefix=None``, the prefix ``rp_`` is automatically
 prepended to the name of the optical elements found in the rml file to create the dame of the object in python. If you have a Dipole called 
-``D13``, then the name would be: ``rp_D13``. You can now use the simulated motors as you would normally do in bluesky.
+``Dipole``, then the name would be: ``rp_Dipole``. You can now use the simulated motors as you would normally do in bluesky.
 
-For instance you can scan the energy and see the intensity at the source and and the sample position
+To see a list of the implemented motors and detectors use the ipython autocompletion by typing in the ipython shell
+
+.. code:: python
+
+    rp_
+
+and pressing ``tab``.
+
+RaypyngOphyd - Motors
+======================
+Presently only a subset of the parameters available in rml file in RAY-UI are implemented as motor axes. To see which ones are available, 
+use the tab-autocompletion. For instance, to see what axes are available for the motor ``rp_Dipole`` write in the ipython shell:
+
+.. code:: python
+
+    rp_Dipole.
+
+and press tab: among the other things you will see that are implemented ``rp_Dipole.nrays``, the number of rays to use in the simulation,  
+and ``p_Dipole.en``, the photon energy in eV. You can of course also use the ``.get()`` and ``.set()`` methods:
+
+.. code:: python
+
+    In [1]: rp_Dipole.en.get()
+    Out[1]: 1000.0
+
+    In [2]: rp_Dipole.en.set(1500)
+    Out[2]: <ophyd.sim.NullStatus at 0x7fbf4c25adc0>
+
+    In [3]: rp_Dipole.en.get()
+    Out[3]: 1500.0
+    
+For a complete description of the axis available for each optical element see the `API documentation <https://raypyng-bluesky.readthedocs.io/en/latest/API.html#id1>`_ 
+
+RaypyngOphyd - Detectors
+=========================
+
+When an ``ImagePlane``, or an ``ImagePlaneBundle`` is found in the rml file, a detector is created. Each detector 
+can return four properties of the x-ray beam. For instance, for the ``DetectorAtFocus``:
+- ``rp_DetectorAtFocus.intensity``: the intensity [Ph/s/A/BW]
+- ``rp_DetectorAtFocus.bw``: the bandwidth  [eV]
+- ``rp_DetectorAtFocus.hor_foc``: the horizontal focus [um]
+- ``rp_DetectorAtFocus.ver_foc``: the vertical focus [um]
+
+
+A scan in Bluesky
+=========================
+It is possible to do scan using the simulation engine RAY-UI as it is normally done in bluesky.
+For instance you can scan the photon energy and see the intensity at the source and and the sample position. 
+While at the beamline to change the energy we would simply ask the monochromator to do it, for the simulations 
+one needs to change the energy of the source
 
 .. code:: python
 

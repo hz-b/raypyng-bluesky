@@ -28,7 +28,7 @@ RayPySignalRO
    :members:
 
 
-Ophyd Devices
+Ophyd Axes
 ==================
 
 Axes
