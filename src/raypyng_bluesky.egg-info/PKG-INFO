@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: raypyng-bluesky
-Version: 0.0.1
+Version: 0.0.2
 Summary: This is a raypyng-Bluesky interface library that allows using the Bluesky data acquisition framework to run raypyng simulations (RAY-UI)
 Author-email: "Simone Vadilonga, Ruslan Ovsyannikov" <simone.vadilonga@helmholtz-berlin.de>
 License: The MIT License (MIT)
@@ -37,4 +37,4 @@ License-File: LICENSE
 ## Project Description
 This is a raypyng-Bluesky interface library that allows using the Bluesky data acquisition framework to run raypyng simulations (RAY-UI)
 
-[Documentation](https://raypyng.readthedocs.io/en/latest/index.html)
+[Documentation](https://raypyng-bluesky.readthedocs.io/en/latest/index.html)
