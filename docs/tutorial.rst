@@ -63,7 +63,7 @@ The first part of the file contains a minimal installation of bluesky
         stop)
 
 The last part contains the the two lines of code used to create RaypyngOphyd devices. See the API documentation for 
-more details about ``RaypyngOphydDevices``.
+more details about ``RaypyngOphydDevices``. If you already have an ipython profile with Bluesky you can just add these lines.
 
 .. code:: python
 
