@@ -70,7 +70,7 @@ more details about ``RaypyngOphydDevices``. If you already have an ipython profi
     # insert here the path to the rml file that you want to use
     rml_path = '...rml/elisa.rml'
 
-    RaypyngOphydDevices(RE=RE, rml_path=rml_path, temporary_folder=None, name_space=None, prefix=None)
+    RaypyngOphydDevices(RE=RE, rml_path=rml_path, temporary_folder=None, name_space=None, prefix=None, ray_ui_location=None)
 
 The ipython profile can be started using:
 

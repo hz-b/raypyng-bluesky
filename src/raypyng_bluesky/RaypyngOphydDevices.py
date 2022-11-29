@@ -59,8 +59,9 @@ class RaypyngOphydDevices():
         name_space (frame, optional): If None the class will try to understand the correct namespace to add the Ophyd devices to.
                                     If the automatic retrieval fails, pass ``sys._getframe(0)``. Defaults to None.
         prefix (str): the prefix to prepend to the oe names found in the rml file
+        ray_ui_location (str): the location of the RAY-UI installation folder. If None the program will try to find it automatically. Deafault to None.
     """    
-    def __init__(self, *args, RE, rml_path, temporary_folder=None, name_space=None, prefix=None, **kwargs):
+    def __init__(self, *args, RE, rml_path, temporary_folder=None, name_space=None, prefix=None, ray_ui_location=None,**kwargs):
        
 
         self.RE = RE
@@ -84,6 +85,7 @@ class RaypyngOphydDevices():
         else:
             self.prefix = prefix
 
+        self.ray_ui_location = ray_ui_location
         rpg = RaypyngDictionary()
         self.type_to_class_dict = rpg.type_to_class_dict
         
@@ -140,6 +142,7 @@ class RaypyngOphydDevices():
         """Add supplemental data to the RunEngine to trigger the simulations
         """        
         TriggerDetector = self.trigger_detector()
+        TriggerDetector.set_ray_ui_location(self.ray_ui_location)
         sd = SupplementalDataRaypyng(trigger_detector=TriggerDetector)
         self.RE.preprocessors.append(sd) 
 

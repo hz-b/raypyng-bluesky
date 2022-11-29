@@ -91,6 +91,7 @@ class RaypyngTriggerDetector(Signal):
         self.rml=rml
         self.path = temporary_folder
         self.exports_list = []
+        self.ray_ui_location = None
 
         if not os.path.exists(self.path):
             os.makedirs(self.path)
@@ -104,6 +105,9 @@ class RaypyngTriggerDetector(Signal):
     def set(self, value, *, timestamp=None, force=False):
         raise ReadOnlyError("The signal {} is readonly.".format(self.name))
     
+    def set_ray_ui_location(self, ray_ui_location):
+        self.ray_ui_location =  ray_ui_location
+
     def set_simulation_temporary_folder(self, path):
         self.path = path
         if not os.path.exists(self.path):
@@ -115,7 +119,7 @@ class RaypyngTriggerDetector(Signal):
             shutil.rmtree(self.path)
 
     def setup_simulation(self):
-        self.r = RayUIRunner(ray_path=None, hide=True)
+        self.r = RayUIRunner(ray_path=self.ray_ui_location, hide=True)
         self.a = RayUIAPI(self.r)
         return self.a
 
