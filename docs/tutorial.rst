@@ -72,6 +72,7 @@ more details about ``RaypyngOphydDevices``. If you already have an ipython profi
 
     RaypyngOphydDevices(RE=RE, rml_path=rml_path, temporary_folder=None, name_space=None, prefix=None, ray_ui_location=None)
 
+
 The ipython profile can be started using:
 
 .. code:: python
@@ -89,6 +90,28 @@ To see a list of the implemented motors and detectors use the ipython autocomple
     rp_
 
 and pressing ``tab``.
+
+What can go wrong, and how to correct it
+=========================================
+
+If once you setup the ipython profile as explained in the section above no elements are found, might be that the ``RaypyngOphydDevices`` 
+class fails to insert the ophyd devices in the correct namespace. In this case try to call the classes passing explicitly the correct namespace
+like this:
+
+.. code:: python
+
+    import sys
+    RaypyngOphydDevices(RE=RE, rml_path=rml_path, temporary_folder=None, name_space=sys._getframe(0), prefix=None, ray_ui_location=None)
+
+
+If when you start a scan (see section below in this tutorial), RAY-UI is not found, it is because you installed it in a non-standard location. 
+In this case simply pass the absolute path of the folder where you installed RAY-UI to the class:
+
+.. code:: python
+
+    ray_path = ... # here the path to RAY-UI folder
+    RaypyngOphydDevices(RE=RE, rml_path=rml_path, temporary_folder=None, name_space=None, prefix=None, ray_ui_location=ray_path)
+
 
 RaypyngOphyd - Motors
 ======================
