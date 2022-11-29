@@ -1,6 +1,6 @@
 [project]
 name = "raypyng_bluesky"
-version = "0.0.2"
+version = "0.0.3"
 authors = [
   { name="Simone Vadilonga, Ruslan Ovsyannikov", email="simone.vadilonga@helmholtz-berlin.de" },
 ]
@@ -23,6 +23,6 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/hz-b/raypyng/"
-"Bug Tracker" = "https://github.com/hz-b/raypyng/issues"
-"Documentation" = "https://raypyng.readthedocs.io"
+"Homepage" = "https://github.com/hz-b/raypyng-bluesky"
+"Bug Tracker" = "https://github.com/hz-b/raypyng-bluesky/issues"
+"Documentation" = "https://raypyng-bluesky.readthedocs.io/en/latest/index.html"

@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: raypyng-bluesky
-Version: 0.0.2
+Version: 0.0.3
 Summary: This is a raypyng-Bluesky interface library that allows using the Bluesky data acquisition framework to run raypyng simulations (RAY-UI)
 Author-email: "Simone Vadilonga, Ruslan Ovsyannikov" <simone.vadilonga@helmholtz-berlin.de>
 License: The MIT License (MIT)
@@ -25,9 +25,9 @@ License: The MIT License (MIT)
         OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
         THE SOFTWARE.
         
-Project-URL: Homepage, https://github.com/hz-b/raypyng/
-Project-URL: Bug Tracker, https://github.com/hz-b/raypyng/issues
-Project-URL: Documentation, https://raypyng.readthedocs.io
+Project-URL: Homepage, https://github.com/hz-b/raypyng-bluesky
+Project-URL: Bug Tracker, https://github.com/hz-b/raypyng-bluesky/issues
+Project-URL: Documentation, https://raypyng-bluesky.readthedocs.io/en/latest/index.html
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Requires-Python: >=3.8
