@@ -1,8 +1,8 @@
 [project]
 name = "raypyng_bluesky"
-version = "0.0.3"
+version = "0.0.4"
 authors = [
-  { name="Simone Vadilonga, Ruslan Ovsyannikov", email="simone.vadilonga@helmholtz-berlin.de" },
+  { name="Simone Vadilonga, Ruslan Ovsyannikov, Sebastian Sachse, Will Smith", email="simone.vadilonga@helmholtz-berlin.de" },
 ]
 description = "This is a raypyng-Bluesky interface library that allows using the Bluesky data acquisition framework to run raypyng simulations (RAY-UI)"
 readme = "README.md"
