@@ -5,7 +5,7 @@ Setup an Ipython profile
 =========================
 The code is thought to be used in an environment where bluesky is setup. For doing this it is convenient to create an ipython profile
 and modify the startup files.
-The code in the following example is available at this `link <https://github.com/hz-b/raypyng-bluesky/tree/main/examples/profile-raypyng-bluesky-tutorial>`_ 
+The code in the following example is available at this `link <https://github.com/hz-b/raypyng-bluesky/tree/main/examples/profile_raypyng-bluesky-tutorial>`_ 
 In the startup folder of the ipython profile create a file called ``0-bluesky.py`` that contains a minimal setup of bluesky and raypyng-bluesky. 
 
 
