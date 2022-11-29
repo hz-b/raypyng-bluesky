@@ -10,6 +10,7 @@ In the startup folder of the ipython profile create a file called ``0-bluesky.py
 
 
 The first part of the file contains a minimal installation of bluesky
+
 .. code:: python
 
     import os
