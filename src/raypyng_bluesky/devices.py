@@ -42,22 +42,43 @@ class SimulatedPGM(MisalignComponents):
     aspectAngle       = Cpt(SimulatedAxisGrating, name='aspectAngle')
     grooveDepth       = Cpt(SimulatedAxisGrating, name='grooveDepth')
     grooveRatio       = Cpt(SimulatedAxisGrating, name='grooveRatio')
-    grating1 = {'lineDensity':None, 
-                'orderDiffraction':None,
-                'lineProfile':None,
-                'blazeAngle':None,
-                'aspectAngle':None,
-                'grooveDepth':None,
-                'grooveRatio':None,}
-    grating2 = {'lineDensity':None, 
-                'orderDiffraction':None,
-                'lineProfile':None,
-                'blazeAngle':None,
-                'aspectAngle':None,
-                'grooveDepth':None,
-                'grooveRatio':None,}
+    _gratings          = None
+    grating_dict_keys_blazed = ['lineDensity',
+                                'orderDiffraction',
+                                'lineProfile',
+                                'blazeAngle',
+                                'aspectAngle',
+                                'grooveDepth',
+                                'grooveRatio',
+                                ]
+    grating_dict_keys = ['lineDensity',
+                        'orderDiffraction',
+                        'lineProfile',
+                        'aspectAngle',
+                        'grooveDepth',
+                        'grooveRatio',
+                        ]
 
-        
+
+    @property
+    def gratings(self):
+        return self._gratings
+    
+    @gratings.setter
+    def gratings(self,name_and_dict_tuple):
+        name, grat_dict = name_and_dict_tuple
+        self._check_grating_dict(name, grat_dict)
+        self.gratings[name] = grat_dict
+
+    def _check_grating_dict(self, name, grat_dict):
+        keysList = list(grat_dict.keys())
+        if grat_dict['lineProfile'] == 'blaze':
+            grating_dict_keys = self.grating_dict_keys_blazed
+        else: 
+            grating_dict_keys = self.grating_dict_keys
+        if not sorted(keysList) == sorted(grating_dict_keys):
+            raise ValueError (f"In the dictionary for the grating '{name}' these and onl these elements must be included\n{grating_dict_keys}")
+
     def __init__(self, *args, obj, **kwargs):
         super().__init__(*args,obj=obj, **kwargs)
         self.cff.set_axis(obj=obj, axis="cFactor")
@@ -68,26 +89,57 @@ class SimulatedPGM(MisalignComponents):
         self.aspectAngle.set_axis(obj=obj, axis="aspectAngle")
         self.grooveDepth.set_axis(obj=obj, axis="grooveDepth")
         self.grooveRatio.set_axis(obj=obj, axis="grooveRatio")
+        self._setup_default_grating()
 
-    def change_grating(self, lineDensity):
-        """Change between grating1 and grating2 based on the line density
+    def _setup_default_grating(self):
+        self._gratings = {'default': 
+                            {'lineDensity':self.lineDensity.get(),
+                            'orderDiffraction':self.orderDiffraction.get(),
+                            'lineProfile': self.lineProfile.get(),
+                            'blazeAngle':self.blazeAngle.get(),
+                            'aspectAngle': self.aspectAngle.get(),
+                            'grooveDepth':self.grooveDepth.get(),
+                            'grooveRatio':self.grooveRatio.get(),
+                            }
+                        }
+
+    def rename_default_grating(self, new_name):
+        """Rename the default grating
+
+        Args:
+            new_name (str): the new name for the default grating
+        """        
+        self.gratings[new_name] = self.gratings.pop('default')
+
+    def rename_grating(self, new_name, old_name):
+        """Rename any grating
+
+        Args:
+            new_name (str): the new name for the default grating
+            old_name (str): the old name of the grating
+        """        
+        self.gratings[new_name] = self.gratings.pop(old_name)
+
+    
+    def change_grating(self, grating_name):
+        """Change between gratings based on the line density
 
         Args:
             lineDensity (int): the line density of the grating you want to use in lines/mm
         """        
-        if lineDensity == self.grating1['lineDensity']:
-            grating = self.grating1
-        elif lineDensity == self.grating2['lineDensity']:
-            grating = self.grating2
-        else:
+        if grating_name not in self.gratings.keys():
             raise ValueError('This grating does not exists')
+        
+        grating = self.gratings[grating_name]
         self.lineDensity.set(grating['lineDensity'])
         self.orderDiffraction.set(grating['orderDiffraction'])
         self.lineProfile.set(grating['lineProfile'])
-        self.blazeAngle.set(grating['blazeAngle'])
         self.aspectAngle.set(grating['aspectAngle'])
         self.grooveDepth.set(grating['grooveDepth'])
         self.grooveRatio.set(grating['grooveRatio'])
+        if grating['lineProfile']=='blaze':
+            self.blazeAngle.set(grating['blazeAngle'])
+
         
         
         
