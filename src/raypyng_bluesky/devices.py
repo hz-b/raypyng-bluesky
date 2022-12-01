@@ -79,6 +79,14 @@ class SimulatedPGM(MisalignComponents):
     
     @gratings.setter
     def gratings(self,name_and_dict_tuple):
+        """Any additional grating can be added here
+
+        Args:
+            name_and_dict_tuple (touple):  touple made of the name of the grating (str)
+                                            and a dictionary that contains the 
+                                            parameters of the grating. See the 'How to' 
+                                            section of the documentation.
+        """        
         name, grat_dict = name_and_dict_tuple
         self._check_grating_dict(name, grat_dict)
         self.gratings[name] = grat_dict
@@ -135,7 +143,7 @@ class SimulatedPGM(MisalignComponents):
         """Change between gratings based on the line density
 
         Args:
-            lineDensity (int): the line density of the grating you want to use in lines/mm
+            grating_name (str): the name you of the grating you want to use
         """        
         if grating_name not in self.gratings.keys():
             raise ValueError('This grating does not exists')
