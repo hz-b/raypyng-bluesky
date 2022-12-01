@@ -48,16 +48,29 @@ class SimulatedPGM(MisalignComponents):
                                 'lineProfile',
                                 'blazeAngle',
                                 'aspectAngle',
+                                ]
+    grating_dict_keys_laminar = ['lineDensity',
+                                'orderDiffraction',
+                                'lineProfile',
+                                'aspectAngle',
                                 'grooveDepth',
                                 'grooveRatio',
                                 ]
-    grating_dict_keys = ['lineDensity',
-                        'orderDiffraction',
-                        'lineProfile',
-                        'aspectAngle',
-                        'grooveDepth',
-                        'grooveRatio',
-                        ]
+    grating_dict_keys_sinus   = ['lineDensity',
+                                'orderDiffraction',
+                                'lineProfile',
+                                'grooveDepth',
+                                ]
+
+    grating_dict_keys_unknown = ['lineDensity',
+                                'orderDiffraction',
+                                'lineProfile',
+                                'gratingEfficiency'
+                                ]
+    gratings_dict = {'blazed':grating_dict_keys_blazed,
+                    'laminar': grating_dict_keys_laminar,
+                    'sinus': grating_dict_keys_sinus,
+                    'unknown':grating_dict_keys_unknown,}
 
 
     @property
@@ -72,10 +85,7 @@ class SimulatedPGM(MisalignComponents):
 
     def _check_grating_dict(self, name, grat_dict):
         keysList = list(grat_dict.keys())
-        if grat_dict['lineProfile'] == 'blaze':
-            grating_dict_keys = self.grating_dict_keys_blazed
-        else: 
-            grating_dict_keys = self.grating_dict_keys
+        grating_dict_keys = self.gratings_dict[grat_dict['lineProfile']]
         if not sorted(keysList) == sorted(grating_dict_keys):
             raise ValueError (f"In the dictionary for the grating '{name}' these and onl these elements must be included\n{grating_dict_keys}")
 
@@ -131,15 +141,22 @@ class SimulatedPGM(MisalignComponents):
             raise ValueError('This grating does not exists')
         
         grating = self.gratings[grating_name]
+
         self.lineDensity.set(grating['lineDensity'])
         self.orderDiffraction.set(grating['orderDiffraction'])
         self.lineProfile.set(grating['lineProfile'])
-        self.aspectAngle.set(grating['aspectAngle'])
-        self.grooveDepth.set(grating['grooveDepth'])
-        self.grooveRatio.set(grating['grooveRatio'])
+
         if grating['lineProfile']=='blaze':
             self.blazeAngle.set(grating['blazeAngle'])
-
+            self.aspectAngle.set(grating['aspectAngle'])
+        elif grating['lineProfile']=='laminar':
+            self.aspectAngle.set(grating['aspectAngle'])
+            self.grooveDepth.set(grating['grooveDepth'])
+            self.grooveRatio.set(grating['grooveRatio'])
+        elif grating['lineProfile']=='sinus':
+            self.blazeAngle.set(grating['grooveDepth'])
+        elif grating['lineProfile']=='unknown':
+            self.blazeAngle.set(grating['gratingEfficiency'])
         
         
         
