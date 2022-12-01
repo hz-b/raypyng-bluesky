@@ -6,7 +6,7 @@ Change grating
 This feature is stil experimental, and the implementation is somehow poor. However, the method can still be used to implement a grating change.
 
 
-When we call the ``RaypyngOphydDevices`` class, Ophyd devices are automatically created
+When the ``RaypyngOphydDevices`` class is called, Ophyd devices are automatically created
 .. code:: python
 
     from raypyng_bluesky.RaypyngOphydDevices import RaypyngOphydDevices
@@ -51,3 +51,41 @@ while to use the laminar grating:
     rp_PG.change_grating('400')
 
 
+Four different kind of gratings can be implemented: ``blazed``,
+``laminar``, ``sinus``, and ``unknown``. Each grating needs slightly different
+parameters:
+
+.. code:: python
+    
+    grating_dict_keys_blazed = {'name': 
+                                    {'lineDensity':value,
+                                    'orderDiffraction':value,
+                                    'lineProfile':value,
+                                    'blazeAngle':value,
+                                    'aspectAngle':value,
+                                    }
+                                }
+    grating_dict_keys_laminar = {'name':
+                                    {'lineDensity':value,
+                                    'orderDiffraction:value',
+                                    'lineProfile':value,
+                                    'aspectAngle':value,
+                                    'grooveDepth':value,
+                                    'grooveRatio':value,
+                                    }
+                                }
+    grating_dict_keys_sinus   = {'name':
+                                    {'lineDensity':value,
+                                    'orderDiffraction':value,
+                                    'lineProfile':value,
+                                    'grooveDepth':value,
+                                    }
+                                }
+
+    grating_dict_keys_unknown = {'name':
+                                    {'lineDensity':value,
+                                    'orderDiffraction':value,
+                                    'lineProfile':value,
+                                    'gratingEfficiency':value
+                                    }
+                                }
