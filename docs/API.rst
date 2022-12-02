@@ -42,8 +42,7 @@ SimulatedAxisSource
    :members:
 
 class SimulatedAxisMisalign(RaypyngAxis):
-
----------------------
+------------------------------------------
 .. autoclass:: raypyng_bluesky.axes.SimulatedAxisMisalign
    :members:
 
@@ -74,7 +73,7 @@ Ophyd Devices
 ==================
 
 MisalignComponents
-----------------
+--------------------
 .. autoclass:: raypyng_bluesky.devices.MisalignComponents
    :members:
 
@@ -84,7 +83,7 @@ SimulatedPGM
    :members:
 
 SimulatedApertures
-----------------
+--------------------
 .. autoclass:: raypyng_bluesky.devices.SimulatedApertures
    :members:
 
@@ -102,7 +101,7 @@ Preprocessor
 ==================
 
 MisalignComponents
-----------------
+--------------------
 .. autofunction:: raypyng_bluesky.preprocessor.trigger_sim
 
 SupplementalDataRaypyng

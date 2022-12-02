@@ -61,7 +61,7 @@
 
 
 \title{raypyng\sphinxhyphen{}bluesky}
-\date{Nov 28, 2022}
+\date{Dec 02, 2022}
 \release{}
 \author{Simone Vadilonga, Ruslan Ovsyannikov}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -82,21 +82,406 @@
 \phantomsection\label{\detokenize{index::doc}}
 
 
+\sphinxAtStartPar
+This is a raypyng\sphinxhyphen{}Bluesky interface library that allows using the Bluesky data acquisition framework to run RAY\sphinxhyphen{}UI simulations.
+It can be used to implement a digital twin at the beamline.
+This package is based on Bluesky, raypyng and RAY\sphinxhyphen{}UI.
+
+\sphinxAtStartPar
+\sphinxhref{https://blueskyproject.io/}{Bluesky}
+\sphinxhref{https://raypyng-bluesky.readthedocs.io/en/latest/index.html}{Raypyng}
+\sphinxhref{https://www.helmholtz-berlin.de/forschung/oe/wi/optik-strahlrohre/arbeitsgebiete/ray\_en.html}{Ray\sphinxhyphen{}UI}
+
 \sphinxstepscope
 
 
 \chapter{Installation}
 \label{\detokenize{installation:installation}}\label{\detokenize{installation::doc}}
+\sphinxAtStartPar
+raypyng\sphinxhyphen{}bluesky will work only if using a Linux or a macOS distribution.
+
+
+\section{Install RAY\sphinxhyphen{}UI}
+\label{\detokenize{installation:install-ray-ui}}
+\sphinxAtStartPar
+Download the RAY\sphinxhyphen{}UI installer from  \sphinxhref{https://www.helmholtz-berlin.de/forschung/oe/wi/optik-strahlrohre/arbeitsgebiete/ray\_en.html}{this link},
+and run the installer.
+
+
+\section{Install xvfb}
+\label{\detokenize{installation:install-xvfb}}
+\sphinxAtStartPar
+xvfb is a virtual X11 framebuffer server that let you run RAY\sphinxhyphen{}UI headless
+
+\sphinxAtStartPar
+Install xvfb:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+sudo apt install xvfb
+\end{sphinxVerbatim}
+
+\begin{sphinxadmonition}{note}{Note:}
+\sphinxAtStartPar
+xvfb\sphinxhyphen{}run script is a part of the xvfb distribution and
+runs an app on a new virtual X11 server.
+\end{sphinxadmonition}
+
+
+\section{Install raypyng\sphinxhyphen{}bluesky}
+\label{\detokenize{installation:install-raypyng-bluesky}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+You will need Python 3.8 or newer. From a shell (“Terminal” on OSX),
+check your current Python version.
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+python3 \PYGZhy{}\PYGZhy{}version
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+If that version is less than 3.8, you must update it.
+
+\sphinxAtStartPar
+We recommend installing raypyng into a “virtual environment” so that this
+installation will not interfere with any existing Python software:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+python3 \PYGZhy{}m venv \PYGZti{}/raypyng\PYGZhy{}bluesky\PYGZhy{}tutorial
+\PYG{n+nb}{source} \PYGZti{}/raypyng\PYGZhy{}bluesky\PYGZhy{}tutorial/bin/activate
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+Alternatively, if you are a
+\sphinxhref{https://conda.io/docs/user-guide/install/download.html}{conda} user,
+you can create a conda environment:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+conda create \PYGZhy{}n raypyng\PYGZhy{}bluesky\PYGZhy{}tutorial \PYG{l+s+s2}{\PYGZdq{}python\PYGZgt{}=3.8\PYGZdq{}}
+conda activate raypyng\PYGZhy{}bluesky\PYGZhy{}tutorial
+\end{sphinxVerbatim}
+
+\item {} 
+\sphinxAtStartPar
+Install the latest versions of raypyng and ophyd. Also, install IPython
+(a Python interpreter designed by scientists for scientists).
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+python3 \PYGZhy{}m pip install \PYGZhy{}\PYGZhy{}upgrade raypyng\PYGZhy{}bluesky ipython
+\end{sphinxVerbatim}
+
+\item {} 
+\sphinxAtStartPar
+Start IPython:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{ipython} \PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZhy{}}\PYG{n}{matplotlib}\PYG{o}{=}\PYG{n}{qt5}
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+The flag \sphinxcode{\sphinxupquote{\sphinxhyphen{}\sphinxhyphen{}matplotlib=qt5}} is necessary for live\sphinxhyphen{}updating plots to work.
+
+\sphinxAtStartPar
+Or, if you wish you use raypyng from a Jupyter notebook, install a kernel like
+so:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{ipython} \PYG{n}{kernel} \PYG{n}{install} \PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZhy{}}\PYG{n}{user} \PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZhy{}}\PYG{n}{name}\PYG{o}{=}\PYG{n}{raypyng}\PYG{o}{\PYGZhy{}}\PYG{n}{bluesky}\PYG{o}{\PYGZhy{}}\PYG{n}{tutorial} \PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZhy{}}\PYG{n}{display}\PYG{o}{\PYGZhy{}}\PYG{n}{name} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Python (raypyng\PYGZhy{}bluesky)}\PYG{l+s+s2}{\PYGZdq{}}
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+You may start Jupyter from any environment where it is already installed, or
+install it in this environment alongside raypyng and run it from there:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{pip} \PYG{n}{install} \PYG{n}{notebook}
+\PYG{n}{jupyter} \PYG{n}{notebook}
+\end{sphinxVerbatim}
+
+\end{itemize}
+
 \sphinxstepscope
 
 
 \chapter{Tutorial}
 \label{\detokenize{tutorial:tutorial}}\label{\detokenize{tutorial::doc}}
+
+\section{Setup an Ipython profile}
+\label{\detokenize{tutorial:setup-an-ipython-profile}}
+\sphinxAtStartPar
+The code is thought to be used in an environment where bluesky is setup. For doing this it is convenient to create an ipython profile
+and modify the startup files. An rml file created with RAY\sphinxhyphen{}UI containg a beamline is also needed.
+The code in the following example and an rml file ready to use is available at this \sphinxhref{https://github.com/hz-b/raypyng-bluesky/tree/main/examples/profile\_raypyng-bluesky-tutorial}{link}
+In the startup folder of the ipython profile create a file called \sphinxcode{\sphinxupquote{0\sphinxhyphen{}bluesky.py}} that contains a minimal setup of bluesky and raypyng\sphinxhyphen{}bluesky.
+
+\sphinxAtStartPar
+The first part of the file contains a minimal installation of bluesky
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{os}
+\PYG{k+kn}{from} \PYG{n+nn}{bluesky} \PYG{k+kn}{import} \PYG{n}{RunEngine}
+\PYG{k+kn}{from} \PYG{n+nn}{raypyng\PYGZus{}bluesky}\PYG{n+nn}{.}\PYG{n+nn}{RaypyngOphydDevices} \PYG{k+kn}{import} \PYG{n}{RaypyngOphydDevices}
+
+\PYG{n}{RE} \PYG{o}{=} \PYG{n}{RunEngine}\PYG{p}{(}\PYG{p}{\PYGZob{}}\PYG{p}{\PYGZcb{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Send all metadata/data captured to the BestEffortCallback.}
+\PYG{k+kn}{from} \PYG{n+nn}{bluesky}\PYG{n+nn}{.}\PYG{n+nn}{callbacks}\PYG{n+nn}{.}\PYG{n+nn}{best\PYGZus{}effort} \PYG{k+kn}{import} \PYG{n}{BestEffortCallback}
+\PYG{n}{bec} \PYG{o}{=} \PYG{n}{BestEffortCallback}\PYG{p}{(}\PYG{p}{)}
+
+
+\PYG{c+c1}{\PYGZsh{} Make plots update live while scans run.}
+\PYG{k+kn}{from} \PYG{n+nn}{bluesky}\PYG{n+nn}{.}\PYG{n+nn}{utils} \PYG{k+kn}{import} \PYG{n}{install\PYGZus{}kicker}
+\PYG{n}{install\PYGZus{}kicker}\PYG{p}{(}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} create a temporary database}
+\PYG{k+kn}{from} \PYG{n+nn}{databroker} \PYG{k+kn}{import} \PYG{n}{Broker}
+\PYG{n}{db} \PYG{o}{=} \PYG{n}{Broker}\PYG{o}{.}\PYG{n}{named}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{temp}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{RE}\PYG{o}{.}\PYG{n}{subscribe}\PYG{p}{(}\PYG{n}{db}\PYG{o}{.}\PYG{n}{insert}\PYG{p}{)}
+\PYG{n}{RE}\PYG{o}{.}\PYG{n}{subscribe}\PYG{p}{(}\PYG{n}{bec}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} import the magics}
+\PYG{k+kn}{from} \PYG{n+nn}{bluesky}\PYG{n+nn}{.}\PYG{n+nn}{magics} \PYG{k+kn}{import} \PYG{n}{BlueskyMagics}
+\PYG{n}{get\PYGZus{}ipython}\PYG{p}{(}\PYG{p}{)}\PYG{o}{.}\PYG{n}{register\PYGZus{}magics}\PYG{p}{(}\PYG{n}{BlueskyMagics}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} import plans}
+\PYG{k+kn}{from} \PYG{n+nn}{bluesky}\PYG{n+nn}{.}\PYG{n+nn}{plans} \PYG{k+kn}{import} \PYG{p}{(}
+    \PYG{n}{relative\PYGZus{}scan} \PYG{k}{as} \PYG{n}{dscan}\PYG{p}{,}
+    \PYG{n}{scan}\PYG{p}{,} \PYG{n}{scan} \PYG{k}{as} \PYG{n}{ascan}\PYG{p}{,}
+    \PYG{n}{list\PYGZus{}scan}\PYG{p}{,}
+    \PYG{n}{rel\PYGZus{}list\PYGZus{}scan}\PYG{p}{,}
+    \PYG{n}{rel\PYGZus{}grid\PYGZus{}scan}\PYG{p}{,}  \PYG{n}{rel\PYGZus{}grid\PYGZus{}scan} \PYG{k}{as} \PYG{n}{dmesh}\PYG{p}{,}
+    \PYG{n}{list\PYGZus{}grid\PYGZus{}scan}\PYG{p}{,}
+    \PYG{n}{adaptive\PYGZus{}scan}\PYG{p}{,}
+    \PYG{n}{rel\PYGZus{}adaptive\PYGZus{}scan}\PYG{p}{,}
+    \PYG{n}{inner\PYGZus{}product\PYGZus{}scan}            \PYG{k}{as} \PYG{n}{a2scan}\PYG{p}{,}
+    \PYG{n}{relative\PYGZus{}inner\PYGZus{}product\PYGZus{}scan}   \PYG{k}{as} \PYG{n}{d2scan}\PYG{p}{,}
+    \PYG{n}{tweak}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} import stubs}
+\PYG{k+kn}{from} \PYG{n+nn}{bluesky}\PYG{n+nn}{.}\PYG{n+nn}{plan\PYGZus{}stubs} \PYG{k+kn}{import} \PYG{p}{(}
+    \PYG{n}{abs\PYGZus{}set}\PYG{p}{,}\PYG{n}{rel\PYGZus{}set}\PYG{p}{,}
+    \PYG{n}{mv}\PYG{p}{,} \PYG{n}{mvr}\PYG{p}{,}
+    \PYG{n}{trigger}\PYG{p}{,}
+    \PYG{n}{read}\PYG{p}{,} \PYG{n}{rd}\PYG{p}{,}
+    \PYG{n}{stage}\PYG{p}{,} \PYG{n}{unstage}\PYG{p}{,}
+    \PYG{n}{configure}\PYG{p}{,}
+    \PYG{n}{stop}\PYG{p}{)}
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+The last part contains the the two lines of code used to create RaypyngOphyd devices. See the API documentation for
+more details about \sphinxcode{\sphinxupquote{RaypyngOphydDevices}}. If you already have an ipython profile with Bluesky you can just add these lines.
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} insert here the path to the rml file that you want to use}
+\PYG{n}{rml\PYGZus{}path} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{...rml/elisa.rml}\PYG{l+s+s1}{\PYGZsq{}}
+
+\PYG{n}{RaypyngOphydDevices}\PYG{p}{(}\PYG{n}{RE}\PYG{o}{=}\PYG{n}{RE}\PYG{p}{,} \PYG{n}{rml\PYGZus{}path}\PYG{o}{=}\PYG{n}{rml\PYGZus{}path}\PYG{p}{,} \PYG{n}{temporary\PYGZus{}folder}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{name\PYGZus{}space}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{prefix}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{ray\PYGZus{}ui\PYGZus{}location}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{)}
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+The ipython profile can be started using:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{ipython} \PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZhy{}}\PYG{n}{profile}\PYG{o}{=}\PYG{n}{raypyng}\PYG{o}{\PYGZhy{}}\PYG{n}{bluesky}\PYG{o}{\PYGZhy{}}\PYG{n}{tutorial} \PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZhy{}}\PYG{n}{matplotlib}\PYG{o}{=}\PYG{n}{qt5}
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+All the elements present in the rml file as ophyd devices. If you set \sphinxcode{\sphinxupquote{prefix=None}}, the prefix \sphinxcode{\sphinxupquote{rp\_}} is automatically
+prepended to the name of the optical elements found in the rml file to create the dame of the object in python. If you have a Dipole called
+\sphinxcode{\sphinxupquote{Dipole}}, then the name would be: \sphinxcode{\sphinxupquote{rp\_Dipole}}. You can now use the simulated motors as you would normally do in bluesky.
+
+\sphinxAtStartPar
+To see a list of the implemented motors and detectors use the ipython autocompletion by typing in the ipython shell
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{rp\PYGZus{}}
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+and pressing \sphinxcode{\sphinxupquote{tab}}.
+
+
+\section{What can go wrong, and how to correct it}
+\label{\detokenize{tutorial:what-can-go-wrong-and-how-to-correct-it}}
+\sphinxAtStartPar
+If once you setup the ipython profile as explained in the section above no elements are found, might be that the \sphinxcode{\sphinxupquote{RaypyngOphydDevices}}
+class fails to insert the ophyd devices in the correct namespace. In this case try to call the classes passing explicitly the correct namespace
+like this:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{sys}
+\PYG{n}{RaypyngOphydDevices}\PYG{p}{(}\PYG{n}{RE}\PYG{o}{=}\PYG{n}{RE}\PYG{p}{,} \PYG{n}{rml\PYGZus{}path}\PYG{o}{=}\PYG{n}{rml\PYGZus{}path}\PYG{p}{,} \PYG{n}{temporary\PYGZus{}folder}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{name\PYGZus{}space}\PYG{o}{=}\PYG{n}{sys}\PYG{o}{.}\PYG{n}{\PYGZus{}getframe}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{,} \PYG{n}{prefix}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{ray\PYGZus{}ui\PYGZus{}location}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{)}
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+If when you start a scan (see section below in this tutorial), RAY\sphinxhyphen{}UI is not found, it is because you installed it in a non\sphinxhyphen{}standard location.
+In this case simply pass the absolute path of the folder where you installed RAY\sphinxhyphen{}UI to the class:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{ray\PYGZus{}path} \PYG{o}{=} \PYG{o}{.}\PYG{o}{.}\PYG{o}{.} \PYG{c+c1}{\PYGZsh{} here the path to RAY\PYGZhy{}UI folder}
+\PYG{n}{RaypyngOphydDevices}\PYG{p}{(}\PYG{n}{RE}\PYG{o}{=}\PYG{n}{RE}\PYG{p}{,} \PYG{n}{rml\PYGZus{}path}\PYG{o}{=}\PYG{n}{rml\PYGZus{}path}\PYG{p}{,} \PYG{n}{temporary\PYGZus{}folder}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{name\PYGZus{}space}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{prefix}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{ray\PYGZus{}ui\PYGZus{}location}\PYG{o}{=}\PYG{n}{ray\PYGZus{}path}\PYG{p}{)}
+\end{sphinxVerbatim}
+
+
+\section{RaypyngOphyd \sphinxhyphen{} Motors}
+\label{\detokenize{tutorial:raypyngophyd-motors}}
+\sphinxAtStartPar
+Presently only a subset of the parameters available in rml file in RAY\sphinxhyphen{}UI are implemented as motor axes. To see which ones are available,
+use the tab\sphinxhyphen{}autocompletion. For instance, to see what axes are available for the motor \sphinxcode{\sphinxupquote{rp\_Dipole}} write in the ipython shell:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{rp\PYGZus{}Dipole}\PYG{o}{.}
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+and press tab: among the other things you will see that are implemented \sphinxcode{\sphinxupquote{rp\_Dipole.nrays}}, the number of rays to use in the simulation,
+and \sphinxcode{\sphinxupquote{p\_Dipole.en}}, the photon energy in eV. You can of course also use the \sphinxcode{\sphinxupquote{.get()}} and \sphinxcode{\sphinxupquote{.set()}} methods:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{In} \PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{p}{:} \PYG{n}{rp\PYGZus{}Dipole}\PYG{o}{.}\PYG{n}{en}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{Out}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{p}{:} \PYG{l+m+mf}{1000.0}
+
+\PYG{n}{In} \PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{]}\PYG{p}{:} \PYG{n}{rp\PYGZus{}Dipole}\PYG{o}{.}\PYG{n}{en}\PYG{o}{.}\PYG{n}{set}\PYG{p}{(}\PYG{l+m+mi}{1500}\PYG{p}{)}
+\PYG{n}{Out}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{]}\PYG{p}{:} \PYG{o}{\PYGZlt{}}\PYG{n}{ophyd}\PYG{o}{.}\PYG{n}{sim}\PYG{o}{.}\PYG{n}{NullStatus} \PYG{n}{at} \PYG{l+m+mh}{0x7fbf4c25adc0}\PYG{o}{\PYGZgt{}}
+
+\PYG{n}{In} \PYG{p}{[}\PYG{l+m+mi}{3}\PYG{p}{]}\PYG{p}{:} \PYG{n}{rp\PYGZus{}Dipole}\PYG{o}{.}\PYG{n}{en}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{Out}\PYG{p}{[}\PYG{l+m+mi}{3}\PYG{p}{]}\PYG{p}{:} \PYG{l+m+mf}{1500.0}
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+For a complete description of the axis available for each optical element see the \sphinxhref{https://raypyng-bluesky.readthedocs.io/en/latest/API.html\#id1}{API documentation}
+
+
+\section{RaypyngOphyd \sphinxhyphen{} Detectors}
+\label{\detokenize{tutorial:raypyngophyd-detectors}}
+\sphinxAtStartPar
+When an \sphinxcode{\sphinxupquote{ImagePlane}}, or an \sphinxcode{\sphinxupquote{ImagePlaneBundle}} is found in the rml file, a detector is created. Each detector
+can return four properties of the x\sphinxhyphen{}ray beam. For instance, for the \sphinxcode{\sphinxupquote{DetectorAtFocus}}:
+\sphinxhyphen{} \sphinxcode{\sphinxupquote{rp\_DetectorAtFocus.intensity}}: the intensity {[}Ph/s/A/BW{]}
+\sphinxhyphen{} \sphinxcode{\sphinxupquote{rp\_DetectorAtFocus.bw}}: the bandwidth  {[}eV{]}
+\sphinxhyphen{} \sphinxcode{\sphinxupquote{rp\_DetectorAtFocus.hor\_foc}}: the horizontal focus {[}um{]}
+\sphinxhyphen{} \sphinxcode{\sphinxupquote{rp\_DetectorAtFocus.ver\_foc}}: the vertical focus {[}um{]}
+
+
+\section{A scan in Bluesky}
+\label{\detokenize{tutorial:a-scan-in-bluesky}}
+\sphinxAtStartPar
+It is possible to do scan using the simulation engine RAY\sphinxhyphen{}UI as it is normally done in bluesky.
+For instance you can scan the photon energy and see the intensity at the source and and the sample position.
+While at the beamline to change the energy we would simply ask the monochromator to do it, for the simulations
+one needs to change the energy of the source
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{RE}\PYG{p}{(}\PYG{n}{scan}\PYG{p}{(}\PYG{p}{[}\PYG{n}{rp\PYGZus{}DetectorAtSource}\PYG{o}{.}\PYG{n}{intensity}\PYG{p}{,}\PYG{n}{rp\PYGZus{}DetectorAtFocus}\PYG{o}{.}\PYG{n}{intensity}\PYG{p}{]}\PYG{p}{,} \PYG{n}{rp\PYGZus{}Dipole}\PYG{o}{.}\PYG{n}{en}\PYG{p}{,} \PYG{l+m+mi}{200}\PYG{p}{,} \PYG{l+m+mi}{2200}\PYG{p}{,} \PYG{l+m+mi}{11}\PYG{p}{)}\PYG{p}{)}
+\end{sphinxVerbatim}
+
 \sphinxstepscope
 
 
 \chapter{How To Guides}
 \label{\detokenize{how_to:how-to-guides}}\label{\detokenize{how_to::doc}}
+
+\section{Change grating}
+\label{\detokenize{how_to:change-grating}}
+\sphinxAtStartPar
+This feature is stil experimental, and the implementation is somehow poor. However, the method can still be used to implement a grating change.
+
+\sphinxAtStartPar
+When the \sphinxcode{\sphinxupquote{RaypyngOphydDevices}} class is called, Ophyd devices are automatically created
+.. code:: python
+\begin{quote}
+
+\sphinxAtStartPar
+from raypyng\_bluesky.RaypyngOphydDevices import RaypyngOphydDevices
+
+\sphinxAtStartPar
+\# define here the path to the rml file
+rml\_path = (’…rml/elisa.rml’)
+
+\sphinxAtStartPar
+RaypyngOphydDevices(RE=RE, rml\_path=rml\_path, temporary\_folder=None, name\_space=None, ray\_ui\_location=’/home/simone/RAY\sphinxhyphen{}UI\sphinxhyphen{}development’)\#sys.\_getframe(0))
+\end{quote}
+
+\sphinxAtStartPar
+In this case we know that inside the \sphinxcode{\sphinxupquote{elisa.rml}} file we have a plane grating monochromator, and an elment that is the a plane grating called \sphinxcode{\sphinxupquote{PG}},
+and that an Ophyd device called \sphinxcode{\sphinxupquote{rp\_PG}} is therefore created. The gratings can hold any number of different configurations, and the configuration found in the
+rml file is saved with the name \sphinxcode{\sphinxupquote{\textquotesingle{}default\textquotesingle{}}}
+We can rename the default grating to a more meaningful name, in this case since it is a 1200 lines/mm blazed grating we will call it simply ‘1200’
+.. code:: python
+\begin{quote}
+
+\sphinxAtStartPar
+rp\_PG.rename\_default\_grating(‘1200’)
+\end{quote}
+
+\sphinxAtStartPar
+the second grating is a laminar grating with a pitch of 400 lines/mm.
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{rrp\PYGZus{}PG}\PYG{o}{.}\PYG{n}{gratings}\PYG{o}{=}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{400}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{p}{\PYGZob{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{lineDensity}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{l+m+mi}{400}\PYG{p}{,}
+                    \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{orderDiffraction}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{l+m+mi}{1}\PYG{p}{,}
+                    \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{lineProfile}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{laminar}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+                    \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{aspectAngle}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{l+m+mi}{90}\PYG{p}{,}
+                    \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{grooveDepth}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{l+m+mi}{15}\PYG{p}{,}
+                    \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{grooveRatio}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{l+m+mf}{0.65}\PYG{p}{,}\PYG{p}{\PYGZcb{}}
+            \PYG{p}{)}
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+To change the gratings then, one can use the method implmented in the grating Ophyd device to change the grating, giving as
+argument the pitch of the grating. To use the blazed grating use:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{rp\PYGZus{}PG}\PYG{o}{.}\PYG{n}{change\PYGZus{}grating}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{1200}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+while to use the laminar grating:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{rp\PYGZus{}PG}\PYG{o}{.}\PYG{n}{change\PYGZus{}grating}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{400}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+Four different kind of gratings can be implemented: \sphinxcode{\sphinxupquote{blazed}},
+\sphinxcode{\sphinxupquote{laminar}}, \sphinxcode{\sphinxupquote{sinus}}, and \sphinxcode{\sphinxupquote{unknown}}. Each grating needs slightly different
+parameters:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{grating\PYGZus{}dict\PYGZus{}keys\PYGZus{}blazed} \PYG{o}{=} \PYG{p}{\PYGZob{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{name}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}
+                                \PYG{p}{\PYGZob{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{lineDensity}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{n}{value}\PYG{p}{,}
+                                \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{orderDiffraction}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{n}{value}\PYG{p}{,}
+                                \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{lineProfile}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{n}{value}\PYG{p}{,}
+                                \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{blazeAngle}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{n}{value}\PYG{p}{,}
+                                \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{aspectAngle}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{n}{value}\PYG{p}{,}
+                                \PYG{p}{\PYGZcb{}}
+                            \PYG{p}{\PYGZcb{}}
+\PYG{n}{grating\PYGZus{}dict\PYGZus{}keys\PYGZus{}laminar} \PYG{o}{=} \PYG{p}{\PYGZob{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{name}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}
+                                \PYG{p}{\PYGZob{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{lineDensity}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{n}{value}\PYG{p}{,}
+                                \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{orderDiffraction:value}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+                                \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{lineProfile}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{n}{value}\PYG{p}{,}
+                                \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{aspectAngle}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{n}{value}\PYG{p}{,}
+                                \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{grooveDepth}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{n}{value}\PYG{p}{,}
+                                \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{grooveRatio}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{n}{value}\PYG{p}{,}
+                                \PYG{p}{\PYGZcb{}}
+                            \PYG{p}{\PYGZcb{}}
+\PYG{n}{grating\PYGZus{}dict\PYGZus{}keys\PYGZus{}sinus}   \PYG{o}{=} \PYG{p}{\PYGZob{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{name}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}
+                                \PYG{p}{\PYGZob{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{lineDensity}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{n}{value}\PYG{p}{,}
+                                \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{orderDiffraction}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{n}{value}\PYG{p}{,}
+                                \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{lineProfile}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{n}{value}\PYG{p}{,}
+                                \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{grooveDepth}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{n}{value}\PYG{p}{,}
+                                \PYG{p}{\PYGZcb{}}
+                            \PYG{p}{\PYGZcb{}}
+
+\PYG{n}{grating\PYGZus{}dict\PYGZus{}keys\PYGZus{}unknown} \PYG{o}{=} \PYG{p}{\PYGZob{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{name}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}
+                                \PYG{p}{\PYGZob{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{lineDensity}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{n}{value}\PYG{p}{,}
+                                \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{orderDiffraction}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{n}{value}\PYG{p}{,}
+                                \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{lineProfile}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{n}{value}\PYG{p}{,}
+                                \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{gratingEfficiency}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}\PYG{n}{value}
+                                \PYG{p}{\PYGZcb{}}
+                            \PYG{p}{\PYGZcb{}}
+\end{sphinxVerbatim}
+
 \sphinxstepscope
 
 
@@ -112,13 +497,13 @@
 \begin{fulllineitems}
 \phantomsection\label{\detokenize{API:raypyng_bluesky.RaypyngOphydDevices.RaypyngOphydDevices}}
 \pysigstartsignatures
-\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.RaypyngOphydDevices.}}\sphinxbfcode{\sphinxupquote{RaypyngOphydDevices}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{n}{RE}}, \emph{\DUrole{n}{rml\_path}}, \emph{\DUrole{n}{temporary\_folder}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{name\_space}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{prefix}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.RaypyngOphydDevices.}}\sphinxbfcode{\sphinxupquote{RaypyngOphydDevices}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{n}{RE}}, \emph{\DUrole{n}{rml\_path}}, \emph{\DUrole{n}{temporary\_folder}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{name\_space}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{prefix}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{ray\_ui\_location}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
 \pysigstopsignatures
 \sphinxAtStartPar
 Create ophyd devices from a RAY\sphinxhyphen{}UI rml file and adds them to a name space.
 
 \sphinxAtStartPar
-If you are using ipython sys.\_getframe(0) returns the name space of the ipython instance.
+If you are using ipython \sphinxcode{\sphinxupquote{sys.\_getframe(0)}} returns the name space of the ipython instance.
 (Remember to \sphinxcode{\sphinxupquote{import sys}})
 \begin{quote}\begin{description}
 \sphinxlineitem{Parameters}\begin{itemize}
@@ -138,11 +523,15 @@ set into the ipython profile folder. Default to None.
 \item {} 
 \sphinxAtStartPar
 \sphinxstyleliteralstrong{\sphinxupquote{name\_space}} (\sphinxstyleliteralemphasis{\sphinxupquote{frame}}\sphinxstyleliteralemphasis{\sphinxupquote{, }}\sphinxstyleliteralemphasis{\sphinxupquote{optional}}) \textendash{} If None the class will try to understand the correct namespace to add the Ophyd devices to.
-If the automatic retrieval fails, pass\textasciigrave{}\textasciigrave{}sys.\_getframe(0)\textasciigrave{}\textasciigrave{}. Defaults to None.
+If the automatic retrieval fails, pass \sphinxcode{\sphinxupquote{sys.\_getframe(0)}}. Defaults to None.
 
 \item {} 
 \sphinxAtStartPar
 \sphinxstyleliteralstrong{\sphinxupquote{prefix}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} the prefix to prepend to the oe names found in the rml file
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{ray\_ui\_location}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} the location of the RAY\sphinxhyphen{}UI installation folder. If None the program will try to find it automatically. Deafault to None.
 
 \end{itemize}
 
@@ -416,8 +805,8 @@ Status
 
 
 
-\section{Ophyd Devices}
-\label{\detokenize{API:ophyd-devices}}
+\section{Ophyd Axes}
+\label{\detokenize{API:ophyd-axes}}
 
 \subsection{Axes}
 \label{\detokenize{API:axes}}\index{RaypyngAxis (class in raypyng\_bluesky.axes)@\spxentry{RaypyngAxis}\spxextra{class in raypyng\_bluesky.axes}}
@@ -426,7 +815,15 @@ Status
 \phantomsection\label{\detokenize{API:raypyng_bluesky.axes.RaypyngAxis}}
 \pysigstartsignatures
 \pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.axes.}}\sphinxbfcode{\sphinxupquote{RaypyngAxis}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
-\pysigstopsignatures\index{get() (raypyng\_bluesky.axes.RaypyngAxis method)@\spxentry{get()}\spxextra{raypyng\_bluesky.axes.RaypyngAxis method}}
+\pysigstopsignatures
+\sphinxAtStartPar
+The Axis used by all the Raypyng devices.
+
+\sphinxAtStartPar
+At the moment it is a comparator, in the future some other positioner will be used,
+probably a SoftPositioner.
+The class defines an empty dictionary, the \sphinxcode{\sphinxupquote{axes\_dict}} that will be then filled by each device.
+\index{get() (raypyng\_bluesky.axes.RaypyngAxis method)@\spxentry{get()}\spxextra{raypyng\_bluesky.axes.RaypyngAxis method}}
 
 \begin{fulllineitems}
 \phantomsection\label{\detokenize{API:raypyng_bluesky.axes.RaypyngAxis.get}}
@@ -434,11 +831,17 @@ Status
 \pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get}}}{}{}
 \pysigstopsignatures
 \sphinxAtStartPar
-Get the value of all components in the device
-
+return the value of a certain axis as in the RMLFile
+\begin{quote}\begin{description}
+\sphinxlineitem{Returns}
 \sphinxAtStartPar
-Keyword arguments are passed onto each signal.get(). Components
-beginning with an underscore will not be included.
+the value of the axis in the RML file
+
+\sphinxlineitem{Return type}
+\sphinxAtStartPar
+float
+
+\end{description}\end{quote}
 
 \end{fulllineitems}
 
@@ -464,56 +867,36 @@ The current position of the motor in its engineering units
 \pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{set}}}{\emph{\DUrole{n}{value}}}{}
 \pysigstopsignatures
 \sphinxAtStartPar
-Set a value and return a Status object
+Write a value in the RMLFile for a certain element/axis
+\begin{quote}\begin{description}
+\sphinxlineitem{Parameters}
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{value}} (\sphinxstyleliteralemphasis{\sphinxupquote{float}}\sphinxstyleliteralemphasis{\sphinxupquote{,}}\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} the value to set to the axis
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{set\_axis() (raypyng\_bluesky.axes.RaypyngAxis method)@\spxentry{set\_axis()}\spxextra{raypyng\_bluesky.axes.RaypyngAxis method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.axes.RaypyngAxis.set_axis}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{set\_axis}}}{\emph{\DUrole{n}{obj}}, \emph{\DUrole{n}{axis}}}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Set what axis should be used, based on the \sphinxcode{\sphinxupquote{axes\_dict}}
 \begin{quote}\begin{description}
 \sphinxlineitem{Parameters}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{new\_position}} (\sphinxstyleliteralemphasis{\sphinxupquote{object}}) \textendash{} The input here is whatever the device requires (this
-should be over\sphinxhyphen{}ridden by the implementation.  For example
-a motor would take a float, a shutter the strings \{‘Open’,
-‘Close’\}, and a goineometer (h, k, l) tuples
+\sphinxstyleliteralstrong{\sphinxupquote{obj}} (\sphinxstyleliteralemphasis{\sphinxupquote{\_type\_}}) \textendash{} \_description\_
 
 \item {} 
 \sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{timeout}} (\sphinxstyleliteralemphasis{\sphinxupquote{float}}\sphinxstyleliteralemphasis{\sphinxupquote{, }}\sphinxstyleliteralemphasis{\sphinxupquote{optional}}) \textendash{} Maximum time to wait for the motion. If None, the default timeout
-for this positioner is used.
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{moved\_cb}} (\sphinxstyleliteralemphasis{\sphinxupquote{callable}}\sphinxstyleliteralemphasis{\sphinxupquote{, }}\sphinxstyleliteralemphasis{\sphinxupquote{optional}}) \textendash{} 
-\sphinxAtStartPar
-Deprecated
-
-\sphinxAtStartPar
-Call this callback when movement has finished. This callback
-must accept one keyword argument: ‘obj’ which will be set to
-this positioner instance.
-
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstyleliteralstrong{\sphinxupquote{wait}} (\sphinxstyleliteralemphasis{\sphinxupquote{bool}}\sphinxstyleliteralemphasis{\sphinxupquote{, }}\sphinxstyleliteralemphasis{\sphinxupquote{optional}}) \textendash{} 
-\sphinxAtStartPar
-Deprecated
-
-\sphinxAtStartPar
-If the method should block until the Status object reports
-it is done.
-
-\sphinxAtStartPar
-Defaults to False
-
+\sphinxstyleliteralstrong{\sphinxupquote{axis}} (\sphinxstyleliteralemphasis{\sphinxupquote{\_type\_}}) \textendash{} \_description\_
 
 \end{itemize}
-
-\sphinxlineitem{Returns}
-\sphinxAtStartPar
-\sphinxstylestrong{status} \textendash{} Status object to indicate when the motion / set is done.
-
-\sphinxlineitem{Return type}
-\sphinxAtStartPar
-StatusBase
 
 \end{description}\end{quote}
 
@@ -532,11 +915,58 @@ StatusBase
 \pysigstartsignatures
 \pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.axes.}}\sphinxbfcode{\sphinxupquote{SimulatedAxisSource}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
 \pysigstopsignatures
+\sphinxAtStartPar
+Define basic properties of the source.
+
+\sphinxAtStartPar
+Available axes:
+\sphinxhyphen{} number of rays
+\sphinxhyphen{} photon energy {[}eV{]}
+\sphinxhyphen{} bandwidth {[}\% of photon energy{]}
+
 \end{fulllineitems}
 
 
+
+\subsection{class SimulatedAxisMisalign(RaypyngAxis):}
+\label{\detokenize{API:class-simulatedaxismisalign-raypyngaxis}}\index{SimulatedAxisMisalign (class in raypyng\_bluesky.axes)@\spxentry{SimulatedAxisMisalign}\spxextra{class in raypyng\_bluesky.axes}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.axes.SimulatedAxisMisalign}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.axes.}}\sphinxbfcode{\sphinxupquote{SimulatedAxisMisalign}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
+\pysigstopsignatures
 \sphinxAtStartPar
-class SimulatedAxisMisalign(RaypyngAxis):
+Define misalignment axes
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+translationXerror
+
+\item {} 
+\sphinxAtStartPar
+translationYerror
+
+\item {} 
+\sphinxAtStartPar
+translationZerror
+
+\item {} 
+\sphinxAtStartPar
+rotationXerror
+
+\item {} 
+\sphinxAtStartPar
+rotationYerror
+
+\item {} 
+\sphinxAtStartPar
+rotationZerror
+
+\end{itemize}
+
+\end{fulllineitems}
+
 
 
 \subsection{SimulatedAxisAperture}
@@ -547,6 +977,10 @@ class SimulatedAxisMisalign(RaypyngAxis):
 \pysigstartsignatures
 \pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.axes.}}\sphinxbfcode{\sphinxupquote{SimulatedAxisAperture}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
 \pysigstopsignatures
+\sphinxAtStartPar
+Define basic properties of the aperture,
+the width and the height.
+
 \end{fulllineitems}
 
 
@@ -559,6 +993,43 @@ class SimulatedAxisMisalign(RaypyngAxis):
 \pysigstartsignatures
 \pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.axes.}}\sphinxbfcode{\sphinxupquote{SimulatedAxisGrating}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
 \pysigstopsignatures
+\sphinxAtStartPar
+Define basic properties of the gratings:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+lineDensity
+
+\item {} 
+\sphinxAtStartPar
+orderDiffraction
+
+\item {} 
+\sphinxAtStartPar
+cFactor
+
+\item {} 
+\sphinxAtStartPar
+lineProfile
+
+\item {} 
+\sphinxAtStartPar
+blazeAngle
+
+\item {} 
+\sphinxAtStartPar
+aspectAngle
+
+\item {} 
+\sphinxAtStartPar
+grooveDepth
+
+\item {} 
+\sphinxAtStartPar
+grooveRatio
+
+\end{itemize}
+
 \end{fulllineitems}
 
 
@@ -573,7 +1044,11 @@ class SimulatedAxisMisalign(RaypyngAxis):
 \phantomsection\label{\detokenize{API:raypyng_bluesky.detector.RaypyngDetector}}
 \pysigstartsignatures
 \pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.detector.}}\sphinxbfcode{\sphinxupquote{RaypyngDetector}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{n}{information\_to\_extract}\DUrole{o}{=}\DUrole{default_value}{\textquotesingle{}intensity\textquotesingle{}}}, \emph{\DUrole{n}{parent\_detector\_name}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
-\pysigstopsignatures\index{get() (raypyng\_bluesky.detector.RaypyngDetector method)@\spxentry{get()}\spxextra{raypyng\_bluesky.detector.RaypyngDetector method}}
+\pysigstopsignatures
+\sphinxAtStartPar
+Defining a raypyng detector using a signal. The detector is created when
+an Image Plane or an Image Plane Bundle is found in the rml file.
+\index{get() (raypyng\_bluesky.detector.RaypyngDetector method)@\spxentry{get()}\spxextra{raypyng\_bluesky.detector.RaypyngDetector method}}
 
 \begin{fulllineitems}
 \phantomsection\label{\detokenize{API:raypyng_bluesky.detector.RaypyngDetector.get}}
@@ -674,7 +1149,11 @@ Call that is used by bluesky prior to read()
 \phantomsection\label{\detokenize{API:raypyng_bluesky.detector.RaypyngTriggerDetector}}
 \pysigstartsignatures
 \pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.detector.}}\sphinxbfcode{\sphinxupquote{RaypyngTriggerDetector}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{n}{rml}}, \emph{\DUrole{n}{temporary\_folder}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
-\pysigstopsignatures\index{get() (raypyng\_bluesky.detector.RaypyngTriggerDetector method)@\spxentry{get()}\spxextra{raypyng\_bluesky.detector.RaypyngTriggerDetector method}}
+\pysigstopsignatures
+\sphinxAtStartPar
+The trigger detector is used to start the simulations. The simulations are done on
+the machine where bluesky is running.
+\index{get() (raypyng\_bluesky.detector.RaypyngTriggerDetector method)@\spxentry{get()}\spxextra{raypyng\_bluesky.detector.RaypyngTriggerDetector method}}
 
 \begin{fulllineitems}
 \phantomsection\label{\detokenize{API:raypyng_bluesky.detector.RaypyngTriggerDetector.get}}
@@ -769,7 +1248,7 @@ Call that is used by bluesky prior to read()
 
 
 \section{Ophyd Devices}
-\label{\detokenize{API:id1}}
+\label{\detokenize{API:ophyd-devices}}
 
 \subsection{MisalignComponents}
 \label{\detokenize{API:misaligncomponents}}\index{MisalignComponents (class in raypyng\_bluesky.devices)@\spxentry{MisalignComponents}\spxextra{class in raypyng\_bluesky.devices}}
@@ -779,6 +1258,10 @@ Call that is used by bluesky prior to read()
 \pysigstartsignatures
 \pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.devices.}}\sphinxbfcode{\sphinxupquote{MisalignComponents}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{n}{obj}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
 \pysigstopsignatures
+\sphinxAtStartPar
+Define the misalignment components of an optical element
+using SimulatedAxisMisalign
+
 \end{fulllineitems}
 
 
@@ -791,6 +1274,75 @@ Call that is used by bluesky prior to read()
 \pysigstartsignatures
 \pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.devices.}}\sphinxbfcode{\sphinxupquote{SimulatedPGM}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{n}{obj}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
 \pysigstopsignatures
+\sphinxAtStartPar
+Define the Plan Grating Monochromator using SimulatedAxisMisalign
+and SimulatedAxisGrating.
+
+\sphinxAtStartPar
+Additionaly defines a two dictionaries to store different grating parameters
+and a method  \sphinxcode{\sphinxupquote{change\_grating()}} to switch between them.
+\index{change\_grating() (raypyng\_bluesky.devices.SimulatedPGM method)@\spxentry{change\_grating()}\spxextra{raypyng\_bluesky.devices.SimulatedPGM method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.devices.SimulatedPGM.change_grating}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{change\_grating}}}{\emph{\DUrole{n}{grating\_name}}}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Change between gratings based on the line density
+\begin{quote}\begin{description}
+\sphinxlineitem{Parameters}
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{grating\_name}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} the name you of the grating you want to use
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{rename\_default\_grating() (raypyng\_bluesky.devices.SimulatedPGM method)@\spxentry{rename\_default\_grating()}\spxextra{raypyng\_bluesky.devices.SimulatedPGM method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.devices.SimulatedPGM.rename_default_grating}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{rename\_default\_grating}}}{\emph{\DUrole{n}{new\_name}}}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Rename the default grating
+\begin{quote}\begin{description}
+\sphinxlineitem{Parameters}
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{new\_name}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} the new name for the default grating
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{rename\_grating() (raypyng\_bluesky.devices.SimulatedPGM method)@\spxentry{rename\_grating()}\spxextra{raypyng\_bluesky.devices.SimulatedPGM method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{API:raypyng_bluesky.devices.SimulatedPGM.rename_grating}}
+\pysigstartsignatures
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{rename\_grating}}}{\emph{\DUrole{n}{new\_name}}, \emph{\DUrole{n}{old\_name}}}{}
+\pysigstopsignatures
+\sphinxAtStartPar
+Rename any grating
+\begin{quote}\begin{description}
+\sphinxlineitem{Parameters}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{new\_name}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} the new name for the default grating
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstyleliteralstrong{\sphinxupquote{old\_name}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} the old name of the grating
+
+\end{itemize}
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+
 \end{fulllineitems}
 
 
@@ -803,6 +1355,10 @@ Call that is used by bluesky prior to read()
 \pysigstartsignatures
 \pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.devices.}}\sphinxbfcode{\sphinxupquote{SimulatedApertures}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{n}{obj}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
 \pysigstopsignatures
+\sphinxAtStartPar
+Define the apertures using SimulatedAxisMisalign
+and SimulatedAxisAperture.
+
 \end{fulllineitems}
 
 
@@ -815,6 +1371,9 @@ Call that is used by bluesky prior to read()
 \pysigstartsignatures
 \pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.devices.}}\sphinxbfcode{\sphinxupquote{SimulatedMirror}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{n}{obj}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
 \pysigstopsignatures
+\sphinxAtStartPar
+Define the mirrors using SimulatedAxisMisalign.
+
 \end{fulllineitems}
 
 
@@ -827,6 +1386,9 @@ Call that is used by bluesky prior to read()
 \pysigstartsignatures
 \pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class\DUrole{w}{  }}}\sphinxcode{\sphinxupquote{raypyng\_bluesky.devices.}}\sphinxbfcode{\sphinxupquote{SimulatedSource}}}{\emph{\DUrole{o}{*}\DUrole{n}{args}}, \emph{\DUrole{n}{obj}}, \emph{\DUrole{o}{**}\DUrole{n}{kwargs}}}{}
 \pysigstopsignatures
+\sphinxAtStartPar
+Define the source using SimulatedAxisSource.
+
 \end{fulllineitems}
 
 
@@ -835,7 +1397,7 @@ Call that is used by bluesky prior to read()
 \label{\detokenize{API:preprocessor}}
 
 \subsection{MisalignComponents}
-\label{\detokenize{API:id2}}\index{trigger\_sim() (in module raypyng\_bluesky.preprocessor)@\spxentry{trigger\_sim()}\spxextra{in module raypyng\_bluesky.preprocessor}}
+\label{\detokenize{API:id1}}\index{trigger\_sim() (in module raypyng\_bluesky.preprocessor)@\spxentry{trigger\_sim()}\spxextra{in module raypyng\_bluesky.preprocessor}}
 
 \begin{fulllineitems}
 \phantomsection\label{\detokenize{API:raypyng_bluesky.preprocessor.trigger_sim}}
@@ -847,15 +1409,13 @@ Trigger simulations for raypyng plans
 
 \sphinxAtStartPar
 This function is composed of four steps:
-1\sphinxhyphen{} populate\_raypyng\_devices\_list\_at\_stage:
-\begin{quote}
-
+\begin{description}
+\sphinxlineitem{1\sphinxhyphen{} populate\_raypyng\_devices\_list\_at\_stage:}
 \sphinxAtStartPar
 at the ‘stage message’ each device is classified
 and saved into two list. One list is dedicated to
 raypng devices, and one for all the others
-\end{quote}
-\begin{description}
+
 \sphinxlineitem{2\sphinxhyphen{} prepare\_simulations\_at\_open\_run:}
 \sphinxAtStartPar
 when the message is ‘open\_run’, if both raypyng

@@ -53,7 +53,7 @@ class RaypyngAxis(PVPositionerDone):
         self.readback.set_axis(axes_dict[axis])
 
     def get(self):
-        """return the value of a certain axis as in the RMLFile
+        """Return the value of a certain axis as in the RMLFile
 
         Returns:
             float: the value of the axis in the RML file
@@ -81,7 +81,12 @@ class RaypyngAxis(PVPositionerDone):
 
 
 class SimulatedAxisSource(RaypyngAxis):
-    """Define basic properties of the source, number of rays and photon energy in eV.
+    """Define basic properties of the source:
+    
+    Available axes:
+    * number of rays [a.u.]
+    * photon energy [eV]
+    * bandwidth [% of photon energy]
 
     """    
 
@@ -93,6 +98,7 @@ class SimulatedAxisSource(RaypyngAxis):
     def _axes_dict(self):
         axes_dict={"photonEnergy":self.obj.photonEnergy,
                     "numberRays": self.obj.numberRays,
+                    "energySpread":self.obj.energySpread
                     }
         return axes_dict
     
@@ -101,8 +107,14 @@ class SimulatedAxisSource(RaypyngAxis):
     
 
 class SimulatedAxisMisalign(RaypyngAxis):
-    '''Define basic properties of the all the optical elements after the source, 
-    the misalignement along and about the axis.
+    '''Define misalignment axes:
+
+    * translationXerror [mm]
+    * translationYerror [mm]
+    * translationZerror [mm]
+    * rotationXerror [um]
+    * rotationYerror [um]
+    * rotationZerror [um]
     '''
     raypyng   = True
     
@@ -122,8 +134,10 @@ class SimulatedAxisMisalign(RaypyngAxis):
     
 
 class SimulatedAxisAperture(RaypyngAxis):
-    '''Define basic properties of the aperture, 
-    the width and the height.
+    '''Define basic properties of apertures:
+
+    * width [mm]
+    * height [mm]
     '''
     raypyng   = True
         
@@ -136,19 +150,36 @@ class SimulatedAxisAperture(RaypyngAxis):
                     }
         return axes_dict
 
+class SimulatedAxisReflectingElement(RaypyngAxis):
+    '''Define basic properties of a reflecting element:
+
+    * grazingIncAngle [°]
+    * azimuthalAngle  [°]
+    '''
+    raypyng   = True
+        
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+    def _axes_dict(self):
+        axes_dict={"grazingIncAngle": self.obj.grazingIncAngle,
+                    "azimuthalAngle": self.obj.azimuthalAngle,
+                    }
+        return axes_dict
+
     
 
 class SimulatedAxisGrating(RaypyngAxis):
     '''Define basic properties of the gratings:
 
-    - lineDensity        
-    - orderDiffraction
-    - cFactor
-    - lineProfile
-    - blazeAngle
-    - aspectAngle
-    - grooveDepth
-    - grooveRatio
+    * lineDensity  [lines/mm]    
+    * orderDiffraction 
+    * cFactor
+    * lineProfile (laminar, sinus, blaze, unknown)
+    * blazeAngle  [°]
+    * aspectAngle [°]
+    * grooveDepth [nm]
+    * grooveRatio (groove width divided by spacing)
     
     '''
     raypyng   = True

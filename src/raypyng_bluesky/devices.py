@@ -4,6 +4,7 @@ from ophyd import Component as Cpt
 
 from .axes import SimulatedAxisSource, SimulatedAxisMisalign 
 from .axes import SimulatedAxisAperture, SimulatedAxisGrating
+from .axes import SimulatedAxisReflectingElement
 
 class MisalignComponents(Device):
     """Define the misalignment components of an optical element
@@ -186,19 +187,27 @@ class SimulatedMirror(MisalignComponents):
     """Define the mirrors using SimulatedAxisMisalign.
     """   
     raypyng  = True
+    grazingIncAngle  = Cpt(SimulatedAxisReflectingElement, name="grazingIncAngle", kind='normal')
+    azimuthalAngle  = Cpt(SimulatedAxisReflectingElement, name="azimuthalAngle", kind='normal')
+
     def __init__(self, *args, obj, **kwargs):
         super().__init__(*args,obj=obj, **kwargs)
+        self.grazingIncAngle.set_axis(obj=obj, axis="grazingIncAngle")
+        self.azimuthalAngle.set_axis(obj=obj, axis="azimuthalAngle")
+
 
           
 
 class SimulatedSource(Device):
     """Define the source using SimulatedAxisSource.
     """   
-    raypyng  = True
-    en       = Cpt(SimulatedAxisSource, name="source_en", kind='normal')
-    nrays    = Cpt(SimulatedAxisSource, name="source_nrays", kind='normal')
+    raypyng   = True
+    en        = Cpt(SimulatedAxisSource, name="source_en", kind='normal')
+    nrays     = Cpt(SimulatedAxisSource, name="source_nrays", kind='normal')
+    bandwidth = Cpt(SimulatedAxisSource, name="source_bandwidth", kind='normal')
         
     def __init__(self, *args, obj, **kwargs):
         super().__init__(*args, **kwargs)
         self.en.set_axis(obj=obj, axis="photonEnergy")  
         self.nrays.set_axis(obj=obj, axis="numberRays")
+        self.bandwidth.set_axis(obj=obj, axis="energySpread")
