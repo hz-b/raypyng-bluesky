@@ -84,6 +84,7 @@ class SimulatedAxisSource(RaypyngAxis):
     """Define basic properties of the source:
     
     Available axes:
+
     * number of rays [a.u.]
     * photon energy [eV]
     * bandwidth [% of photon energy]
@@ -109,6 +110,8 @@ class SimulatedAxisSource(RaypyngAxis):
 class SimulatedAxisMisalign(RaypyngAxis):
     '''Define misalignment axes:
 
+    Available axes:
+    
     * translationXerror [mm]
     * translationYerror [mm]
     * translationZerror [mm]
@@ -136,6 +139,8 @@ class SimulatedAxisMisalign(RaypyngAxis):
 class SimulatedAxisAperture(RaypyngAxis):
     '''Define basic properties of apertures:
 
+    Available axes:
+    
     * width [mm]
     * height [mm]
     '''
@@ -153,6 +158,8 @@ class SimulatedAxisAperture(RaypyngAxis):
 class SimulatedAxisReflectingElement(RaypyngAxis):
     '''Define basic properties of a reflecting element:
 
+    Available axes:
+    
     * grazingIncAngle [°]
     * azimuthalAngle  [°]
     '''
@@ -172,6 +179,8 @@ class SimulatedAxisReflectingElement(RaypyngAxis):
 class SimulatedAxisGrating(RaypyngAxis):
     '''Define basic properties of the gratings:
 
+    Available axes:
+    
     * lineDensity  [lines/mm]    
     * orderDiffraction 
     * cFactor
