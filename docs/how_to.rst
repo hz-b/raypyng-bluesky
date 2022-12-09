@@ -91,7 +91,7 @@ parameters:
                                 }
 
 Write your own simulation Engine
-===========================
+=================================
 
 The simulations are performed using RAY-UI on a local computer. However, in the future,
 more simulation engine can be easily written, as long the following three methods are provided.
@@ -111,6 +111,19 @@ more simulation engine can be easily written, as long the following three method
         def setup_simulation(self):
             pass
 
-        def simulate(self):
+        def simulate(self, path):
+            '''the result of the simulation must be saved in the temporary_folder
+            os.path.join(path,'tmp')
+            '''
             pass
-             
+
+Your simulation engine should export in the `tmp` folder a file with the following columns and a header:
+
+.. code:: bash
+
+    # SourcePhotonFlux	NumberRaysSurvived	PercentageRaysSurvived	PhotonFlux	Bandwidth	HorizontalFocusFWHM	VerticalFocusFWHM
+    6.934960000000000000e+12	1.000000000000000000e+04	1.000000000000000000e+02	6.934960000000000000e+12	-4.999559755833615782e-02	1.904934623550874839e+00	5.918353021235417399e-01
+
+At the moment the detectors will extract only the `PhotonFlux`, `Bandwidth`, `HorizontalFocusFWHM`, and the `VerticalFocusFWHM`.
+Since it is not clear how the program will develop in the future, even if not used save all the columns, including the not used
+`SourcePhotonFlux`,	`NumberRaysSurvived`, and `PercentageRaysSurvived` (They can be zeros). 

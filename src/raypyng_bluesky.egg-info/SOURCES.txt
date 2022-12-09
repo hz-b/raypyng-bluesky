@@ -9,6 +9,7 @@ src/raypyng_bluesky/devices.py
 src/raypyng_bluesky/positioners.py
 src/raypyng_bluesky/preprocessor.py
 src/raypyng_bluesky/signal.py
+src/raypyng_bluesky/simulation_engine.py
 src/raypyng_bluesky.egg-info/PKG-INFO
 src/raypyng_bluesky.egg-info/SOURCES.txt
 src/raypyng_bluesky.egg-info/dependency_links.txt
