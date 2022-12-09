@@ -29,8 +29,7 @@ def trigger_sim(plan, trigger_detector):
         an exception. Otherwise the list of exports is 
         prepared(consists of detector names included in the plan) 
         and passed to the trigger detector.
-        The done simulation file is removed from the 
-        temporary folder. 
+
     3-  insert_before_first_det_trigger:
         before the first detector is triggered, a trigger
         message for the raypyng trigger detector is inserted
@@ -89,7 +88,7 @@ def trigger_sim(plan, trigger_detector):
                 trigger_msgs = Msg('trigger', trigger_detector, group=group)
                 rayui_api = trigger_detector.setup_simulation() 
                 for det in gi_detectors:
-                    det.set_rayui_api(rayui_api)
+                    det.set_simulation_api(rayui_api)
                 def new_gen():
                     yield from ensure_generator(trigger_msgs)
                     yield msg

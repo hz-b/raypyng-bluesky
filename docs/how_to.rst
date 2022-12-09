@@ -89,3 +89,28 @@ parameters:
                                     'gratingEfficiency':value
                                     }
                                 }
+
+Write your own simulation Engine
+===========================
+
+The simulations are performed using RAY-UI on a local computer. However, in the future,
+more simulation engine can be easily written, as long the following three methods are provided.
+
+
+.. code:: python
+
+    class SimulatonEngineCUSTOM():
+        
+        def __init__(self) -> None:
+                
+            pass
+
+        def check_if_simulation_is_done(self):
+            pass
+        
+        def setup_simulation(self):
+            pass
+
+        def simulate(self):
+            pass
+             

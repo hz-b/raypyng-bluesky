@@ -11,9 +11,7 @@ from ophyd.status import Status
 from ophyd import Component as Cpt
 from ophyd.device import Device
 
-
-from raypyng.runner import RayUIRunner, RayUIAPI
-from raypyng.postprocessing import PostProcess
+from ophyd.status import DeviceStatus
 
 
 class RaypyngDetector(Signal):
@@ -42,11 +40,11 @@ class RaypyngDetector(Signal):
         if not os.path.exists(self.path):
             os.makedirs(self.path)
     
-    def set_rayui_api(self,rayui_api): 
-        self.rayui_api = rayui_api
+    def set_simulation_api(self,simulation_api): 
+        self.simulation_api = simulation_api
 
     def check_if_simulation_is_done(self,result_queue):
-        while not self.rayui_api._simulation_done:
+        while not self.simulation_api._simulation_done:
              time.sleep(.1)
         result_queue.put(('done'))
         return 
@@ -86,12 +84,14 @@ class RaypyngTriggerDetector(Signal):
     """   
     raypyng = True
     raypyngTriggerDet = True
-    def __init__(self, *args, rml, temporary_folder, **kwargs):
+    def __init__(self, *args, rml, temporary_folder,simulation_api, **kwargs):
         super().__init__(*args, **kwargs)
         self.rml=rml
         self.path = temporary_folder
         self.exports_list = []
         self.ray_ui_location = None
+        self.simulation_api = simulation_api
+        
 
         if not os.path.exists(self.path):
             os.makedirs(self.path)
@@ -113,54 +113,32 @@ class RaypyngTriggerDetector(Signal):
         if not os.path.exists(self.path):
             os.makedirs(self.path)
     
+    def set_simulation_engine(self, simulation_engine):
+        self.simulation_engine = simulation_engine
+
     def delete_temporary_folder(self):
         # make sure tmp folder exists, if exists delete it
         if os.path.exists(self.path):
             shutil.rmtree(self.path)
 
     def setup_simulation(self):
-        self.r = RayUIRunner(ray_path=self.ray_ui_location, hide=True)
-        self.a = RayUIAPI(self.r)
+        self.a = self.simulation_engine.setup_simulation()
         return self.a
-
-    def simulate(self,result_queue):
-        # make sure tmp folder exists, if not create it
-        if not os.path.exists(self.path):
-            os.makedirs(self.path)
-        self.rml.write(os.path.join(self.path,'tmp.rml'))
-        self.r.run()
-        self.a.load(os.path.join(self.path,'tmp.rml'))
-        self.a.trace(analyze=False)
-        self.a.save(os.path.join(self.path,'tmp.rml'))
-        for exp in self.exports_list:
-            aa=self.a.export(exp, "RawRaysOutgoing", self.path, '')
-            pp = PostProcess()
-            pp.postprocess_RawRays(exported_element=exp, 
-                                exported_object='RawRaysOutgoing', 
-                                dir_path=self.path, 
-                                sim_number='', 
-                                rml_filename=os.path.join(self.path,'tmp.rml'))
-        
-        self.a.quit()
-        result_queue.put(('done'))
-        return 
     
     def update_exports(self, exp):
         self.exports_list= exp
 
     def trigger(self):
         self.exports_list = list(set(self.exports_list))
-        q = queue.Queue()
-        threads = threading.Thread(target=self.simulate(q), args=())
-        threads.daemon = True
-        threads.start()
+        self.complete_status = DeviceStatus(self)
 
-        d = Status(self)
-        d._finished()
-        return d
+        def simulate():    
+            self.simulation_engine.simulate(self.path,self.rml,self.exports_list)
+            self.complete_status._finished(success=True)
+        threading.Thread(target=simulate, daemon=True).start()
+
+        return self.complete_status
         
-    def get(self): 
-        return 1
 
 
 class RaypyngDetectorDevice(Device):
