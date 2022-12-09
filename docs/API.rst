@@ -14,6 +14,14 @@ RaypyngDictionary
 .. autoclass:: raypyng_bluesky.RaypyngOphydDevices.RaypyngDictionary
    :members:
 
+Simulation Engine
+===================================
+
+RaypyngOphydDevices
+--------------------
+.. autoclass:: raypyng_bluesky.simulation_engine.SimulatonEngineRAYUI
+   :members:
+
 Ophyd Signals
 ==================
 
