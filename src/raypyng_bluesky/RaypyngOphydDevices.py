@@ -8,6 +8,7 @@ from raypyng.rml import RMLFile
 from .devices import SimulatedPGM, SimulatedApertures, SimulatedMirror, SimulatedSource
 from .detector import RaypyngDetectorDevice, RaypyngTriggerDetector
 from .preprocessor import SupplementalDataRaypyng
+from .simulation_engine import SimulatonEngineRAYUI
 
 
 
@@ -61,11 +62,18 @@ class RaypyngOphydDevices():
         prefix (str): the prefix to prepend to the oe names found in the rml file
         ray_ui_location (str): the location of the RAY-UI installation folder. If None the program will try to find it automatically. Deafault to None.
     """    
-    def __init__(self, *args, RE, rml_path, temporary_folder=None, name_space=None, prefix=None, ray_ui_location=None,**kwargs):
+    def __init__(self, *args, RE, rml_path, temporary_folder=None, name_space=None, prefix=None, ray_ui_location=None, simulation_engine='rayui',**kwargs):
        
 
         self.RE = RE
         self.rml = RMLFile(rml_path)
+        simulation_engine_dict = {'rayui':SimulatonEngineRAYUI(ray_ui_location=ray_ui_location)}
+
+        if simulation_engine in simulation_engine_dict.keys():
+            self.simulation_engine = simulation_engine_dict[simulation_engine]
+        else:
+            raise ValueError(f"The simulation engine '{simulation_engine}' is not yet implemented")
+        
         if temporary_folder == None:
             stack = traceback.extract_stack()
             fn = stack[-2].filename
@@ -92,6 +100,7 @@ class RaypyngOphydDevices():
         self.prepend_to_oe_name()
         self.create_raypyng_elements_from_rml()
         self.create_trigger_detector()
+        self.setup_trigger_detector()
         self.append_preprocessor()
     
     def prepend_to_oe_name(self):
@@ -127,8 +136,13 @@ class RaypyngOphydDevices():
         ret = ()
         k = 'TriggerDetector'
         cls = RaypyngTriggerDetector
-        self.name_space[k] = cls(name='RaypyngTriggerDetector', rml=self.rml, temporary_folder=self.temporary_folder)
+        self.name_space[k] = cls(name='RaypyngTriggerDetector', rml=self.rml, temporary_folder=self.temporary_folder, simulation_api=self.simulation_engine)
         ret = ret + (self.name_space[k],)
+    
+    def setup_trigger_detector(self):
+        TriggerDetector = self.trigger_detector()
+        TriggerDetector.set_ray_ui_location(self.ray_ui_location)
+        TriggerDetector.set_simulation_engine(self.simulation_engine)
 
     def trigger_detector(self):
         """Return the RaypyngTriggerDetector
@@ -142,7 +156,6 @@ class RaypyngOphydDevices():
         """Add supplemental data to the RunEngine to trigger the simulations
         """        
         TriggerDetector = self.trigger_detector()
-        TriggerDetector.set_ray_ui_location(self.ray_ui_location)
         sd = SupplementalDataRaypyng(trigger_detector=TriggerDetector)
         self.RE.preprocessors.append(sd) 
 
