@@ -11,9 +11,7 @@ from ophyd.status import Status
 from ophyd import Component as Cpt
 from ophyd.device import Device
 
-
-from raypyng.runner import RayUIRunner, RayUIAPI
-from raypyng.postprocessing import PostProcess
+from ophyd.status import DeviceStatus
 
 
 class RaypyngDetector(Signal):
@@ -93,6 +91,7 @@ class RaypyngTriggerDetector(Signal):
         self.exports_list = []
         self.ray_ui_location = None
         self.simulation_api = simulation_api
+        
 
         if not os.path.exists(self.path):
             os.makedirs(self.path)
@@ -125,28 +124,21 @@ class RaypyngTriggerDetector(Signal):
     def setup_simulation(self):
         self.a = self.simulation_engine.setup_simulation()
         return self.a
-
-    def simulate(self,result_queue):
-        self.simulation_engine.simulate(self.path,self.rml,self.exports_list)
-        result_queue.put(('done'))
-        return 
     
     def update_exports(self, exp):
         self.exports_list= exp
 
     def trigger(self):
         self.exports_list = list(set(self.exports_list))
-        q = queue.Queue()
-        threads = threading.Thread(target=self.simulate(q), args=())
-        threads.daemon = True
-        threads.start()
+        self.complete_status = DeviceStatus(self)
 
-        d = Status(self)
-        d._finished()
-        return d
+        def simulate():    
+            self.simulation_engine.simulate(self.path,self.rml,self.exports_list)
+            self.complete_status._finished(success=True)
+        threading.Thread(target=simulate, daemon=True).start()
+
+        return self.complete_status
         
-    def get(self): 
-        return 1
 
 
 class RaypyngDetectorDevice(Device):
