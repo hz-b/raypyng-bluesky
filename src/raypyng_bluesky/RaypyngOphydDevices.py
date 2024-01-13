@@ -21,7 +21,7 @@ class RaypyngDictionary():
         self._optical_elements = ['Toroid', 'PlaneMirror', 'Cylinder', 'Ellipsoid', 'Foil', 'Zoneplate', 'Cone', 'Sphere', 'Paraboloid', 'Experts Optics', 'Elliptical Toroid', 'Hyperboloid', 'Reflection Zoneplate', 'Crystal', 'Cylindrical Crystal']
         self._optical_elements_dict = {k:SimulatedMirror for k in self._optical_elements}
 
-        self._sources = ['Matrix Source','Point Source', 'Pixel Source', 'Circle Source',  'Dipole',  'Wiggler', 'Wunder Source', 'Helical Double Undulator', 'Simple Undulator', 'Twin Orbit Point Source', 'Undulator File', 'Helical Double Undulator File', 'Source Data File']
+        self._sources = ['Matrix Source','Point Source', 'PointSource', 'Pixel Source', 'Circle Source',  'Dipole',  'Wiggler', 'Wunder Source', 'Helical Double Undulator', 'Simple Undulator', 'Twin Orbit Point Source', 'Undulator File', 'Helical Double Undulator File', 'Source Data File']
         self._source_dict = {k:SimulatedSource for k in self._sources}
 
         self._gratings = ['PlaneGrating', 'Spherical Grating', 'Toroidal Grating' ]
