@@ -19,3 +19,5 @@ dist
 .vscode/targets.log
 
 
+src/raypyng_bluesky.egg-info/PKG-INFO
+src/raypyng_bluesky.egg-info/SOURCES.txt

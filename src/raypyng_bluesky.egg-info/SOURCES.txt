@@ -1,6 +1,7 @@
 LICENSE
 README.md
 pyproject.toml
+src/raypyng_bluesky/KillRayProcesses.py
 src/raypyng_bluesky/RaypyngOphydDevices.py
 src/raypyng_bluesky/__init__.py
 src/raypyng_bluesky/axes.py
