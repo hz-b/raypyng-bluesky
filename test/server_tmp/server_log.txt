@@ -1,0 +1,1377 @@
+[2023-11-29 11:05:59,715] Server started.
+[2023-11-29 11:05:59,715] Connection made from ('127.0.0.1', 37566)
+[2023-11-29 11:05:59,716] Data Received
+[2023-11-29 11:05:59,717] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:05:59,718] Starting Simulations
+[2023-11-29 11:06:14,753] Simulations done: True
+[2023-11-29 11:06:15,711] Data Postprocessed
+[2023-11-29 11:06:15,711] Start to send back the data
+[2023-11-29 11:06:15,711] Data sent
+[2023-11-29 11:06:15,720] Connection lost.
+[2023-11-29 11:06:15,741] Server started.
+[2023-11-29 11:06:15,741] Connection made from ('127.0.0.1', 57750)
+[2023-11-29 11:06:15,749] Data Received
+[2023-11-29 11:06:15,750] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:06:15,750] Starting Simulations
+[2023-11-29 11:06:28,708] Simulations done: True
+[2023-11-29 11:06:30,424] Data Postprocessed
+[2023-11-29 11:06:30,424] Start to send back the data
+[2023-11-29 11:06:30,425] Data sent
+[2023-11-29 11:06:30,471] Server started.
+[2023-11-29 11:06:30,471] Connection made from ('127.0.0.1', 38050)
+[2023-11-29 11:06:30,487] Data Received
+[2023-11-29 11:06:30,488] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:06:30,488] Starting Simulations
+[2023-11-29 11:06:46,335] Simulations done: True
+[2023-11-29 11:06:47,299] Data Postprocessed
+[2023-11-29 11:06:47,299] Start to send back the data
+[2023-11-29 11:06:47,299] Data sent
+[2023-11-29 11:09:48,230] Server started.
+[2023-11-29 11:09:48,231] Connection made from ('127.0.0.1', 48562)
+[2023-11-29 11:09:48,232] Data Received
+[2023-11-29 11:09:48,233] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:09:48,234] Starting Simulations
+[2023-11-29 11:09:48,234] Simulations done: None
+[2023-11-29 11:09:48,234] Data Postprocessed
+[2023-11-29 11:09:48,234] Start to send back the data
+[2023-11-29 11:09:48,236] Data sent
+[2023-11-29 11:09:48,271] Connection lost.
+[2023-11-29 11:09:48,347] Server started.
+[2023-11-29 11:09:48,348] Connection made from ('127.0.0.1', 48570)
+[2023-11-29 11:09:48,370] Data Received
+[2023-11-29 11:09:48,371] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:09:48,371] Starting Simulations
+[2023-11-29 11:09:48,372] Simulations done: None
+[2023-11-29 11:09:48,372] Data Postprocessed
+[2023-11-29 11:09:48,372] Start to send back the data
+[2023-11-29 11:09:48,373] Data sent
+[2023-11-29 11:09:48,479] Connection lost.
+[2023-11-29 11:09:48,487] Server started.
+[2023-11-29 11:09:48,488] Connection made from ('127.0.0.1', 48586)
+[2023-11-29 11:09:48,502] Data Received
+[2023-11-29 11:09:48,503] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:09:48,503] Starting Simulations
+[2023-11-29 11:09:48,504] Simulations done: None
+[2023-11-29 11:09:48,504] Data Postprocessed
+[2023-11-29 11:09:48,504] Start to send back the data
+[2023-11-29 11:09:48,506] Data sent
+[2023-11-29 11:09:48,992] Connection lost.
+[2023-11-29 11:11:32,527] Server started.
+[2023-11-29 11:11:32,527] Connection made from ('127.0.0.1', 38434)
+[2023-11-29 11:11:32,528] Data Received
+[2023-11-29 11:11:32,529] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:11:32,530] Starting Simulations
+[2023-11-29 11:11:47,835] Simulations done: True
+[2023-11-29 11:11:48,802] Data Postprocessed
+[2023-11-29 11:11:48,802] Start to send back the data
+[2023-11-29 11:11:48,802] Data sent
+[2023-11-29 11:11:48,810] Connection lost.
+[2023-11-29 11:11:48,826] Server started.
+[2023-11-29 11:11:48,826] Connection made from ('127.0.0.1', 59438)
+[2023-11-29 11:11:48,828] Data Received
+[2023-11-29 11:11:48,829] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:11:48,829] Starting Simulations
+[2023-11-29 11:12:01,332] Simulations done: True
+[2023-11-29 11:12:02,231] Data Postprocessed
+[2023-11-29 11:12:02,231] Start to send back the data
+[2023-11-29 11:12:02,231] Data sent
+[2023-11-29 11:12:02,245] Connection lost.
+[2023-11-29 11:12:02,257] Server started.
+[2023-11-29 11:12:02,257] Connection made from ('127.0.0.1', 45548)
+[2023-11-29 11:12:02,264] Data Received
+[2023-11-29 11:12:02,264] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:12:02,264] Starting Simulations
+[2023-11-29 11:12:16,670] Simulations done: True
+[2023-11-29 11:12:17,583] Data Postprocessed
+[2023-11-29 11:12:17,583] Start to send back the data
+[2023-11-29 11:12:17,584] Data sent
+[2023-11-29 11:12:17,934] Connection lost.
+[2023-11-29 11:13:01,298] Server started.
+[2023-11-29 11:13:01,298] Connection made from ('127.0.0.1', 58214)
+[2023-11-29 11:13:01,299] Data Received
+[2023-11-29 11:13:01,300] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:13:01,301] Starting Simulations
+[2023-11-29 11:13:01,305] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:13:03,284] File loaded
+[2023-11-29 11:13:18,128] File traced
+[2023-11-29 11:13:18,128] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:13:18,154] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:13:19,094] Simulations done: True
+[2023-11-29 11:13:20,060] Data Postprocessed
+[2023-11-29 11:13:20,060] Start to send back the data
+[2023-11-29 11:13:20,060] Data sent
+[2023-11-29 11:13:20,069] Connection lost.
+[2023-11-29 11:13:20,086] Server started.
+[2023-11-29 11:13:20,086] Connection made from ('127.0.0.1', 42730)
+[2023-11-29 11:13:20,089] Data Received
+[2023-11-29 11:13:20,089] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:13:20,089] Starting Simulations
+[2023-11-29 11:13:20,090] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:13:21,434] File loaded
+[2023-11-29 11:13:33,681] File traced
+[2023-11-29 11:13:33,681] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:13:33,713] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:13:34,647] Simulations done: True
+[2023-11-29 11:13:35,597] Data Postprocessed
+[2023-11-29 11:13:35,597] Start to send back the data
+[2023-11-29 11:13:35,597] Data sent
+[2023-11-29 11:13:35,628] Server started.
+[2023-11-29 11:13:35,628] Connection made from ('127.0.0.1', 52100)
+[2023-11-29 11:13:35,632] Data Received
+[2023-11-29 11:13:35,633] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:13:35,633] Starting Simulations
+[2023-11-29 11:13:35,634] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:13:36,741] File loaded
+[2023-11-29 11:13:48,668] File traced
+[2023-11-29 11:13:48,668] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:13:48,695] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:13:49,607] Simulations done: True
+[2023-11-29 11:13:50,598] Data Postprocessed
+[2023-11-29 11:13:50,598] Start to send back the data
+[2023-11-29 11:13:50,598] Data sent
+[2023-11-29 11:13:51,084] Connection lost.
+[2023-11-29 11:13:51,505] Connection lost.
+[2023-11-29 11:17:19,711] Server started.
+[2023-11-29 11:17:19,712] Connection made from ('127.0.0.1', 33838)
+[2023-11-29 11:17:19,713] Data Received
+[2023-11-29 11:17:19,714] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:17:19,714] Starting Simulations
+[2023-11-29 11:17:19,718] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:17:21,695] File loaded
+[2023-11-29 11:17:35,023] File traced
+[2023-11-29 11:17:35,023] Fatal error: protocol.data_received() call failed.
+protocol: <raypyng_bluesky.asyncio_server.ServerProtocol object at 0x7f48aa4b7e50>
+transport: <_SelectorSocketTransport fd=7 read=polling write=<idle, bufsize=0>>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 876, in _read_ready__data_received
+    self._protocol.data_received(data)
+  File "/home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/src/raypyng_bluesky/asyncio_server.py", line 80, in data_received
+    perform_simulation(exports_list, self.tmp_folder)
+  File "/home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/src/raypyng_bluesky/asyncio_server.py", line 39, in perform_simulation
+    if verbose:
+NameError: name 'verbose' is not defined
+[2023-11-29 11:17:35,024] Connection lost with exception: name 'verbose' is not defined
+[2023-11-29 11:18:31,507] Server started.
+[2023-11-29 11:18:31,508] Connection made from ('127.0.0.1', 41692)
+[2023-11-29 11:18:31,509] Data Received
+[2023-11-29 11:18:31,511] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:18:31,512] Starting Simulations
+[2023-11-29 11:18:31,518] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:18:33,119] File loaded
+[2023-11-29 11:18:34,942] File traced
+[2023-11-29 11:18:34,942] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:18:35,048] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:18:35,284] Simulations done
+[2023-11-29 11:18:35,284] Starting to Postprocess Data
+[2023-11-29 11:18:35,630] Data Postprocessed
+[2023-11-29 11:18:35,631] Start to send back the data
+[2023-11-29 11:18:35,631] Data sent
+[2023-11-29 11:18:35,650] Connection lost.
+[2023-11-29 11:18:35,691] Server started.
+[2023-11-29 11:18:35,692] Connection made from ('127.0.0.1', 41702)
+[2023-11-29 11:18:35,872] Data Received
+[2023-11-29 11:18:35,872] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:18:35,873] Starting Simulations
+[2023-11-29 11:18:35,875] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:18:37,391] File loaded
+[2023-11-29 11:18:38,832] File traced
+[2023-11-29 11:18:38,832] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:18:38,929] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:18:39,133] Simulations done
+[2023-11-29 11:18:39,133] Starting to Postprocess Data
+[2023-11-29 11:18:39,412] Data Postprocessed
+[2023-11-29 11:18:39,412] Start to send back the data
+[2023-11-29 11:18:39,412] Data sent
+[2023-11-29 11:18:39,446] Server started.
+[2023-11-29 11:18:39,446] Connection made from ('127.0.0.1', 41706)
+[2023-11-29 11:18:39,454] Data Received
+[2023-11-29 11:18:39,455] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:18:39,455] Starting Simulations
+[2023-11-29 11:18:39,457] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:18:40,770] File loaded
+[2023-11-29 11:18:42,195] File traced
+[2023-11-29 11:18:42,195] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:18:42,302] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:18:42,474] Simulations done
+[2023-11-29 11:18:42,474] Starting to Postprocess Data
+[2023-11-29 11:18:42,611] Data Postprocessed
+[2023-11-29 11:18:42,611] Start to send back the data
+[2023-11-29 11:18:42,611] Data sent
+[2023-11-29 11:24:38,531] Server started.
+[2023-11-29 11:24:38,532] Connection made from ('127.0.0.1', 42428)
+[2023-11-29 11:24:38,533] Data Received
+[2023-11-29 11:24:38,534] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:24:38,535] Starting Simulations
+[2023-11-29 11:24:38,539] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:24:40,416] File loaded
+[2023-11-29 11:24:41,868] File traced
+[2023-11-29 11:24:41,869] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:24:41,891] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:24:42,057] Simulations done
+[2023-11-29 11:24:42,057] Starting to Postprocess Data
+[2023-11-29 11:24:42,354] Data Postprocessed
+[2023-11-29 11:24:42,354] Start to send back the data
+[2023-11-29 11:24:42,354] Data sent
+[2023-11-29 11:24:42,365] Connection lost.
+[2023-11-29 11:24:42,537] Server started.
+[2023-11-29 11:24:42,538] Connection made from ('127.0.0.1', 47674)
+[2023-11-29 11:24:42,554] Data Received
+[2023-11-29 11:24:42,555] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:24:42,555] Starting Simulations
+[2023-11-29 11:24:42,558] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:24:44,685] File loaded
+[2023-11-29 11:24:46,619] File traced
+[2023-11-29 11:24:46,620] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:24:46,640] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:24:46,794] Simulations done
+[2023-11-29 11:24:46,794] Starting to Postprocess Data
+[2023-11-29 11:24:47,065] Data Postprocessed
+[2023-11-29 11:24:47,065] Start to send back the data
+[2023-11-29 11:24:47,065] Data sent
+[2023-11-29 11:24:47,169] Server started.
+[2023-11-29 11:24:47,170] Connection made from ('127.0.0.1', 47688)
+[2023-11-29 11:24:47,182] Data Received
+[2023-11-29 11:24:47,184] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:24:47,184] Starting Simulations
+[2023-11-29 11:24:47,187] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:24:48,523] File loaded
+[2023-11-29 11:24:51,980] File traced
+[2023-11-29 11:24:51,980] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:24:52,004] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:24:52,171] Simulations done
+[2023-11-29 11:24:52,172] Starting to Postprocess Data
+[2023-11-29 11:24:52,437] Data Postprocessed
+[2023-11-29 11:24:52,437] Start to send back the data
+[2023-11-29 11:24:52,437] Data sent
+[2023-11-29 11:26:40,670] Server started.
+[2023-11-29 11:26:40,671] Connection made from ('127.0.0.1', 41854)
+[2023-11-29 11:26:40,672] Data Received
+[2023-11-29 11:26:40,673] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:26:40,673] Starting Simulations
+[2023-11-29 11:26:40,677] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:26:42,640] File loaded
+[2023-11-29 11:26:44,578] File traced
+[2023-11-29 11:26:44,578] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:26:44,601] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:26:44,759] Simulations done
+[2023-11-29 11:26:44,759] Starting to Postprocess Data
+[2023-11-29 11:26:45,065] Data Postprocessed
+[2023-11-29 11:26:45,065] Start to send back the data
+[2023-11-29 11:26:45,065] Data sent
+[2023-11-29 11:26:45,072] Connection lost.
+[2023-11-29 11:26:45,088] Server started.
+[2023-11-29 11:26:45,088] Connection made from ('127.0.0.1', 39776)
+[2023-11-29 11:26:45,095] Data Received
+[2023-11-29 11:26:45,095] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:26:45,095] Starting Simulations
+[2023-11-29 11:26:45,097] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:26:46,220] File loaded
+[2023-11-29 11:26:50,159] File traced
+[2023-11-29 11:26:50,160] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:26:50,185] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:26:50,352] Simulations done
+[2023-11-29 11:26:50,352] Starting to Postprocess Data
+[2023-11-29 11:26:50,578] Data Postprocessed
+[2023-11-29 11:26:50,579] Start to send back the data
+[2023-11-29 11:26:50,579] Data sent
+[2023-11-29 11:26:50,617] Server started.
+[2023-11-29 11:26:50,618] Connection made from ('127.0.0.1', 39782)
+[2023-11-29 11:26:50,632] Data Received
+[2023-11-29 11:26:50,633] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:26:50,633] Starting Simulations
+[2023-11-29 11:26:50,636] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:26:52,271] File loaded
+[2023-11-29 11:26:53,718] File traced
+[2023-11-29 11:26:53,718] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:26:53,740] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:26:53,899] Simulations done
+[2023-11-29 11:26:53,900] Starting to Postprocess Data
+[2023-11-29 11:26:54,175] Data Postprocessed
+[2023-11-29 11:26:54,175] Start to send back the data
+[2023-11-29 11:26:54,176] Data sent
+[2023-11-29 11:26:54,177] Connection lost.
+[2023-11-29 11:26:54,665] Connection lost.
+[2023-11-29 11:41:45,244] Server started.
+[2023-11-29 11:41:45,245] Connection made from ('127.0.0.1', 47136)
+[2023-11-29 11:41:45,246] Data Received
+[2023-11-29 11:41:45,247] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:41:45,247] Starting Simulations
+[2023-11-29 11:41:45,251] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:41:47,251] File loaded
+[2023-11-29 11:41:47,629] File traced
+[2023-11-29 11:41:47,629] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:41:47,653] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:41:47,736] Simulations done
+[2023-11-29 11:41:47,736] Starting to Postprocess Data
+[2023-11-29 11:41:47,796] Data Postprocessed
+[2023-11-29 11:41:47,796] Start to send back the data
+[2023-11-29 11:41:47,797] Data sent
+[2023-11-29 11:41:47,829] Connection lost.
+[2023-11-29 11:41:47,957] Server started.
+[2023-11-29 11:41:47,958] Connection made from ('127.0.0.1', 47152)
+[2023-11-29 11:41:47,983] Data Received
+[2023-11-29 11:41:47,985] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:41:47,985] Starting Simulations
+[2023-11-29 11:41:47,990] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:41:49,375] File loaded
+[2023-11-29 11:41:49,702] File traced
+[2023-11-29 11:41:49,702] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:41:49,723] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:41:49,805] Simulations done
+[2023-11-29 11:41:49,805] Starting to Postprocess Data
+[2023-11-29 11:41:50,471] Data Postprocessed
+[2023-11-29 11:41:50,472] Start to send back the data
+[2023-11-29 11:41:50,472] Data sent
+[2023-11-29 11:41:50,523] Server started.
+[2023-11-29 11:41:50,524] Connection made from ('127.0.0.1', 47160)
+[2023-11-29 11:41:50,539] Data Received
+[2023-11-29 11:41:50,540] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:41:50,540] Starting Simulations
+[2023-11-29 11:41:50,542] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:41:51,899] File loaded
+[2023-11-29 11:41:52,284] File traced
+[2023-11-29 11:41:52,284] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:41:52,306] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:41:52,387] Simulations done
+[2023-11-29 11:41:52,387] Starting to Postprocess Data
+[2023-11-29 11:41:52,398] Fatal error: protocol.data_received() call failed.
+protocol: <raypyng_bluesky.asyncio_server.ServerProtocol object at 0x7f8f7055c190>
+transport: <_SelectorSocketTransport fd=9 read=polling write=<idle, bufsize=0>>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 876, in _read_ready__data_received
+    self._protocol.data_received(data)
+  File "/home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/src/raypyng_bluesky/asyncio_server.py", line 80, in data_received
+    postprocess = postprocess_simulation(exports_list, self.tmp_folder, 'beamline.rml')
+  File "/home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/src/raypyng_bluesky/asyncio_server.py", line 48, in postprocess_simulation
+    pp.postprocess_RawRays(
+  File "/home/simone/Documents/RAYPYNG/raypyng_master/raypyng/src/raypyng/postprocessing.py", line 177, in postprocess_RawRays
+    if rays.shape[0]==0: # if no rays survived
+IndexError: tuple index out of range
+[2023-11-29 11:41:52,399] Connection lost with exception: tuple index out of range
+[2023-11-29 11:46:02,285] Connection lost.
+[2023-11-29 11:46:21,538] Server started.
+[2023-11-29 11:46:21,539] Connection made from ('127.0.0.1', 45638)
+[2023-11-29 11:46:21,541] Data Received
+[2023-11-29 11:46:21,542] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:46:21,543] Starting Simulations
+[2023-11-29 11:46:21,547] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:46:23,253] File loaded
+[2023-11-29 11:46:23,554] File traced
+[2023-11-29 11:46:23,554] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:46:23,575] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:46:23,658] Simulations done
+[2023-11-29 11:46:23,658] Starting to Postprocess Data
+[2023-11-29 11:46:23,675] Fatal error: protocol.data_received() call failed.
+protocol: <raypyng_bluesky.asyncio_server.ServerProtocol object at 0x7fe6a86500a0>
+transport: <_SelectorSocketTransport fd=7 read=polling write=<idle, bufsize=0>>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 876, in _read_ready__data_received
+    self._protocol.data_received(data)
+  File "/home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/src/raypyng_bluesky/asyncio_server.py", line 86, in data_received
+    self.transport.write('IndexError')
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 906, in write
+    raise TypeError(f'data argument must be a bytes-like object, '
+TypeError: data argument must be a bytes-like object, not 'str'
+[2023-11-29 11:46:23,676] Connection lost with exception: data argument must be a bytes-like object, not 'str'
+[2023-11-29 11:49:17,837] Server started.
+[2023-11-29 11:49:17,838] Connection made from ('127.0.0.1', 45884)
+[2023-11-29 11:49:17,839] Data Received
+[2023-11-29 11:49:17,841] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:49:17,841] Starting Simulations
+[2023-11-29 11:49:17,845] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:49:19,617] File loaded
+[2023-11-29 11:49:21,993] File traced
+[2023-11-29 11:49:21,994] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:49:22,116] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:49:22,302] Connection lost.
+[2023-11-29 11:49:36,667] Server started.
+[2023-11-29 11:49:36,668] Connection made from ('127.0.0.1', 37330)
+[2023-11-29 11:49:36,669] Data Received
+[2023-11-29 11:49:36,670] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:49:36,670] Starting Simulations
+[2023-11-29 11:49:36,674] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:49:38,309] File loaded
+[2023-11-29 11:49:38,695] File traced
+[2023-11-29 11:49:38,695] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:49:38,725] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:49:38,805] Simulations done
+[2023-11-29 11:49:38,806] Starting to Postprocess Data
+[2023-11-29 11:49:38,831] Connection lost.
+[2023-11-29 11:50:02,449] Server started.
+[2023-11-29 11:50:02,449] Connection made from ('127.0.0.1', 43984)
+[2023-11-29 11:50:02,450] Data Received
+[2023-11-29 11:50:02,451] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:50:02,451] Starting Simulations
+[2023-11-29 11:50:02,455] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:50:04,192] File loaded
+[2023-11-29 11:50:04,530] File traced
+[2023-11-29 11:50:04,530] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:50:04,558] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:50:04,638] Simulations done
+[2023-11-29 11:50:04,638] Starting to Postprocess Data
+[2023-11-29 11:50:46,036] Server started.
+[2023-11-29 11:50:46,037] Connection made from ('127.0.0.1', 58450)
+[2023-11-29 11:50:46,038] Data Received
+[2023-11-29 11:50:46,039] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:50:46,040] Starting Simulations
+[2023-11-29 11:50:46,043] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:50:48,295] File loaded
+[2023-11-29 11:50:48,709] File traced
+[2023-11-29 11:50:48,709] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:50:48,731] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:50:48,812] Simulations done
+[2023-11-29 11:50:48,812] Starting to Postprocess Data
+[2023-11-29 11:55:21,923] Connection lost.
+[2023-11-29 11:55:21,924] Connection lost.
+[2023-11-29 11:55:26,300] Server started.
+[2023-11-29 11:55:26,301] Connection made from ('127.0.0.1', 37762)
+[2023-11-29 11:55:26,301] Data Received
+[2023-11-29 11:55:26,303] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:55:26,303] Starting Simulations
+[2023-11-29 11:55:26,306] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:55:27,760] File loaded
+[2023-11-29 11:55:29,657] File traced
+[2023-11-29 11:55:29,657] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:55:29,752] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:55:29,904] Simulations done
+[2023-11-29 11:55:29,904] Starting to Postprocess Data
+[2023-11-29 11:55:30,200] Data Postprocessed
+[2023-11-29 11:55:30,200] Start to send back the data
+[2023-11-29 11:55:30,200] Data sent
+[2023-11-29 11:55:30,209] Connection lost.
+[2023-11-29 11:55:30,559] Server started.
+[2023-11-29 11:55:30,559] Connection made from ('127.0.0.1', 37766)
+[2023-11-29 11:55:30,580] Data Received
+[2023-11-29 11:55:30,581] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:55:30,581] Starting Simulations
+[2023-11-29 11:55:30,585] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:55:31,953] File loaded
+[2023-11-29 11:55:33,582] File traced
+[2023-11-29 11:55:33,582] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:55:33,696] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:55:33,856] Simulations done
+[2023-11-29 11:55:33,856] Starting to Postprocess Data
+[2023-11-29 11:55:33,964] Data Postprocessed
+[2023-11-29 11:55:33,964] Start to send back the data
+[2023-11-29 11:55:33,964] Data sent
+[2023-11-29 11:55:33,992] Server started.
+[2023-11-29 11:55:33,992] Connection made from ('127.0.0.1', 44860)
+[2023-11-29 11:55:34,001] Data Received
+[2023-11-29 11:55:34,001] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:55:34,001] Starting Simulations
+[2023-11-29 11:55:34,003] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:55:35,339] File loaded
+[2023-11-29 11:55:36,808] File traced
+[2023-11-29 11:55:36,808] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:55:36,904] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:55:37,107] Simulations done
+[2023-11-29 11:55:37,107] Starting to Postprocess Data
+[2023-11-29 11:55:37,424] Data Postprocessed
+[2023-11-29 11:55:37,425] Start to send back the data
+[2023-11-29 11:55:37,425] Data sent
+[2023-11-29 11:55:37,762] Connection lost.
+[2023-11-29 11:55:43,819] Server started.
+[2023-11-29 11:55:43,819] Connection made from ('127.0.0.1', 38550)
+[2023-11-29 11:55:43,820] Data Received
+[2023-11-29 11:55:43,822] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:55:43,822] Starting Simulations
+[2023-11-29 11:55:43,826] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:55:46,100] File loaded
+[2023-11-29 11:55:46,375] File traced
+[2023-11-29 11:55:46,375] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:55:46,396] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:55:46,527] Simulations done
+[2023-11-29 11:55:46,527] Starting to Postprocess Data
+[2023-11-29 11:55:46,597] Connection lost.
+[2023-11-29 11:56:36,163] Connection lost.
+[2023-11-29 11:56:47,474] Server started.
+[2023-11-29 11:56:47,475] Connection made from ('127.0.0.1', 44260)
+[2023-11-29 11:56:47,475] Data Received
+[2023-11-29 11:56:47,477] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:56:47,477] Starting Simulations
+[2023-11-29 11:56:47,480] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 11:56:49,202] File loaded
+[2023-11-29 11:56:49,484] File traced
+[2023-11-29 11:56:49,484] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:56:49,506] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 11:56:49,587] Simulations done
+[2023-11-29 11:56:49,588] Starting to Postprocess Data
+[2023-11-29 11:56:49,614] Connection lost.
+[2023-11-29 13:16:23,596] Server started.
+[2023-11-29 13:16:23,597] Connection made from ('127.0.0.1', 36398)
+[2023-11-29 13:16:23,598] Data Received
+[2023-11-29 13:16:23,599] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 13:16:23,600] Starting Simulations
+[2023-11-29 13:16:23,604] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 13:16:24,911] File loaded
+[2023-11-29 13:16:26,878] File traced
+[2023-11-29 13:16:26,878] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 13:16:26,899] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 13:16:27,052] Simulations done
+[2023-11-29 13:16:27,052] Starting to Postprocess Data
+[2023-11-29 13:16:27,382] Data Postprocessed
+[2023-11-29 13:16:27,382] Start to send back the data
+[2023-11-29 13:16:27,382] Data sent
+[2023-11-29 13:16:27,390] Connection lost.
+[2023-11-29 13:16:27,600] Server started.
+[2023-11-29 13:16:27,601] Connection made from ('127.0.0.1', 36400)
+[2023-11-29 13:16:27,647] Data Received
+[2023-11-29 13:16:27,647] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 13:16:27,647] Starting Simulations
+[2023-11-29 13:16:27,649] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 13:16:29,342] File loaded
+[2023-11-29 13:16:31,112] File traced
+[2023-11-29 13:16:31,112] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 13:16:31,139] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 13:16:31,391] Simulations done
+[2023-11-29 13:16:31,391] Starting to Postprocess Data
+[2023-11-29 13:16:31,615] Data Postprocessed
+[2023-11-29 13:16:31,615] Start to send back the data
+[2023-11-29 13:16:31,615] Data sent
+[2023-11-29 13:16:31,651] Server started.
+[2023-11-29 13:16:31,652] Connection made from ('127.0.0.1', 33776)
+[2023-11-29 13:16:31,663] Data Received
+[2023-11-29 13:16:31,664] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 13:16:31,664] Starting Simulations
+[2023-11-29 13:16:31,666] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 13:16:33,360] File loaded
+[2023-11-29 13:16:35,346] File traced
+[2023-11-29 13:16:35,346] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 13:16:35,369] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 13:16:35,537] Simulations done
+[2023-11-29 13:16:35,538] Starting to Postprocess Data
+[2023-11-29 13:16:35,720] Data Postprocessed
+[2023-11-29 13:16:35,720] Start to send back the data
+[2023-11-29 13:16:35,722] Data sent
+[2023-11-29 13:16:36,121] Connection lost.
+[2023-11-29 13:20:31,365] Server started.
+[2023-11-29 13:20:31,366] Connection made from ('127.0.0.1', 54226)
+[2023-11-29 13:20:31,367] Data Received
+[2023-11-29 13:20:31,369] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 13:20:31,369] Starting Simulations
+[2023-11-29 13:20:31,373] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 13:20:33,649] File loaded
+[2023-11-29 13:20:35,872] File traced
+[2023-11-29 13:20:35,872] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 13:20:35,896] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 13:20:36,054] Simulations done
+[2023-11-29 13:20:36,054] Starting to Postprocess Data
+[2023-11-29 13:20:36,353] Data Postprocessed
+[2023-11-29 13:20:36,353] Start to send back the data
+[2023-11-29 13:20:36,353] Data sent
+[2023-11-29 13:20:36,363] Connection lost.
+[2023-11-29 13:20:36,384] Server started.
+[2023-11-29 13:20:36,385] Connection made from ('127.0.0.1', 54238)
+[2023-11-29 13:20:36,395] Data Received
+[2023-11-29 13:20:36,395] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 13:20:36,396] Starting Simulations
+[2023-11-29 13:20:36,397] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 13:20:37,534] File loaded
+[2023-11-29 13:20:38,966] File traced
+[2023-11-29 13:20:38,966] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 13:20:38,987] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 13:20:39,205] Simulations done
+[2023-11-29 13:20:39,205] Starting to Postprocess Data
+[2023-11-29 13:20:39,489] Data Postprocessed
+[2023-11-29 13:20:39,489] Start to send back the data
+[2023-11-29 13:20:39,490] Data sent
+[2023-11-29 13:20:39,508] Connection lost.
+[2023-11-29 13:20:39,513] Server started.
+[2023-11-29 13:20:39,513] Connection made from ('127.0.0.1', 54240)
+[2023-11-29 13:20:39,524] Data Received
+[2023-11-29 13:20:39,525] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 13:20:39,525] Starting Simulations
+[2023-11-29 13:20:39,526] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 13:20:40,810] File loaded
+[2023-11-29 13:20:42,730] File traced
+[2023-11-29 13:20:42,731] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 13:20:42,755] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 13:20:42,913] Simulations done
+[2023-11-29 13:20:42,914] Starting to Postprocess Data
+[2023-11-29 13:20:43,124] Data Postprocessed
+[2023-11-29 13:20:43,124] Start to send back the data
+[2023-11-29 13:20:43,125] Data sent
+[2023-11-29 13:20:43,566] Connection lost.
+[2023-11-29 13:20:55,099] Server started.
+[2023-11-29 13:20:55,100] Connection made from ('127.0.0.1', 48636)
+[2023-11-29 13:20:55,101] Data Received
+[2023-11-29 13:20:55,103] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 13:20:55,103] Starting Simulations
+[2023-11-29 13:20:55,112] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 13:20:57,343] File loaded
+[2023-11-29 13:20:58,811] File traced
+[2023-11-29 13:20:58,811] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 13:20:58,832] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 13:20:58,989] Simulations done
+[2023-11-29 13:20:58,989] Starting to Postprocess Data
+[2023-11-29 13:20:59,257] Data Postprocessed
+[2023-11-29 13:20:59,257] Start to send back the data
+[2023-11-29 13:20:59,257] Data sent
+[2023-11-29 13:20:59,266] Connection lost.
+[2023-11-29 13:20:59,288] Server started.
+[2023-11-29 13:20:59,289] Connection made from ('127.0.0.1', 48648)
+[2023-11-29 13:20:59,299] Data Received
+[2023-11-29 13:20:59,300] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 13:20:59,300] Starting Simulations
+[2023-11-29 13:20:59,302] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 13:21:00,577] File loaded
+[2023-11-29 13:21:02,050] File traced
+[2023-11-29 13:21:02,050] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 13:21:02,072] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 13:21:02,225] Simulations done
+[2023-11-29 13:21:02,225] Starting to Postprocess Data
+[2023-11-29 13:21:02,476] Data Postprocessed
+[2023-11-29 13:21:02,476] Start to send back the data
+[2023-11-29 13:21:02,477] Data sent
+[2023-11-29 13:21:02,517] Connection lost.
+[2023-11-29 13:21:02,562] Server started.
+[2023-11-29 13:21:02,562] Connection made from ('127.0.0.1', 54946)
+[2023-11-29 13:21:02,592] Data Received
+[2023-11-29 13:21:02,594] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 13:21:02,594] Starting Simulations
+[2023-11-29 13:21:02,606] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 13:21:03,983] File loaded
+[2023-11-29 13:21:05,323] File traced
+[2023-11-29 13:21:05,323] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 13:21:05,344] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 13:21:05,501] Simulations done
+[2023-11-29 13:21:05,501] Starting to Postprocess Data
+[2023-11-29 13:21:05,710] Data Postprocessed
+[2023-11-29 13:21:05,710] Start to send back the data
+[2023-11-29 13:21:05,711] Data sent
+[2023-11-29 13:21:06,184] Connection lost.
+[2023-11-29 15:48:15,688] Server started.
+[2023-11-29 15:48:15,689] Connection made from ('127.0.0.1', 41900)
+[2023-11-29 15:48:15,689] Data Received
+[2023-11-29 15:48:15,690] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 15:48:15,691] Starting Simulations
+[2023-11-29 15:48:15,697] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 15:48:17,831] File loaded
+[2023-11-29 15:48:18,090] File traced
+[2023-11-29 15:48:18,090] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 15:48:18,112] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 15:48:18,192] Simulations done
+[2023-11-29 15:48:18,192] Starting to Postprocess Data
+[2023-11-29 15:48:18,249] Data Postprocessed Failed: tuple index out of range
+[2023-11-29 15:48:18,252] Connection lost.
+[2023-11-29 15:52:44,599] Server started.
+[2023-11-29 15:52:44,600] Connection made from ('127.0.0.1', 41942)
+[2023-11-29 15:52:44,603] Data Received
+[2023-11-29 15:52:44,605] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 15:52:44,605] Starting Simulations
+[2023-11-29 15:52:44,609] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 15:52:46,521] File loaded
+[2023-11-29 15:52:47,960] File traced
+[2023-11-29 15:52:47,961] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 15:52:47,982] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 15:52:48,134] Simulations done
+[2023-11-29 15:52:48,134] Starting to Postprocess Data
+[2023-11-29 15:52:48,447] Data Postprocessed
+[2023-11-29 15:52:48,447] Start to send back the data
+[2023-11-29 15:52:48,448] Data sent
+[2023-11-29 15:52:48,448] Connection lost.
+[2023-11-29 15:57:15,191] Server started.
+[2023-11-29 15:57:15,192] Connection made from ('127.0.0.1', 40486)
+[2023-11-29 15:57:15,192] Data Received
+[2023-11-29 15:57:15,194] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 15:57:15,194] Starting Simulations
+[2023-11-29 15:57:15,198] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 15:57:17,084] File loaded
+[2023-11-29 15:57:19,023] File traced
+[2023-11-29 15:57:19,023] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 15:57:19,119] Exporting obj: rp_DetectorAtFocus in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 15:57:19,309] Simulations done
+[2023-11-29 15:57:19,310] Starting to Postprocess Data
+[2023-11-29 15:57:19,613] Data Postprocessed
+[2023-11-29 15:57:19,613] Start to send back the data
+[2023-11-29 15:57:19,613] Data sent
+[2023-11-29 15:57:19,614] Connection lost.
+[2023-11-29 16:10:49,182] Server started.
+[2023-11-29 16:10:49,183] Connection made from ('127.0.0.1', 35790)
+[2023-11-29 16:10:49,184] Data Received
+[2023-11-29 16:10:49,185] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:10:49,185] Starting Simulations
+[2023-11-29 16:10:49,188] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:10:50,841] File loaded
+[2023-11-29 16:10:51,390] File traced
+[2023-11-29 16:10:51,390] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:10:51,486] Simulations done
+[2023-11-29 16:10:51,486] Starting to Postprocess Data
+[2023-11-29 16:10:51,538] Data Postprocessed
+[2023-11-29 16:10:51,539] Start to send back the data
+[2023-11-29 16:10:51,539] Data sent
+[2023-11-29 16:10:51,542] Connection lost.
+[2023-11-29 16:12:04,965] Server started.
+[2023-11-29 16:12:04,965] Connection made from ('127.0.0.1', 51016)
+[2023-11-29 16:12:04,966] Data Received
+[2023-11-29 16:12:04,967] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:12:04,967] Starting Simulations
+[2023-11-29 16:12:04,971] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:12:06,569] File loaded
+[2023-11-29 16:12:08,050] File traced
+[2023-11-29 16:12:08,050] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:12:08,207] Simulations done
+[2023-11-29 16:12:08,207] Starting to Postprocess Data
+[2023-11-29 16:12:08,471] Data Postprocessed
+[2023-11-29 16:12:08,471] Start to send back the data
+[2023-11-29 16:12:08,471] Data sent
+[2023-11-29 16:12:08,472] Connection lost.
+[2023-11-29 16:13:50,542] Server started.
+[2023-11-29 16:13:50,543] Connection made from ('127.0.0.1', 60546)
+[2023-11-29 16:13:50,545] Data Received
+[2023-11-29 16:13:50,546] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:13:50,546] Starting Simulations
+[2023-11-29 16:13:50,551] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:13:52,424] File loaded
+[2023-11-29 16:13:53,926] File traced
+[2023-11-29 16:13:53,926] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:13:54,085] Simulations done
+[2023-11-29 16:13:54,085] Starting to Postprocess Data
+[2023-11-29 16:13:54,391] Data Postprocessed
+[2023-11-29 16:13:54,391] Start to send back the data
+[2023-11-29 16:13:54,391] Data sent
+[2023-11-29 16:13:54,392] Connection lost.
+[2023-11-29 16:14:49,960] Server started.
+[2023-11-29 16:14:49,961] Connection made from ('127.0.0.1', 52382)
+[2023-11-29 16:14:49,962] Data Received
+[2023-11-29 16:14:49,963] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:14:49,963] Starting Simulations
+[2023-11-29 16:14:49,966] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:14:51,693] File loaded
+[2023-11-29 16:14:53,334] File traced
+[2023-11-29 16:14:53,334] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:14:53,462] Simulations done
+[2023-11-29 16:14:53,462] Starting to Postprocess Data
+[2023-11-29 16:14:53,739] Data Postprocessed
+[2023-11-29 16:14:53,739] Fatal error: protocol.data_received() call failed.
+protocol: <raypyng_bluesky.asyncio_server.ServerProtocol object at 0x7fda6515c0a0>
+transport: <_SelectorSocketTransport fd=7 read=polling write=<idle, bufsize=0>>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 876, in _read_ready__data_received
+    self._protocol.data_received(data)
+  File "/home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/src/raypyng_bluesky/asyncio_server.py", line 211, in data_received
+    send_simulation_results(exports_list, self.tmp_folder, self.transport)
+NameError: name 'send_simulation_results' is not defined
+[2023-11-29 16:14:53,739] Connection lost with exception: name 'send_simulation_results' is not defined
+[2023-11-29 16:15:23,903] Server started.
+[2023-11-29 16:15:23,904] Connection made from ('127.0.0.1', 48658)
+[2023-11-29 16:15:23,906] Data Received
+[2023-11-29 16:15:23,907] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:15:23,908] Starting Simulations
+[2023-11-29 16:15:23,912] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:15:25,472] File loaded
+[2023-11-29 16:15:27,117] File traced
+[2023-11-29 16:15:27,117] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:15:27,375] Simulations done
+[2023-11-29 16:15:27,376] Starting to Postprocess Data
+[2023-11-29 16:15:27,698] Data Postprocessed
+[2023-11-29 16:15:27,698] Start to send back the data
+[2023-11-29 16:15:27,698] Data sent
+[2023-11-29 16:15:27,704] Connection lost.
+[2023-11-29 16:15:27,782] Server started.
+[2023-11-29 16:15:27,782] Connection made from ('127.0.0.1', 48664)
+[2023-11-29 16:15:27,969] Data Received
+[2023-11-29 16:15:27,970] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:15:27,970] Starting Simulations
+[2023-11-29 16:15:27,973] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:15:29,330] File loaded
+[2023-11-29 16:15:30,848] File traced
+[2023-11-29 16:15:30,848] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:15:31,057] Simulations done
+[2023-11-29 16:15:31,057] Starting to Postprocess Data
+[2023-11-29 16:15:31,335] Data Postprocessed
+[2023-11-29 16:15:31,335] Start to send back the data
+[2023-11-29 16:15:31,335] Data sent
+[2023-11-29 16:15:31,352] Server started.
+[2023-11-29 16:15:31,353] Connection made from ('127.0.0.1', 49182)
+[2023-11-29 16:15:31,353] Data Received
+[2023-11-29 16:15:31,354] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:15:31,354] Starting Simulations
+[2023-11-29 16:15:31,355] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:15:32,671] File loaded
+[2023-11-29 16:15:34,087] File traced
+[2023-11-29 16:15:34,087] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:15:34,244] Simulations done
+[2023-11-29 16:15:34,244] Starting to Postprocess Data
+[2023-11-29 16:15:34,464] Data Postprocessed
+[2023-11-29 16:15:34,464] Start to send back the data
+[2023-11-29 16:15:34,465] Data sent
+[2023-11-29 16:15:34,913] Connection lost.
+[2023-11-29 16:15:34,918] Connection lost.
+[2023-11-29 16:17:56,452] Server started.
+[2023-11-29 16:17:56,452] Connection made from ('127.0.0.1', 54086)
+[2023-11-29 16:17:56,453] Data Received
+[2023-11-29 16:17:56,454] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:17:56,454] Starting Simulations
+[2023-11-29 16:17:56,457] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:17:58,642] File loaded
+[2023-11-29 16:18:00,075] File traced
+[2023-11-29 16:18:00,075] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:18:00,235] Simulations done
+[2023-11-29 16:18:00,235] Starting to Postprocess Data
+[2023-11-29 16:18:00,517] Data Postprocessed
+[2023-11-29 16:18:00,517] Start to send back the data
+[2023-11-29 16:18:00,517] Data sent
+[2023-11-29 16:18:00,519] Connection lost.
+[2023-11-29 16:19:24,982] Server started.
+[2023-11-29 16:19:24,983] Connection made from ('127.0.0.1', 44992)
+[2023-11-29 16:19:24,984] Data Received
+[2023-11-29 16:19:24,985] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:19:24,986] Starting Simulations
+[2023-11-29 16:19:24,991] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:19:26,943] File loaded
+[2023-11-29 16:19:28,778] File traced
+[2023-11-29 16:19:28,778] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:19:28,937] Simulations done
+[2023-11-29 16:19:28,938] Starting to Postprocess Data
+[2023-11-29 16:19:29,068] Data Postprocessed
+[2023-11-29 16:19:29,068] Start to send back the data
+[2023-11-29 16:19:29,068] Data sent
+[2023-11-29 16:19:29,079] Connection lost.
+[2023-11-29 16:19:29,114] Server started.
+[2023-11-29 16:19:29,114] Connection made from ('127.0.0.1', 48630)
+[2023-11-29 16:19:29,331] Data Received
+[2023-11-29 16:19:29,331] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:19:29,332] Starting Simulations
+[2023-11-29 16:19:29,333] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:19:30,546] File loaded
+[2023-11-29 16:19:33,475] File traced
+[2023-11-29 16:19:33,475] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:19:33,633] Simulations done
+[2023-11-29 16:19:33,634] Starting to Postprocess Data
+[2023-11-29 16:19:33,959] Data Postprocessed
+[2023-11-29 16:19:33,959] Start to send back the data
+[2023-11-29 16:19:33,959] Data sent
+[2023-11-29 16:19:33,974] Server started.
+[2023-11-29 16:19:33,974] Connection made from ('127.0.0.1', 48640)
+[2023-11-29 16:19:33,974] Data Received
+[2023-11-29 16:19:33,974] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:19:33,975] Starting Simulations
+[2023-11-29 16:19:33,975] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:19:35,221] File loaded
+[2023-11-29 16:19:36,823] File traced
+[2023-11-29 16:19:36,828] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:19:36,995] Simulations done
+[2023-11-29 16:19:36,995] Starting to Postprocess Data
+[2023-11-29 16:19:37,132] Data Postprocessed
+[2023-11-29 16:19:37,132] Start to send back the data
+[2023-11-29 16:19:37,133] Data sent
+[2023-11-29 16:19:37,676] Connection lost.
+[2023-11-29 16:19:37,677] Connection lost.
+[2023-11-29 16:21:54,201] Server started.
+[2023-11-29 16:21:54,202] Connection made from ('127.0.0.1', 39722)
+[2023-11-29 16:21:54,202] Data Received
+[2023-11-29 16:21:54,203] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:21:54,203] Starting Simulations
+[2023-11-29 16:21:54,206] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:21:56,528] File loaded
+[2023-11-29 16:21:59,423] File traced
+[2023-11-29 16:21:59,423] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:21:59,585] Simulations done
+[2023-11-29 16:21:59,585] Starting to Postprocess Data
+[2023-11-29 16:21:59,850] Data Postprocessed
+[2023-11-29 16:21:59,850] Start to send back the data
+[2023-11-29 16:21:59,850] Data sent
+[2023-11-29 16:21:59,883] Connection lost.
+[2023-11-29 16:22:24,900] Server started.
+[2023-11-29 16:22:24,900] Connection made from ('127.0.0.1', 40052)
+[2023-11-29 16:22:24,901] Data Received
+[2023-11-29 16:22:24,901] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:22:24,902] Starting Simulations
+[2023-11-29 16:22:24,903] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:22:27,108] File loaded
+[2023-11-29 16:22:29,427] File traced
+[2023-11-29 16:22:29,427] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:22:29,600] Simulations done
+[2023-11-29 16:22:29,600] Starting to Postprocess Data
+[2023-11-29 16:22:29,933] Data Postprocessed
+[2023-11-29 16:22:29,933] Start to send back the data
+[2023-11-29 16:22:29,933] Data sent
+[2023-11-29 16:22:29,937] Connection lost.
+[2023-11-29 16:22:53,642] Server started.
+[2023-11-29 16:22:53,642] Connection made from ('127.0.0.1', 35020)
+[2023-11-29 16:22:53,643] Data Received
+[2023-11-29 16:22:53,644] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:22:53,645] Starting Simulations
+[2023-11-29 16:22:53,649] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:22:55,604] File loaded
+[2023-11-29 16:22:57,387] File traced
+[2023-11-29 16:22:57,387] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:22:57,553] Simulations done
+[2023-11-29 16:22:57,553] Starting to Postprocess Data
+[2023-11-29 16:22:57,838] Data Postprocessed
+[2023-11-29 16:22:57,839] Start to send back the data
+[2023-11-29 16:22:57,839] Data sent
+[2023-11-29 16:22:57,860] Connection lost.
+[2023-11-29 16:22:57,918] Server started.
+[2023-11-29 16:22:57,919] Connection made from ('127.0.0.1', 35028)
+[2023-11-29 16:22:58,107] Data Received
+[2023-11-29 16:22:58,108] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:22:58,109] Starting Simulations
+[2023-11-29 16:22:58,111] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:22:59,324] File loaded
+[2023-11-29 16:23:00,789] File traced
+[2023-11-29 16:23:00,789] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:23:00,959] Simulations done
+[2023-11-29 16:23:00,959] Starting to Postprocess Data
+[2023-11-29 16:23:01,268] Data Postprocessed
+[2023-11-29 16:23:01,268] Start to send back the data
+[2023-11-29 16:23:01,269] Data sent
+[2023-11-29 16:23:01,313] Server started.
+[2023-11-29 16:23:01,314] Connection made from ('127.0.0.1', 37858)
+[2023-11-29 16:23:01,322] Data Received
+[2023-11-29 16:23:01,323] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:23:01,323] Starting Simulations
+[2023-11-29 16:23:01,325] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:23:02,745] File loaded
+[2023-11-29 16:23:05,713] File traced
+[2023-11-29 16:23:05,714] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:23:05,879] Simulations done
+[2023-11-29 16:23:05,879] Starting to Postprocess Data
+[2023-11-29 16:23:05,968] Data Postprocessed
+[2023-11-29 16:23:05,968] Start to send back the data
+[2023-11-29 16:23:05,968] Data sent
+[2023-11-29 16:23:06,431] Connection lost.
+[2023-11-29 16:23:06,436] Connection lost.
+[2023-11-29 16:25:44,620] Server started.
+[2023-11-29 16:25:44,621] Connection made from ('127.0.0.1', 47534)
+[2023-11-29 16:25:44,621] Data Received
+[2023-11-29 16:25:44,622] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:25:44,622] Starting Simulations
+[2023-11-29 16:25:44,627] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:25:47,089] File loaded
+[2023-11-29 16:25:48,725] File traced
+[2023-11-29 16:25:48,725] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:25:48,890] Simulations done
+[2023-11-29 16:25:48,890] Starting to Postprocess Data
+[2023-11-29 16:25:49,181] Data Postprocessed
+[2023-11-29 16:25:49,181] Start to send back the data
+[2023-11-29 16:25:49,181] Data sent
+[2023-11-29 16:25:49,188] Connection lost.
+[2023-11-29 16:25:49,210] Server started.
+[2023-11-29 16:25:49,211] Connection made from ('127.0.0.1', 39162)
+[2023-11-29 16:25:49,218] Data Received
+[2023-11-29 16:25:49,219] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:25:49,219] Starting Simulations
+[2023-11-29 16:25:49,221] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:25:50,915] File loaded
+[2023-11-29 16:25:52,533] File traced
+[2023-11-29 16:25:52,533] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:25:52,694] Simulations done
+[2023-11-29 16:25:52,694] Starting to Postprocess Data
+[2023-11-29 16:25:53,037] Data Postprocessed
+[2023-11-29 16:25:53,037] Start to send back the data
+[2023-11-29 16:25:53,037] Data sent
+[2023-11-29 16:25:53,055] Server started.
+[2023-11-29 16:25:53,055] Connection made from ('127.0.0.1', 39168)
+[2023-11-29 16:25:53,059] Data Received
+[2023-11-29 16:25:53,059] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:25:53,059] Starting Simulations
+[2023-11-29 16:25:53,060] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:25:54,393] File loaded
+[2023-11-29 16:25:56,944] File traced
+[2023-11-29 16:25:56,944] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:25:57,104] Simulations done
+[2023-11-29 16:25:57,104] Starting to Postprocess Data
+[2023-11-29 16:25:57,372] Data Postprocessed
+[2023-11-29 16:25:57,372] Start to send back the data
+[2023-11-29 16:25:57,372] Data sent
+[2023-11-29 16:25:57,718] Connection lost.
+[2023-11-29 16:25:57,718] Connection lost.
+[2023-11-29 16:26:46,771] Server started.
+[2023-11-29 16:26:46,771] Connection made from ('127.0.0.1', 39340)
+[2023-11-29 16:26:46,772] Data Received
+[2023-11-29 16:26:46,773] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:26:46,774] Starting Simulations
+[2023-11-29 16:26:46,778] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:26:49,260] File loaded
+[2023-11-29 16:26:51,226] File traced
+[2023-11-29 16:26:51,226] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:26:51,448] Simulations done
+[2023-11-29 16:26:51,449] Starting to Postprocess Data
+[2023-11-29 16:26:51,741] Data Postprocessed
+[2023-11-29 16:26:51,741] Start to send back the data
+[2023-11-29 16:26:51,741] Data sent
+[2023-11-29 16:26:51,749] Connection lost.
+[2023-11-29 16:26:51,765] Server started.
+[2023-11-29 16:26:51,766] Connection made from ('127.0.0.1', 48364)
+[2023-11-29 16:26:51,769] Data Received
+[2023-11-29 16:26:51,770] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:26:51,770] Starting Simulations
+[2023-11-29 16:26:51,771] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:26:53,455] File loaded
+[2023-11-29 16:26:55,961] File traced
+[2023-11-29 16:26:55,962] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:26:56,182] Simulations done
+[2023-11-29 16:26:56,182] Starting to Postprocess Data
+[2023-11-29 16:26:56,510] Data Postprocessed
+[2023-11-29 16:26:56,510] Start to send back the data
+[2023-11-29 16:26:56,510] Data sent
+[2023-11-29 16:26:56,536] Server started.
+[2023-11-29 16:26:56,536] Connection made from ('127.0.0.1', 48370)
+[2023-11-29 16:26:56,539] Data Received
+[2023-11-29 16:26:56,539] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:26:56,539] Starting Simulations
+[2023-11-29 16:26:56,540] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:26:58,937] File loaded
+[2023-11-29 16:27:02,405] File traced
+[2023-11-29 16:27:02,405] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:27:02,568] Simulations done
+[2023-11-29 16:27:02,568] Starting to Postprocess Data
+[2023-11-29 16:27:02,842] Data Postprocessed
+[2023-11-29 16:27:02,843] Start to send back the data
+[2023-11-29 16:27:02,843] Data sent
+[2023-11-29 16:27:03,102] Connection lost.
+[2023-11-29 16:29:33,320] Server started.
+[2023-11-29 16:29:33,321] Connection made from ('127.0.0.1', 52898)
+[2023-11-29 16:29:33,322] Data Received
+[2023-11-29 16:29:33,323] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:29:33,323] Starting Simulations
+[2023-11-29 16:29:33,328] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:29:35,317] File loaded
+[2023-11-29 16:29:37,053] File traced
+[2023-11-29 16:29:37,053] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:29:37,209] Simulations done
+[2023-11-29 16:29:37,210] Starting to Postprocess Data
+[2023-11-29 16:29:37,517] Data Postprocessed
+[2023-11-29 16:29:37,517] Start to send back the data
+[2023-11-29 16:29:37,517] Fatal error: protocol.data_received() call failed.
+protocol: <raypyng_bluesky.asyncio_server.ServerProtocol object at 0x7f555714c130>
+transport: <_SelectorSocketTransport fd=7 read=polling write=<idle, bufsize=0>>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/selector_events.py", line 876, in _read_ready__data_received
+    self._protocol.data_received(data)
+  File "/home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/src/raypyng_bluesky/asyncio_server.py", line 228, in data_received
+    send_simulation_results(exports_list, self.tmp_folder, self.transport)
+  File "/home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/src/raypyng_bluesky/asyncio_server.py", line 152, in send_simulation_results
+    send_file_in_chuncks(tmp_folder, result_filename, transport, chunk_size=40960)
+NameError: name 'send_file_in_chuncks' is not defined
+[2023-11-29 16:29:37,517] Connection lost with exception: name 'send_file_in_chuncks' is not defined
+[2023-11-29 16:30:28,488] Server started.
+[2023-11-29 16:30:28,489] Connection made from ('127.0.0.1', 49236)
+[2023-11-29 16:30:28,490] Data Received
+[2023-11-29 16:30:28,491] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:30:28,492] Starting Simulations
+[2023-11-29 16:30:28,497] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:30:30,404] File loaded
+[2023-11-29 16:30:32,352] File traced
+[2023-11-29 16:30:32,352] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:30:32,517] Simulations done
+[2023-11-29 16:30:32,517] Starting to Postprocess Data
+[2023-11-29 16:30:32,826] Data Postprocessed
+[2023-11-29 16:30:32,827] Start to send back the data
+[2023-11-29 16:30:32,827] Data sent
+[2023-11-29 16:30:32,836] Connection lost.
+[2023-11-29 16:30:32,854] Server started.
+[2023-11-29 16:30:32,854] Connection made from ('127.0.0.1', 39254)
+[2023-11-29 16:30:32,855] Data Received
+[2023-11-29 16:30:32,855] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:30:32,855] Starting Simulations
+[2023-11-29 16:30:32,856] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:30:34,397] File loaded
+[2023-11-29 16:30:35,900] File traced
+[2023-11-29 16:30:35,900] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:30:36,070] Simulations done
+[2023-11-29 16:30:36,070] Starting to Postprocess Data
+[2023-11-29 16:30:36,312] Data Postprocessed
+[2023-11-29 16:30:36,312] Start to send back the data
+[2023-11-29 16:30:36,312] Data sent
+[2023-11-29 16:30:36,357] Server started.
+[2023-11-29 16:30:36,357] Connection made from ('127.0.0.1', 39268)
+[2023-11-29 16:30:36,360] Data Received
+[2023-11-29 16:30:36,361] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:30:36,361] Starting Simulations
+[2023-11-29 16:30:36,365] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:30:37,927] File loaded
+[2023-11-29 16:30:39,873] File traced
+[2023-11-29 16:30:39,873] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:30:40,031] Simulations done
+[2023-11-29 16:30:40,032] Starting to Postprocess Data
+[2023-11-29 16:30:40,231] Data Postprocessed
+[2023-11-29 16:30:40,231] Start to send back the data
+[2023-11-29 16:30:40,231] Data sent
+[2023-11-29 16:30:40,767] Connection lost.
+[2023-11-29 16:30:40,768] Connection lost.
+[2023-11-29 16:37:41,992] Server started.
+[2023-11-29 16:37:41,993] Connection made from ('127.0.0.1', 45926)
+[2023-11-29 16:37:41,993] Data Received
+[2023-11-29 16:37:41,994] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:37:41,995] Starting Simulations
+[2023-11-29 16:37:41,998] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:37:44,161] File loaded
+[2023-11-29 16:39:33,518] File traced
+[2023-11-29 16:39:33,519] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:39:41,742] Simulations done
+[2023-11-29 16:39:41,742] Starting to Postprocess Data
+[2023-11-29 16:39:49,055] Data Postprocessed
+[2023-11-29 16:39:49,055] Start to send back the data
+[2023-11-29 16:39:49,055] Data sent
+[2023-11-29 16:39:49,065] Connection lost.
+[2023-11-29 16:39:49,092] Server started.
+[2023-11-29 16:39:49,092] Connection made from ('127.0.0.1', 50778)
+[2023-11-29 16:39:49,092] Data Received
+[2023-11-29 16:39:49,093] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:39:49,093] Starting Simulations
+[2023-11-29 16:39:49,094] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:39:50,346] File loaded
+[2023-11-29 16:41:35,394] File traced
+[2023-11-29 16:41:35,394] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:41:42,858] Simulations done
+[2023-11-29 16:41:42,859] Starting to Postprocess Data
+[2023-11-29 16:41:50,454] Data Postprocessed
+[2023-11-29 16:41:50,455] Start to send back the data
+[2023-11-29 16:41:50,455] Data sent
+[2023-11-29 16:41:50,468] Server started.
+[2023-11-29 16:41:50,468] Connection made from ('127.0.0.1', 56260)
+[2023-11-29 16:41:50,469] Data Received
+[2023-11-29 16:41:50,469] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:41:50,469] Starting Simulations
+[2023-11-29 16:41:50,470] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-11-29 16:41:52,112] File loaded
+[2023-11-29 16:43:35,272] File traced
+[2023-11-29 16:43:35,273] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-11-29 16:43:43,174] Simulations done
+[2023-11-29 16:43:43,175] Starting to Postprocess Data
+[2023-11-29 16:43:50,672] Data Postprocessed
+[2023-11-29 16:43:50,672] Start to send back the data
+[2023-11-29 16:43:50,672] Data sent
+[2023-11-29 17:22:21,065] Connection lost.
+[2023-11-29 20:50:15,822] Connection lost.
+[2023-12-02 14:16:18,735] Server started.
+[2023-12-02 14:16:18,736] Connection made from ('127.0.0.1', 34566)
+[2023-12-02 14:16:18,737] Data Received
+[2023-12-02 14:16:18,738] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:16:18,738] Starting Simulations
+[2023-12-02 14:16:18,741] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:16:20,321] File loaded
+[2023-12-02 14:16:20,795] File traced
+[2023-12-02 14:16:20,795] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-12-02 14:16:20,894] Simulations done
+[2023-12-02 14:16:20,894] Starting to Postprocess Data
+[2023-12-02 14:16:20,922] Data Postprocessed
+[2023-12-02 14:16:20,922] Start to send back the data
+[2023-12-02 14:16:20,922] Data sent
+[2023-12-02 14:16:20,929] Connection lost.
+[2023-12-02 14:16:21,319] Server started.
+[2023-12-02 14:16:21,319] Connection made from ('127.0.0.1', 34572)
+[2023-12-02 14:16:21,338] Data Received
+[2023-12-02 14:16:21,339] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:16:21,339] Starting Simulations
+[2023-12-02 14:16:21,342] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:16:22,679] File loaded
+[2023-12-02 14:16:23,250] File traced
+[2023-12-02 14:16:23,250] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-12-02 14:16:23,365] Simulations done
+[2023-12-02 14:16:23,365] Starting to Postprocess Data
+[2023-12-02 14:16:23,407] Data Postprocessed
+[2023-12-02 14:16:23,407] Start to send back the data
+[2023-12-02 14:16:23,408] Data sent
+[2023-12-02 14:16:23,461] Server started.
+[2023-12-02 14:16:23,462] Connection made from ('127.0.0.1', 34578)
+[2023-12-02 14:16:23,464] Data Received
+[2023-12-02 14:16:23,465] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:16:23,465] Starting Simulations
+[2023-12-02 14:16:23,469] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:16:25,120] File loaded
+[2023-12-02 14:16:25,612] File traced
+[2023-12-02 14:16:25,612] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-12-02 14:16:25,713] Simulations done
+[2023-12-02 14:16:25,713] Starting to Postprocess Data
+[2023-12-02 14:16:25,744] Data Postprocessed
+[2023-12-02 14:16:25,744] Start to send back the data
+[2023-12-02 14:16:25,745] Data sent
+[2023-12-02 14:18:48,508] Server started.
+[2023-12-02 14:18:48,509] Connection made from ('127.0.0.1', 57496)
+[2023-12-02 14:18:48,510] Data Received
+[2023-12-02 14:18:48,511] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:18:48,511] Starting Simulations
+[2023-12-02 14:18:48,515] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:18:50,541] File loaded
+[2023-12-02 14:18:51,162] File traced
+[2023-12-02 14:18:51,163] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-12-02 14:18:51,234] Simulations done
+[2023-12-02 14:18:51,234] Starting to Postprocess Data
+[2023-12-02 14:18:51,260] Data Postprocessed
+[2023-12-02 14:18:51,260] Start to send back the data
+[2023-12-02 14:18:51,260] Data sent
+[2023-12-02 14:18:51,269] Connection lost.
+[2023-12-02 14:18:51,317] Server started.
+[2023-12-02 14:18:51,318] Connection made from ('127.0.0.1', 57502)
+[2023-12-02 14:18:51,319] Data Received
+[2023-12-02 14:18:51,319] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:18:51,320] Starting Simulations
+[2023-12-02 14:18:51,322] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:18:52,886] File loaded
+[2023-12-02 14:18:53,429] File traced
+[2023-12-02 14:18:53,429] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-12-02 14:18:53,529] Simulations done
+[2023-12-02 14:18:53,529] Starting to Postprocess Data
+[2023-12-02 14:18:53,576] Data Postprocessed
+[2023-12-02 14:18:53,576] Start to send back the data
+[2023-12-02 14:18:53,576] Data sent
+[2023-12-02 14:18:53,614] Connection lost.
+[2023-12-02 14:18:53,628] Server started.
+[2023-12-02 14:18:53,628] Connection made from ('127.0.0.1', 57508)
+[2023-12-02 14:18:53,630] Data Received
+[2023-12-02 14:18:53,630] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:18:53,631] Starting Simulations
+[2023-12-02 14:18:53,632] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:18:55,148] File loaded
+[2023-12-02 14:18:55,596] File traced
+[2023-12-02 14:18:55,596] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-12-02 14:18:55,747] Simulations done
+[2023-12-02 14:18:55,747] Starting to Postprocess Data
+[2023-12-02 14:18:55,927] Data Postprocessed
+[2023-12-02 14:18:55,927] Start to send back the data
+[2023-12-02 14:18:55,928] Data sent
+[2023-12-02 14:18:56,468] Connection lost.
+[2023-12-02 14:19:05,486] Server started.
+[2023-12-02 14:19:05,487] Connection made from ('127.0.0.1', 41226)
+[2023-12-02 14:19:05,487] Data Received
+[2023-12-02 14:19:05,489] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:19:05,489] Starting Simulations
+[2023-12-02 14:19:05,492] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:19:07,378] File loaded
+[2023-12-02 14:19:07,887] File traced
+[2023-12-02 14:19:07,887] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-12-02 14:19:07,991] Simulations done
+[2023-12-02 14:19:07,992] Starting to Postprocess Data
+[2023-12-02 14:19:08,042] Data Postprocessed
+[2023-12-02 14:19:08,042] Start to send back the data
+[2023-12-02 14:19:08,043] Data sent
+[2023-12-02 14:19:08,104] Server started.
+[2023-12-02 14:19:08,104] Connection made from ('127.0.0.1', 36744)
+[2023-12-02 14:19:08,160] Data Received
+[2023-12-02 14:19:08,161] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:19:08,161] Starting Simulations
+[2023-12-02 14:19:08,164] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:19:09,633] File loaded
+[2023-12-02 14:19:10,098] File traced
+[2023-12-02 14:19:10,098] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-12-02 14:19:10,201] Simulations done
+[2023-12-02 14:19:10,201] Starting to Postprocess Data
+[2023-12-02 14:19:10,239] Data Postprocessed
+[2023-12-02 14:19:10,239] Start to send back the data
+[2023-12-02 14:19:10,240] Data sent
+[2023-12-02 14:19:10,241] Connection lost.
+[2023-12-02 14:19:10,294] Server started.
+[2023-12-02 14:19:10,295] Connection made from ('127.0.0.1', 36758)
+[2023-12-02 14:19:10,318] Data Received
+[2023-12-02 14:19:10,319] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:19:10,319] Starting Simulations
+[2023-12-02 14:19:10,322] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:19:11,801] File loaded
+[2023-12-02 14:19:12,284] File traced
+[2023-12-02 14:19:12,285] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-12-02 14:19:12,437] Simulations done
+[2023-12-02 14:19:12,437] Starting to Postprocess Data
+[2023-12-02 14:19:12,496] Data Postprocessed
+[2023-12-02 14:19:12,497] Start to send back the data
+[2023-12-02 14:19:12,497] Data sent
+[2023-12-02 14:19:12,545] Server started.
+[2023-12-02 14:19:12,546] Connection made from ('127.0.0.1', 36770)
+[2023-12-02 14:19:12,552] Data Received
+[2023-12-02 14:19:12,553] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:19:12,554] Starting Simulations
+[2023-12-02 14:19:12,559] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:19:14,033] File loaded
+[2023-12-02 14:19:15,131] File traced
+[2023-12-02 14:19:15,131] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-12-02 14:19:15,236] Simulations done
+[2023-12-02 14:19:15,236] Starting to Postprocess Data
+[2023-12-02 14:19:15,270] Data Postprocessed
+[2023-12-02 14:19:15,270] Start to send back the data
+[2023-12-02 14:19:15,271] Data sent
+[2023-12-02 14:19:15,362] Server started.
+[2023-12-02 14:19:15,362] Connection made from ('127.0.0.1', 36786)
+[2023-12-02 14:19:15,397] Data Received
+[2023-12-02 14:19:15,398] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:19:15,398] Starting Simulations
+[2023-12-02 14:19:15,402] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:19:17,098] File loaded
+[2023-12-02 14:19:17,588] File traced
+[2023-12-02 14:19:17,588] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-12-02 14:19:17,745] Simulations done
+[2023-12-02 14:19:17,745] Starting to Postprocess Data
+[2023-12-02 14:19:17,795] Data Postprocessed
+[2023-12-02 14:19:17,795] Start to send back the data
+[2023-12-02 14:19:17,796] Data sent
+[2023-12-02 14:19:17,861] Server started.
+[2023-12-02 14:19:17,861] Connection made from ('127.0.0.1', 34314)
+[2023-12-02 14:19:17,877] Data Received
+[2023-12-02 14:19:17,878] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:19:17,878] Starting Simulations
+[2023-12-02 14:19:17,882] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:19:19,445] File loaded
+[2023-12-02 14:19:20,519] File traced
+[2023-12-02 14:19:20,519] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-12-02 14:19:20,589] Simulations done
+[2023-12-02 14:19:20,589] Starting to Postprocess Data
+[2023-12-02 14:19:20,606] Data Postprocessed
+[2023-12-02 14:19:20,606] Start to send back the data
+[2023-12-02 14:19:20,606] Data sent
+[2023-12-02 14:19:20,617] Connection lost.
+[2023-12-02 14:19:20,617] Connection lost.
+[2023-12-02 14:19:20,635] Server started.
+[2023-12-02 14:19:20,635] Connection made from ('127.0.0.1', 34320)
+[2023-12-02 14:19:20,642] Data Received
+[2023-12-02 14:19:20,643] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:19:20,643] Starting Simulations
+[2023-12-02 14:19:20,645] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:19:22,398] File loaded
+[2023-12-02 14:19:22,902] File traced
+[2023-12-02 14:19:22,902] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-12-02 14:19:23,004] Simulations done
+[2023-12-02 14:19:23,004] Starting to Postprocess Data
+[2023-12-02 14:19:23,724] Data Postprocessed
+[2023-12-02 14:19:23,725] Start to send back the data
+[2023-12-02 14:19:23,725] Data sent
+[2023-12-02 14:19:23,752] Server started.
+[2023-12-02 14:19:23,752] Connection made from ('127.0.0.1', 34322)
+[2023-12-02 14:19:23,755] Data Received
+[2023-12-02 14:19:23,755] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:19:23,755] Starting Simulations
+[2023-12-02 14:19:23,756] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:19:24,929] File loaded
+[2023-12-02 14:19:25,502] File traced
+[2023-12-02 14:19:25,503] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-12-02 14:19:25,665] Simulations done
+[2023-12-02 14:19:25,665] Starting to Postprocess Data
+[2023-12-02 14:19:25,738] Data Postprocessed
+[2023-12-02 14:19:25,738] Start to send back the data
+[2023-12-02 14:19:25,739] Data sent
+[2023-12-02 14:19:25,779] Connection lost.
+[2023-12-02 14:19:25,780] Connection lost.
+[2023-12-02 14:19:25,869] Server started.
+[2023-12-02 14:19:25,870] Connection made from ('127.0.0.1', 34324)
+[2023-12-02 14:19:25,881] Data Received
+[2023-12-02 14:19:25,881] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:19:25,881] Starting Simulations
+[2023-12-02 14:19:25,883] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:19:27,216] File loaded
+[2023-12-02 14:19:28,301] File traced
+[2023-12-02 14:19:28,301] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-12-02 14:19:28,402] Simulations done
+[2023-12-02 14:19:28,402] Starting to Postprocess Data
+[2023-12-02 14:19:28,421] Data Postprocessed
+[2023-12-02 14:19:28,421] Start to send back the data
+[2023-12-02 14:19:28,421] Data sent
+[2023-12-02 14:19:28,453] Server started.
+[2023-12-02 14:19:28,454] Connection made from ('127.0.0.1', 54940)
+[2023-12-02 14:19:28,455] Data Received
+[2023-12-02 14:19:28,455] Data saved in /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:19:28,456] Starting Simulations
+[2023-12-02 14:19:28,458] Loading rml_file_path /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp/beamline.rml
+[2023-12-02 14:19:29,969] File loaded
+[2023-12-02 14:19:30,448] File traced
+[2023-12-02 14:19:30,448] Exporting obj: rp_DetectorAtSource in folder: /home/simone/Documents/RAYPYNG/raypyng_master/raypyng_bluesky/test/server_tmp
+[2023-12-02 14:19:30,549] Simulations done
+[2023-12-02 14:19:30,549] Starting to Postprocess Data
+[2023-12-02 14:19:30,573] Data Postprocessed
+[2023-12-02 14:19:30,573] Start to send back the data
+[2023-12-02 14:19:30,574] Data sent
+[2023-12-02 14:19:31,050] Connection lost.
+[2023-12-02 14:19:31,050] Connection lost.
+[2023-12-02 14:19:31,051] Connection lost.
+[2023-12-02 14:19:31,051] Connection lost.
+[2023-12-02 14:26:25,604] Connection lost.

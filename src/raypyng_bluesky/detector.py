@@ -49,16 +49,16 @@ class RaypyngDetector(Signal):
         result_queue.put(('done'))
         return 
     
-    def trigger(self):
+    # def trigger(self):
         
-        q = queue.Queue()
-        threads = threading.Thread(target=self.check_if_simulation_is_done(q), args=())
-        threads.daemon = True
-        threads.start()
+    #     q = queue.Queue()
+    #     threads = threading.Thread(target=self.check_if_simulation_is_done(q), args=())
+    #     threads.daemon = True
+    #     threads.start()
 
-        d = Status(self)
-        d._finished()
-        return d
+    #     d = Status(self)
+    #     d._finished()
+    #     return d
 
     def get(self): 
         self._file_to_read = os.path.join(self.path, self.parent_detector_name+"_analyzed_rays.dat")
@@ -79,8 +79,7 @@ class RaypyngDetector(Signal):
 
 
 class RaypyngTriggerDetector(Signal):
-    """The trigger detector is used to start the simulations. The simulations are done on
-    the machine where bluesky is running.
+    """The trigger detector is used to start the simulations using the simlation engine. 
     """   
     raypyng = True
     raypyngTriggerDet = True

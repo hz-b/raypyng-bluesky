@@ -3,12 +3,13 @@ import sys
 import inspect
 import traceback
 
+from twisted.internet import reactor
 from raypyng.rml import RMLFile
 
 from .devices import SimulatedPGM, SimulatedApertures, SimulatedMirror, SimulatedSource
 from .detector import RaypyngDetectorDevice, RaypyngTriggerDetector
 from .preprocessor import SupplementalDataRaypyng
-from .simulation_engine import SimulatonEngineRAYUI
+from .simulation_engine import SimulatonEngineRAYUI, SimulatonEngineRAYUIClient
 
 
 
@@ -62,13 +63,27 @@ class RaypyngOphydDevices():
         prefix (str): the prefix to prepend to the oe names found in the rml file
         ray_ui_location (str): the location of the RAY-UI installation folder. If None the program will try to find it automatically. Deafault to None.
     """    
-    def __init__(self, *args, RE, rml_path, temporary_folder=None, name_space=None, prefix=None, ray_ui_location=None, simulation_engine='rayui',**kwargs):
+    def __init__(self, *args, RE, rml_path, temporary_folder=None, name_space=None, prefix=None, ray_ui_location=None, ip=None, port=None, simulation_engine='rayui',**kwargs):
        
 
         self.RE = RE
         self.rml = RMLFile(rml_path)
-        simulation_engine_dict = {'rayui':SimulatonEngineRAYUI(ray_ui_location=ray_ui_location)}
+        
 
+        if prefix == None:
+            self.prefix='rp_'
+        else:
+            self.prefix = prefix+'_'
+
+        if simulation_engine == 'rayuiClient':
+            if ip==None:
+                raise ValueError(f"The simulation engine '{simulation_engine}' requires a valid ip")
+            elif port==None:
+                raise ValueError(f"The simulation engine '{simulation_engine}' requires a valid port")
+        
+        simulation_engine_dict = {'rayui':SimulatonEngineRAYUI(ray_ui_location=ray_ui_location),
+                                  'rayuiClient':SimulatonEngineRAYUIClient(ip, port, self.prefix)}
+        
         if simulation_engine in simulation_engine_dict.keys():
             self.simulation_engine = simulation_engine_dict[simulation_engine]
         else:
@@ -87,11 +102,8 @@ class RaypyngOphydDevices():
                     self.name_space = i.frame.f_globals
         else:
             self.name_space = name_space.f_globals
-            
-        if prefix == None:
-            self.prefix='rp_'
-        else:
-            self.prefix = prefix
+
+
 
         self.ray_ui_location = ray_ui_location
         rpg = RaypyngDictionary()
@@ -107,7 +119,7 @@ class RaypyngOphydDevices():
         """Prepend a prefix to the name of all the Ophyd object created
         """        
         for oe in self.rml.beamline.children():
-            oe.attributes()['name']='rp_'+oe['name']
+            oe.attributes()['name']=self.prefix+oe['name']
 
     def create_raypyng_elements_from_rml(self):
         """Iterate through the raypyng objects created by RMLFile and create corresponding Ophyd Devices
